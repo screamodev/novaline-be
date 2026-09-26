@@ -7,7 +7,7 @@
             "display": "+38 (098) 506 06 09",
             "tel": "+380985060609",
             "primary": true,
-            "viber": true
+            "viber": false
           },
           {
             "display": "+38 (099) 506 06 09",
@@ -22,22 +22,19 @@
             "viber": false
           }
         ],
-        "email": "info@novaline.net",
+        "email": "support@novaline.net.ua",
         "socials": [
           {
-            "network": "instagram",
-            "url": "https://instagram.com/"
-          },
-          {
             "network": "telegram",
-            "url": "https://t.me/"
+            "url": "https://t.me/nvln_ch"
           }
         ],
-        "cabinetUrl": "https://novaline.net/",
+        "cabinetUrl": "https://stat.novaline.net/",
         "orgFoundingYear": 2003
       },
       "media": {
-        "logo": "novaline-logo.svg"
+        "logo": "novaline-logo.svg",
+        "offerDocument": "dogovir.pdf"
       },
       "uk": {
         "brandTagline": "НАДІЙНЕ\nПІДКЛЮЧЕННЯ\nДО INTERNET",
@@ -425,44 +422,10 @@
     "api::payment-details.payment-details": {
       "shared": {},
       "uk": {
-        "items": [
-          {
-            "label": "Отримувач",
-            "value": "ТОВ «НоваЛайн»"
-          },
-          {
-            "label": "Рахунок (IBAN)",
-            "value": "UA00 000000 0000000000000000000"
-          },
-          {
-            "label": "ЄДРПОУ",
-            "value": "00000000"
-          },
-          {
-            "label": "Призначення",
-            "value": "Оплата за послуги, о/р №______"
-          }
-        ]
+        "items": []
       },
       "en": {
-        "items": [
-          {
-            "label": "Beneficiary",
-            "value": "NovaLine LLC"
-          },
-          {
-            "label": "Account (IBAN)",
-            "value": "UA00 000000 0000000000000000000"
-          },
-          {
-            "label": "Company code",
-            "value": "00000000"
-          },
-          {
-            "label": "Reference",
-            "value": "Payment for services, acc. no ______"
-          }
-        ]
+        "items": []
       }
     },
     "api::assistant-settings.assistant-settings": {
@@ -498,7 +461,7 @@
           },
           {
             "keywords": "оплат, поповн, платіж, рахунок, приват, моно",
-            "answer": "Поповнити рахунок можна у Приват24, monobank, через термінали City24 та IBox або в особистому кабінеті. Головне — вказувати номер особового рахунку, а не номер договору. Покрокові інструкції є у розділі «Оплата»."
+            "answer": "Поповнити рахунок можна онлайн через Приват24 чи EasyPay, у терміналах City24, EasyPay і ПриватБанку або в особистому кабінеті stat.novaline.net. Головне — вказувати номер особового рахунку, а не номер договору. Покрокові інструкції є у розділі «Оплата»."
           },
           {
             "keywords": "не працює, немає інтернет, проблем, обрив, швидкість, зависа",
@@ -553,7 +516,7 @@
           },
           {
             "keywords": "pay, top up, payment, account, privat, mono",
-            "answer": "You can top up via Privat24, monobank, City24 and IBox terminals, or in your NovaLine account. The key is to enter your personal account number, not the contract number. Step-by-step guides are in the “Payment” section."
+            "answer": "You can top up online via Privat24 or EasyPay, at City24, EasyPay and PrivatBank terminals, or in your account at stat.novaline.net. The key is to enter your personal account number, not the contract number. Step-by-step guides are in the “Payment” section."
           },
           {
             "keywords": "not working, no internet, problem, slow, down, drop",
@@ -4757,20 +4720,15 @@
         {
           "key": "privat24",
           "shared": {
-            "order": 1
+            "order": 1,
+            "url": "https://next.privat24.ua/payments/form/%7B%22companyID%22:%222442548%22,%22form%22:%7B%22query%22:%22novaline%22%7D%7D"
           },
           "uk": {
             "name": "Приват24",
-            "meta": "Картка · без комісії",
+            "meta": "Картка · онлайн",
             "steps": [
               {
-                "text": "Відкрийте застосунок Приват24 або сайт privat24.ua."
-              },
-              {
-                "text": "Перейдіть у розділ «Платежі» та скористайтесь пошуком."
-              },
-              {
-                "text": "Введіть у пошуку NovaLine і виберіть постачальника."
+                "text": "Натисніть «Оплатити онлайн» або відкрийте застосунок Приват24 і знайдіть у платежах NovaLine."
               },
               {
                 "text": "Вкажіть номер особового рахунку та суму платежу."
@@ -4782,16 +4740,10 @@
           },
           "en": {
             "name": "Privat24",
-            "meta": "Card · no fee",
+            "meta": "Card · online",
             "steps": [
               {
-                "text": "Open the Privat24 app or privat24.ua."
-              },
-              {
-                "text": "Go to “Payments” and use the search box."
-              },
-              {
-                "text": "Search for NovaLine and select the provider."
+                "text": "Press “Pay online” or open the Privat24 app and search for NovaLine in Payments."
               },
               {
                 "text": "Enter your personal account number and the amount."
@@ -4803,49 +4755,38 @@
           }
         },
         {
-          "key": "monobank",
+          "key": "easypay",
           "shared": {
-            "order": 2
+            "order": 2,
+            "url": "https://easypay.ua/catalog/internet/novaline"
           },
           "uk": {
-            "name": "monobank",
-            "meta": "Картка · без комісії",
+            "name": "EasyPay",
+            "meta": "Картка · онлайн",
             "steps": [
               {
-                "text": "Відкрийте застосунок monobank."
+                "text": "Натисніть «Оплатити онлайн» — відкриється сторінка NovaLine на easypay.ua."
               },
               {
-                "text": "Оберіть «Платежі» → «Комунальні та інші»."
+                "text": "Вкажіть номер особового рахунку та суму."
               },
               {
-                "text": "У пошуку знайдіть NovaLine."
-              },
-              {
-                "text": "Введіть номер особового рахунку та суму."
-              },
-              {
-                "text": "Оплатіть — квитанція зберігається в історії застосунку."
+                "text": "Оплатіть карткою будь-якого банку та збережіть квитанцію."
               }
             ]
           },
           "en": {
-            "name": "monobank",
-            "meta": "Card · no fee",
+            "name": "EasyPay",
+            "meta": "Card · online",
             "steps": [
               {
-                "text": "Open the monobank app."
-              },
-              {
-                "text": "Choose “Payments” → “Utilities and other”."
-              },
-              {
-                "text": "Search for NovaLine."
+                "text": "Press “Pay online” — the NovaLine page on easypay.ua opens."
               },
               {
                 "text": "Enter your personal account number and the amount."
               },
               {
-                "text": "Pay — the receipt is kept in your app history."
+                "text": "Pay with any bank card and keep the receipt."
               }
             ]
           }
@@ -4856,17 +4797,14 @@
             "order": 3
           },
           "uk": {
-            "name": "Термінали City24 та IBox",
-            "meta": "Готівка",
+            "name": "Термінали самообслуговування",
+            "meta": "Готівка · City24, EasyPay, ПриватБанк",
             "steps": [
               {
-                "text": "Знайдіть найближчий термінал City24, IBox або Easypay."
+                "text": "Знайдіть найближчий термінал City24, EasyPay або ПриватБанку."
               },
               {
-                "text": "На головному екрані оберіть «Інтернет-провайдери»."
-              },
-              {
-                "text": "Оберіть NovaLine зі списку або скористайтесь пошуком."
+                "text": "Оберіть «Інтернет-провайдери» та знайдіть NovaLine."
               },
               {
                 "text": "Введіть номер особового рахунку та перевірте його на екрані."
@@ -4877,17 +4815,14 @@
             ]
           },
           "en": {
-            "name": "City24 and IBox terminals",
-            "meta": "Cash",
+            "name": "Self-service terminals",
+            "meta": "Cash · City24, EasyPay, PrivatBank",
             "steps": [
               {
-                "text": "Find your nearest City24, IBox or Easypay terminal."
+                "text": "Find your nearest City24, EasyPay or PrivatBank terminal."
               },
               {
-                "text": "On the home screen choose “Internet providers”."
-              },
-              {
-                "text": "Select NovaLine from the list or use the search."
+                "text": "Choose “Internet providers” and find NovaLine."
               },
               {
                 "text": "Enter your personal account number and check it on screen."
@@ -4901,89 +4836,42 @@
         {
           "key": "account-area",
           "shared": {
-            "order": 4
+            "order": 4,
+            "url": "https://stat.novaline.net/"
           },
           "uk": {
             "name": "Особистий кабінет NovaLine",
-            "meta": "Картка · автоплатіж",
+            "meta": "Картка · EasyPay, Приват24 та інші",
             "steps": [
               {
-                "text": "Увійдіть в особистий кабінет на novaline.net."
+                "text": "Увійдіть в особистий кабінет на stat.novaline.net."
               },
               {
-                "text": "Відкрийте розділ «Поповнити рахунок»."
+                "text": "Оберіть поповнення рахунку та зручну платіжну систему."
               },
               {
                 "text": "Вкажіть суму — номер рахунку підставляється автоматично."
               },
               {
                 "text": "Оплатіть карткою будь-якого банку."
-              },
-              {
-                "text": "За бажанням увімкніть автоплатіж, щоб оплата списувалась щомісяця."
               }
             ]
           },
           "en": {
             "name": "NovaLine account area",
-            "meta": "Card · auto-payment",
+            "meta": "Card · EasyPay, Privat24 and more",
             "steps": [
               {
-                "text": "Sign in to your account at novaline.net."
+                "text": "Sign in to your account at stat.novaline.net."
               },
               {
-                "text": "Open the “Top up” section."
+                "text": "Choose to top up and pick a payment system."
               },
               {
                 "text": "Enter the amount — your account number is filled in automatically."
               },
               {
-                "text": "Pay with a card from any bank."
-              },
-              {
-                "text": "Optionally enable auto-payment so the fee is charged monthly."
-              }
-            ]
-          }
-        },
-        {
-          "key": "bank-transfer",
-          "shared": {
-            "order": 5
-          },
-          "uk": {
-            "name": "Банківський переказ",
-            "meta": "Для бізнесу",
-            "steps": [
-              {
-                "text": "Отримайте рахунок у свого менеджера або в кабінеті."
-              },
-              {
-                "text": "Сформуйте платіжне доручення за реквізитами нижче."
-              },
-              {
-                "text": "У призначенні платежу вкажіть номер особового рахунку та період."
-              },
-              {
-                "text": "Надішліть платіж — зарахування протягом операційного дня банку."
-              }
-            ]
-          },
-          "en": {
-            "name": "Bank transfer",
-            "meta": "For business",
-            "steps": [
-              {
-                "text": "Request an invoice from your manager or in the account area."
-              },
-              {
-                "text": "Prepare the payment order using the details below."
-              },
-              {
-                "text": "In the payment reference, state your personal account number and the period."
-              },
-              {
-                "text": "Send the payment — it is credited within the bank's operating day."
+                "text": "Pay with any bank card."
               }
             ]
           }

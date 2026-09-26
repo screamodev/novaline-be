@@ -51,6 +51,15 @@
         }
       }
     },
+    "url": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "description": "Optional online payment link shown as a button"
+    },
     "order": {
       "type": "integer",
       "default": 0,

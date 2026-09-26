@@ -16,7 +16,7 @@ const single = (field: string) => (b: any) => (b.data && field in b.data ? null 
 
 const today = new Date().toISOString().slice(0, 10);
 const READS: Check[] = [
-  { id: 'R1', path: '/global?populate[phones]=true&populate[socials]=true&populate[defaultSeo][populate]=ogImage&populate[logo]=true', expect: single('phones') },
+  { id: 'R1', path: '/global?populate[phones]=true&populate[socials]=true&populate[defaultSeo][populate]=ogImage&populate[logo]=true&populate[offerDocument]=true', expect: single('phones') },
   { id: 'R2', path: '/home-page?populate[hero][populate]=image&populate[about][populate]=stats&populate[seo][populate]=ogImage', expect: single('hero') },
   { id: 'R3', path: '/services?sort=order:asc', expect: list(6) },
   { id: 'R4', path: '/plans?sort=order:asc&populate=features&pagination[pageSize]=100', expect: list(9) },
@@ -28,7 +28,7 @@ const READS: Check[] = [
   { id: 'R10a', path: '/dc-services?sort=order:asc', expect: list(7) },
   { id: 'R10b', path: '/dc-facts?sort=order:asc', expect: list(4) },
   { id: 'R11', path: '/shop-items?sort=order:asc&populate=image', expect: list(6) },
-  { id: 'R12', path: '/payment-methods?sort=order:asc&populate=steps', expect: list(5) },
+  { id: 'R12', path: '/payment-methods?sort=order:asc&populate=steps', expect: list(4) },
   { id: 'R13', path: '/payment-details?populate=items', expect: single('items') },
   { id: 'R14', path: '/articles?sort=publishedDate:desc&populate[category]=true&populate[cover]=true&pagination[pageSize]=12', expect: list(6) },
   { id: 'R16', path: '/article-categories?sort=order:asc', expect: list(6) },

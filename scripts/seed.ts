@@ -9,7 +9,8 @@
  *   npm run seed -- --refresh=api::article.article,api::radio.radio
  *
  * `--refresh` deliberately overwrites the listed types with the seed content (both locales), e.g. after
- * the seed data itself changed. Use it only where manual edits may be discarded.
+ * the seed data itself changed; for collections it also deletes entries whose key is no longer in the seed.
+ * Use it only where manual edits may be discarded.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -26,7 +27,7 @@ const SEED_DIR = path.join(process.cwd(), 'scripts', 'seed-data');
 const LOCALES = ['uk', 'en'] as const;
 type Locale = (typeof LOCALES)[number];
 
-const stats = { created: 0, localised: 0, refreshed: 0, skipped: 0 };
+const stats = { created: 0, localised: 0, refreshed: 0, skipped: 0, deleted: 0 };
 const REFRESH = new Set(
   (process.argv.find((a) => a.startsWith('--refresh='))?.slice('--refresh='.length) ?? '').split(',').filter(Boolean),
 );
@@ -45,7 +46,7 @@ async function uploadMedia(strapi: Core.Strapi, fileName: string, alt: string): 
   const existing = await strapi.db.query('plugin::upload.file').findOne({ where: { name: fileName } });
   if (existing) return existing.id;
   const filepath = path.join(SEED_DIR, 'media', fileName);
-  const mimetype = fileName.endsWith('.svg') ? 'image/svg+xml' : 'image/png';
+  const mimetype = fileName.endsWith('.svg') ? 'image/svg+xml' : fileName.endsWith('.pdf') ? 'application/pdf' : 'image/png';
   const [file] = await strapi
     .plugin('upload')
     .service('upload')
@@ -145,6 +146,15 @@ async function seedCollection(strapi: Core.Strapi, uid: string, entries: Entry[]
       stats.localised++;
     }
   }
+  if (REFRESH.has(uid)) {
+    const keep = new Set(entries.map((e) => e.key));
+    const all = await docs(strapi, uid).findMany({ locale: 'uk', status: 'draft', fields: [keyField] });
+    for (const doc of all) {
+      if (keep.has(doc[keyField])) continue;
+      await docs(strapi, uid).delete({ documentId: doc.documentId, locale: '*' });
+      stats.deleted++;
+    }
+  }
   strapi.log.info(`[seed] ${uid}: ${entries.length} entries`);
 }
 
@@ -155,7 +165,7 @@ async function main() {
   try {
     for (const [uid, single] of Object.entries(content.singles)) await seedSingle(app, uid, single);
     for (const [uid, entries] of content.collections) await seedCollection(app, uid, entries);
-    app.log.info(`[seed] done — created ${stats.created}, localised ${stats.localised}, refreshed ${stats.refreshed}, skipped ${stats.skipped}`);
+    app.log.info(`[seed] done — created ${stats.created}, localised ${stats.localised}, refreshed ${stats.refreshed}, deleted ${stats.deleted}, skipped ${stats.skipped}`);
   } finally {
     await app.destroy();
   }

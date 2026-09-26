@@ -31,8 +31,7 @@
         "i18n": {
           "localized": false
         }
-      },
-      "description": "Placeholder from the prototype — replace with real data"
+      }
     },
     "email": {
       "type": "email",
@@ -40,8 +39,7 @@
         "i18n": {
           "localized": false
         }
-      },
-      "description": "Placeholder from the prototype — replace with real data"
+      }
     },
     "socials": {
       "type": "component",
@@ -60,6 +58,19 @@
           "localized": false
         }
       }
+    },
+    "offerDocument": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "description": "Public offer agreement (PDF) linked in the footer"
     },
     "footerTagline": {
       "type": "string",

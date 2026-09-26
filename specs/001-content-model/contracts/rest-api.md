@@ -10,7 +10,7 @@ If a localised request returns `data: null` (single type) or an entry is missing
 
 | # | Endpoint | Query | Returns |
 |---|---|---|---|
-| R1 | `GET /global` | `populate[phones]=true&populate[socials]=true&populate[defaultSeo][populate]=ogImage&populate[logo]=true` | Global |
+| R1 | `GET /global` | `populate[phones]=true&populate[socials]=true&populate[defaultSeo][populate]=ogImage&populate[logo]=true&populate[offerDocument]=true` | Global |
 | R2 | `GET /home-page` | `populate=*` for components + `populate[hero][populate]=image`, `populate[about][populate]=stats`, `populate[seo][populate]=ogImage` | HomePage |
 | R3 | `GET /services` | `sort=order:asc&pagination[pageSize]=100` | Service[] |
 | R4 | `GET /plans` | `sort=order:asc&populate=features&pagination[pageSize]=100` | Plan[] (all segments) |
