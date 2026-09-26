@@ -1,0 +1,4866 @@
+{
+  "singles": {
+    "api::global.global": {
+      "shared": {
+        "phones": [
+          {
+            "display": "+38 (098) 506 06 09",
+            "tel": "+380985060609",
+            "primary": true,
+            "viber": true
+          },
+          {
+            "display": "+38 (099) 506 06 09",
+            "tel": "+380995060609",
+            "primary": false,
+            "viber": false
+          },
+          {
+            "display": "+38 (073) 506 06 09",
+            "tel": "+380735060609",
+            "primary": false,
+            "viber": false
+          }
+        ],
+        "email": "info@novaline.net",
+        "socials": [
+          {
+            "network": "instagram",
+            "url": "https://instagram.com/"
+          },
+          {
+            "network": "telegram",
+            "url": "https://t.me/"
+          }
+        ],
+        "cabinetUrl": "https://novaline.net/",
+        "orgFoundingYear": 2003
+      },
+      "media": {
+        "logo": "novaline-logo.svg"
+      },
+      "uk": {
+        "brandTagline": "НАДІЙНЕ\nПІДКЛЮЧЕННЯ\nДО INTERNET",
+        "footerTagline": "Надійне підключення до Internet у вашому регіоні.",
+        "copyright": "© 2003–2026 NovaLine. Всі права захищено.",
+        "currencyLabel": "грн",
+        "perMonthLabel": "грн/міс",
+        "defaultSeo": {
+          "metaTitle": "NovaLine — швидкісний інтернет за технологією PON",
+          "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, резервне живлення і підтримка 24/7. Харківська, Полтавська, Сумська та Дніпропетровська області."
+        },
+        "orgLegalName": "ТОВ «НоваЛайн»",
+        "orgAreaServed": "Харківська, Полтавська, Сумська та Дніпропетровська області"
+      },
+      "en": {
+        "brandTagline": "RELIABLE\nCONNECTION\nTO THE INTERNET",
+        "footerTagline": "Reliable internet across your region.",
+        "copyright": "© 2003–2026 NovaLine. All rights reserved.",
+        "currencyLabel": "UAH",
+        "perMonthLabel": "UAH/mo",
+        "defaultSeo": {
+          "metaTitle": "NovaLine — high-speed PON fibre internet",
+          "metaDescription": "Fibre straight to your home or office. A stable connection, backup power and 24/7 support across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
+        },
+        "orgLegalName": "NovaLine LLC",
+        "orgAreaServed": "Kharkiv, Poltava, Sumy & Dnipropetrovsk regions"
+      }
+    },
+    "api::home-page.home-page": {
+      "shared": {},
+      "media": {
+        "hero.image": "hero-wide.png"
+      },
+      "uk": {
+        "hero": {
+          "kicker": "GPON / EPON · до 10 Гбіт/с",
+          "titleLine1": "Швидкісний інтернет",
+          "titleLine2": "за технологією PON",
+          "subtitle": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, сучасне обладнання з резервним живленням і підтримка 24/7.",
+          "promoText": "+1 місяць інтернету у подарунок при підключенні",
+          "primaryCta": "Перевірити покриття",
+          "secondaryCta": "Отримати консультацію",
+          "imageAlt": "Задоволена клієнтка користується інтернетом NovaLine",
+          "speedValue": "1000",
+          "speedUnit": "Мбіт/с",
+          "speedCaption": "оптика прямо у дім"
+        },
+        "trustItems": [
+          {
+            "icon": "support",
+            "title": "Технічна підтримка 24/7",
+            "text": "Інженери на зв’язку вдень і вночі"
+          },
+          {
+            "icon": "engineer",
+            "title": "Кваліфіковані інженери",
+            "text": "Монтаж там, де інші відступають"
+          },
+          {
+            "icon": "power",
+            "title": "Резервне живлення",
+            "text": "Працюємо навіть без світла"
+          },
+          {
+            "icon": "award",
+            "title": "Досвід з 2003 року",
+            "text": "20+ років на ринку інтернет-послуг"
+          }
+        ],
+        "coverage": {
+          "heading": {
+            "kicker": "Покриття і тарифи",
+            "title": "Дізнайтесь, чи є NovaLine у вас",
+            "subtitle": "Введіть населений пункт або адресу — покажемо доступну технологію та тарифи за секунди."
+          },
+          "hint": "Понад 300 населених пунктів у кількох областях України вже підключені.",
+          "resultTitle": "Чудові новини — ви у зоні покриття!",
+          "technology": "GPON / EPON",
+          "speedValue": "до 1000 Мбіт/с",
+          "resultNote": "Тарифи, доступні за вашою адресою:",
+          "mapTitle": "Карта покриття",
+          "nodesCount": 300,
+          "nodesLabel": "вузлів",
+          "legendCity": "Місто / смт",
+          "legendVillage": "Село / приватний сектор",
+          "mapHint": "Натисніть на позначку, щоб перевірити тарифи в цьому населеному пункті."
+        },
+        "services": {
+          "kicker": "Послуги",
+          "title": "Все для стабільного з’єднання"
+        },
+        "plans": {
+          "kicker": "Тарифи",
+          "title": "Прозорі тарифи — усе видно одразу",
+          "subtitle": "Оберіть тип підключення. Абонплата вказана повністю; додаткові послуги — окремим блоком нижче."
+        },
+        "plansConnectionNote": "Підключення 1500 грн — 1 місяць доступу до Інтернету вже у вартості.",
+        "addons": {
+          "title": "Додаткові послуги",
+          "subtitle": "Підключаються за бажанням до будь-якого тарифу. Ціна вказана окремо від абонплати."
+        },
+        "tv": {
+          "kicker": "Телебачення",
+          "title": "Телебачення OTT разом із Triniti TV",
+          "subtitle": "Дивіться на телевізорі, смартфоні, планшеті чи в браузері. Один пакет — до 5 пристроїв одночасно."
+        },
+        "tvChips": [
+          {
+            "text": "До 5 пристроїв"
+          },
+          {
+            "text": "Архів 7 днів"
+          },
+          {
+            "text": "HD-якість"
+          }
+        ],
+        "tvChannelsTitle": "Список каналів",
+        "tvChannelsSubtitle": "Оберіть категорію, щоб побачити канали пакета.",
+        "tvChannelsNote": "Перелік каналів може змінюватись. Актуальний список — у особистому кабінеті.",
+        "promos": {
+          "kicker": "Акції",
+          "title": "Поточні акційні пропозиції",
+          "subtitle": "Актуальні умови підключення. Кожна акція має свій термін дії."
+        },
+        "dataCentre": {
+          "kicker": "Дата-центр",
+          "title": "Дата-центр NovaLine",
+          "subtitle": "Власний майданчик із резервним живленням, кліматконтролем і каналами від кількох операторів."
+        },
+        "shop": {
+          "kicker": "Магазин",
+          "title": "Обладнання",
+          "subtitle": "Роутери, ONU-термінали та аксесуари. Можна придбати разом із підключенням."
+        },
+        "shopRouterNote": "У нашій мережі працюють роутери з WAN-портом будь-яких виробників. Щодо конкретної моделі краще проконсультуватись у магазині електроніки, де ви плануєте придбати роутер.",
+        "shopOrderNote": "Обладнання можна отримати в офісі або разом із монтажем.",
+        "payment": {
+          "kicker": "Оплата",
+          "title": "Поповнюйте рахунок як зручно",
+          "subtitle": "Особовий рахунок — головний реквізит для будь-якого способу оплати. Він вказаний у особистому кабінеті та в договорі."
+        },
+        "paymentAccountNote": "Замість номера договору вводьте саме номер особового рахунку — інакше платіж не зарахується автоматично.",
+        "paymentStepsTitle": "Покрокові інструкції",
+        "paymentDetailsTitle": "Реквізити для переказу",
+        "news": {
+          "kicker": "Новини",
+          "title": "Новини та статті",
+          "subtitle": "Що відбувається в мережі, корисні поради та оновлення сервісу."
+        },
+        "about": {
+          "heading": {
+            "kicker": "Про нас",
+            "title": "Надаємо доступ до Internet з 2003 року — і робимо це добре"
+          },
+          "body": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Історія NovaLine почалася у 2003 році, коли «кручена пара» була ще мідною. Технології змінювались, а ми весь час рухались уперед — від піонерських домашніх мереж до оптики GPON."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Сьогодні ми обслуговуємо кілька областей України: сотні підключених населених пунктів, сучасне обладнання з резервним живленням і команда інженерів, що завжди на зв’язку."
+                }
+              ]
+            }
+          ],
+          "stats": [
+            {
+              "value": "2003",
+              "label": "Рік заснування",
+              "tone": "glass"
+            },
+            {
+              "value": "20+",
+              "label": "років досвіду",
+              "tone": "coral"
+            },
+            {
+              "value": "300+",
+              "label": "населених пунктів",
+              "tone": "violet"
+            },
+            {
+              "value": "24/7",
+              "label": "підтримка",
+              "tone": "glass"
+            }
+          ]
+        },
+        "lead": {
+          "kicker": "Заявка на підключення",
+          "title": "Залиште заявку на підключення",
+          "subtitle": "Заповніть форму і наш спеціаліст зв’яжеться з Вами найближчим часом."
+        },
+        "seo": {
+          "metaTitle": "NovaLine — швидкісний інтернет за технологією PON",
+          "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, резервне живлення і підтримка 24/7. Харківська, Полтавська, Сумська та Дніпропетровська області."
+        }
+      },
+      "en": {
+        "hero": {
+          "kicker": "GPON / EPON · up to 10 Gbps",
+          "titleLine1": "High-speed internet",
+          "titleLine2": "on PON technology",
+          "subtitle": "Fiber straight to your home or office. A stable connection, modern equipment with backup power, and 24/7 support.",
+          "promoText": "+1 month of internet free with every connection",
+          "primaryCta": "Check coverage",
+          "secondaryCta": "Get a consultation",
+          "imageAlt": "A happy customer using NovaLine internet at home",
+          "speedValue": "1000",
+          "speedUnit": "Mbps",
+          "speedCaption": "fiber straight to your home"
+        },
+        "trustItems": [
+          {
+            "icon": "support",
+            "title": "24/7 technical support",
+            "text": "Real engineers, day and night"
+          },
+          {
+            "icon": "engineer",
+            "title": "Qualified engineers",
+            "text": "We install where others give up"
+          },
+          {
+            "icon": "power",
+            "title": "Backup power",
+            "text": "We keep you online during outages"
+          },
+          {
+            "icon": "award",
+            "title": "Since 2003",
+            "text": "20+ years in the ISP market"
+          }
+        ],
+        "coverage": {
+          "heading": {
+            "kicker": "Coverage & plans",
+            "title": "Find out if NovaLine reaches you",
+            "subtitle": "Enter your locality or address — we’ll show the available technology and plans in seconds."
+          },
+          "hint": "Over 300 localities across several regions of Ukraine are already connected.",
+          "resultTitle": "Great news — you’re in our coverage area!",
+          "technology": "GPON / EPON",
+          "speedValue": "up to 1000 Mbps",
+          "resultNote": "Plans available at your address:",
+          "mapTitle": "Coverage map",
+          "nodesCount": 300,
+          "nodesLabel": "nodes",
+          "legendCity": "City / town",
+          "legendVillage": "Village / private homes",
+          "mapHint": "Click a marker to check the plans available in that locality."
+        },
+        "services": {
+          "kicker": "Services",
+          "title": "Everything for a stable connection"
+        },
+        "plans": {
+          "kicker": "Plans",
+          "title": "Transparent plans — everything up front",
+          "subtitle": "Pick your connection type. The monthly fee is complete; optional add-ons are listed separately below."
+        },
+        "plansConnectionNote": "Connection 1500 UAH — the first month of internet is already included.",
+        "addons": {
+          "title": "Optional add-ons",
+          "subtitle": "Added to any plan on request. Priced separately from the monthly fee."
+        },
+        "tv": {
+          "kicker": "Television",
+          "title": "OTT television with Triniti TV",
+          "subtitle": "Watch on your TV, phone, tablet or browser. One package — up to 5 devices at once."
+        },
+        "tvChips": [
+          {
+            "text": "Up to 5 devices"
+          },
+          {
+            "text": "7-day archive"
+          },
+          {
+            "text": "HD quality"
+          }
+        ],
+        "tvChannelsTitle": "Channel list",
+        "tvChannelsSubtitle": "Pick a category to see the channels in the package.",
+        "tvChannelsNote": "The channel line-up may change. The current list is in your account.",
+        "promos": {
+          "kicker": "Offers",
+          "title": "Current promotional offers",
+          "subtitle": "Live connection terms. Each offer has its own validity period."
+        },
+        "dataCentre": {
+          "kicker": "Data centre",
+          "title": "The NovaLine data centre",
+          "subtitle": "Our own site with backup power, climate control and uplinks from several carriers."
+        },
+        "shop": {
+          "kicker": "Shop",
+          "title": "Equipment",
+          "subtitle": "Routers, ONU terminals and accessories. Can be bought together with your connection."
+        },
+        "shopRouterNote": "Routers from any manufacturer with a WAN port work on our network. For a specific model, it is best to ask the electronics shop where you plan to buy it.",
+        "shopOrderNote": "Equipment can be collected at our office or delivered with the installation.",
+        "payment": {
+          "kicker": "Payment",
+          "title": "Top up however suits you",
+          "subtitle": "Your personal account number is the key detail for every payment method. You will find it in your account area and in your contract."
+        },
+        "paymentAccountNote": "Enter your personal account number rather than the contract number — otherwise the payment will not be credited automatically.",
+        "paymentStepsTitle": "Step-by-step instructions",
+        "paymentDetailsTitle": "Bank transfer details",
+        "news": {
+          "kicker": "News",
+          "title": "News & articles",
+          "subtitle": "What is happening on the network, useful advice and service updates."
+        },
+        "about": {
+          "heading": {
+            "kicker": "About us",
+            "title": "Providing internet access since 2003 — and doing it well"
+          },
+          "body": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "NovaLine’s story began in 2003, back when twisted-pair cable was still copper. Technology changed and we kept moving forward — from pioneering home networks to GPON fiber."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Today we serve several regions of Ukraine: hundreds of connected localities, modern equipment with backup power, and a team of engineers always on the line."
+                }
+              ]
+            }
+          ],
+          "stats": [
+            {
+              "value": "2003",
+              "label": "Founded",
+              "tone": "glass"
+            },
+            {
+              "value": "20+",
+              "label": "years of experience",
+              "tone": "coral"
+            },
+            {
+              "value": "300+",
+              "label": "localities",
+              "tone": "violet"
+            },
+            {
+              "value": "24/7",
+              "label": "support",
+              "tone": "glass"
+            }
+          ]
+        },
+        "lead": {
+          "kicker": "Connection request",
+          "title": "Leave a connection request",
+          "subtitle": "Fill in the form and our specialist will get in touch with you shortly."
+        },
+        "seo": {
+          "metaTitle": "NovaLine — high-speed PON fibre internet",
+          "metaDescription": "Fibre straight to your home or office. A stable connection, backup power and 24/7 support across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
+        }
+      }
+    },
+    "api::payment-details.payment-details": {
+      "shared": {},
+      "uk": {
+        "items": [
+          {
+            "label": "Отримувач",
+            "value": "ТОВ «НоваЛайн»"
+          },
+          {
+            "label": "Рахунок (IBAN)",
+            "value": "UA00 000000 0000000000000000000"
+          },
+          {
+            "label": "ЄДРПОУ",
+            "value": "00000000"
+          },
+          {
+            "label": "Призначення",
+            "value": "Оплата за послуги, о/р №______"
+          }
+        ]
+      },
+      "en": {
+        "items": [
+          {
+            "label": "Beneficiary",
+            "value": "NovaLine LLC"
+          },
+          {
+            "label": "Account (IBAN)",
+            "value": "UA00 000000 0000000000000000000"
+          },
+          {
+            "label": "Company code",
+            "value": "00000000"
+          },
+          {
+            "label": "Reference",
+            "value": "Payment for services, acc. no ______"
+          }
+        ]
+      }
+    },
+    "api::assistant-settings.assistant-settings": {
+      "shared": {},
+      "uk": {
+        "title": "NovaLine Асистент",
+        "subtitle": "Відповім на питання про тарифи, покриття й оплату",
+        "greeting": "Вітаю! Я асистент NovaLine. Можу підказати щодо тарифів, покриття, оплати або технічних питань. Що вас цікавить?",
+        "quickQuestions": [
+          {
+            "text": "Які є тарифи?"
+          },
+          {
+            "text": "Чи є покриття?"
+          },
+          {
+            "text": "Як оплатити?"
+          },
+          {
+            "text": "Не працює інтернет"
+          }
+        ],
+        "promptAddendum": "",
+        "fallbackMessage": "Дякую за питання. Передам його спеціалісту — він відповість детальніше. Ви також можете залишити заявку, і ми зв’яжемось із вами.",
+        "fallbackReplies": [
+          {
+            "keywords": "тариф, ціна, скільк, коштує, план",
+            "answer": "Для приватного сектору: Старт 150 Мбіт/с — 210 грн/міс, Максимум 1000 Мбіт/с — 270 грн/міс. Для квартир: від 180 грн/міс. Підключення — 1500 грн, перший місяць інтернету вже включений. Публічна IPv4 — окремо, 60 грн/міс."
+          },
+          {
+            "keywords": "покрит, адрес, підключ, район, місто, село",
+            "answer": "Перевірити покриття можна у розділі «Покриття і тарифи» — там є пошук за назвою населеного пункту та карта. Якщо вашої адреси немає у списку, залиште заявку: ми перевіримо можливість підключення вручну."
+          },
+          {
+            "keywords": "оплат, поповн, платіж, рахунок, приват, моно",
+            "answer": "Поповнити рахунок можна у Приват24, monobank, через термінали City24 та IBox або в особистому кабінеті. Головне — вказувати номер особового рахунку, а не номер договору. Покрокові інструкції є у розділі «Оплата»."
+          },
+          {
+            "keywords": "не працює, немає інтернет, проблем, обрив, швидкість, зависа",
+            "answer": "Спробуйте перезавантажити роутер і перевірити індикатори на ONU-терміналі. Якщо не допомогло — зателефонуйте 0 800 або залиште заявку з темою «Немає інтернету», інженер підключиться до діагностики."
+          },
+          {
+            "keywords": "телебач, канал, тв, ott, triniti",
+            "answer": "Телебачення OTT разом із Triniti TV: Мінімальний — 60 каналів, 60 грн/міс; Середній — 130 каналів, 100 грн/міс; Максимальний — 250+ каналів, 150 грн/міс. До 5 пристроїв одночасно та архів 7 днів."
+          },
+          {
+            "keywords": "роутер, обладнан, wi-fi, wifi, onu",
+            "answer": "У нашій мережі працюють роутери з WAN-портом будь-яких виробників. Щодо конкретної моделі краще проконсультуватись у магазині електроніки, де плануєте купувати. Також маємо власний Магазин обладнання."
+          },
+          {
+            "keywords": "дата-центр, датацентр, сервер, колокац, vps, хостинг",
+            "answer": "Дата-центр NovaLine: колокація від 1200 грн/міс, VPS від 350 грн/міс, виділені сервери від 2500 грн/міс, захист від DDoS та резервне копіювання. Деталі — у розділі «Дата-центр»."
+          },
+          {
+            "keywords": "акці, знижк, подарунок, промо",
+            "answer": "Зараз діють: +1 місяць інтернету у подарунок при підключенні, «Приведи друга» — 100 грн обом, гігабіт за ціною 500 Мбіт/с на 3 місяці. Терміни дії — у розділі «Акції»."
+          }
+        ]
+      },
+      "en": {
+        "title": "NovaLine Assistant",
+        "subtitle": "I answer questions on plans, coverage and payments",
+        "greeting": "Hello! I am the NovaLine assistant. I can help with plans, coverage, payments or technical questions. What do you need?",
+        "quickQuestions": [
+          {
+            "text": "What plans do you have?"
+          },
+          {
+            "text": "Do you cover my area?"
+          },
+          {
+            "text": "How do I pay?"
+          },
+          {
+            "text": "My internet is down"
+          }
+        ],
+        "promptAddendum": "",
+        "fallbackMessage": "Thanks for your question. I will pass it to a specialist who can answer in more detail. You can also leave a request and we will get in touch.",
+        "fallbackReplies": [
+          {
+            "keywords": "plan, price, cost, how much, tariff",
+            "answer": "For private homes: Start 150 Mbps — 210 UAH/mo, Maximum 1000 Mbps — 270 UAH/mo. Apartments start at 180 UAH/mo. Installation is 1500 UAH with the first month of internet included. A public IPv4 is a separate add-on at 60 UAH/mo."
+          },
+          {
+            "keywords": "cover, address, connect, area, city, village",
+            "answer": "You can check coverage in the “Coverage & plans” section — it has a search by locality name and a map. If your address is not listed, leave a request and we will check the connection manually."
+          },
+          {
+            "keywords": "pay, top up, payment, account, privat, mono",
+            "answer": "You can top up via Privat24, monobank, City24 and IBox terminals, or in your NovaLine account. The key is to enter your personal account number, not the contract number. Step-by-step guides are in the “Payment” section."
+          },
+          {
+            "keywords": "not working, no internet, problem, slow, down, drop",
+            "answer": "Try restarting your router and checking the indicator lights on the ONU terminal. If that does not help, call us or leave a request with the topic “No internet” and an engineer will run diagnostics."
+          },
+          {
+            "keywords": "tv, television, channel, ott, triniti",
+            "answer": "OTT television with Triniti TV: Minimal — 60 channels, 60 UAH/mo; Medium — 130 channels, 100 UAH/mo; Maximum — 250+ channels, 150 UAH/mo. Up to 5 devices at once and a 7-day archive."
+          },
+          {
+            "keywords": "router, equipment, wi-fi, wifi, onu",
+            "answer": "Routers from any manufacturer with a WAN port work on our network. For a specific model it is best to ask the electronics shop where you plan to buy it. We also have our own equipment shop."
+          },
+          {
+            "keywords": "data centre, data center, server, colocation, vps, hosting",
+            "answer": "The NovaLine data centre: colocation from 1200 UAH/mo, VPS from 350 UAH/mo, dedicated servers from 2500 UAH/mo, plus DDoS protection and backups. Details are in the “Data centre” section."
+          },
+          {
+            "keywords": "offer, promo, discount, gift",
+            "answer": "Currently running: +1 free month of internet on connection, “Refer a friend” — 100 UAH for both, and gigabit at the 500 Mbps price for 3 months. Validity dates are in the “Offers” section."
+          }
+        ]
+      }
+    },
+    "api::radio.radio": {
+      "shared": {},
+      "uk": {
+        "title": "NovaLine Radio",
+        "liveLabel": "У ЕФІРІ",
+        "subtitle": "Ваш музичний фон від NovaLine — цілодобовий потік прямо у браузері, без плеєрів і завантажень.",
+        "genres": [
+          {
+            "text": "lo-fi"
+          },
+          {
+            "text": "chill"
+          },
+          {
+            "text": "deep house"
+          },
+          {
+            "text": "ambient"
+          }
+        ],
+        "nowPlayingTitle": "NovaLine Live Mix",
+        "nowPlayingArtist": "Безперервний потік · lo-fi & chill",
+        "hint": "Потік працює цілодобово. Гучність зберігається у вашому браузері.",
+        "streams": [
+          {
+            "label": "HQ",
+            "bitrate": "320 kbps",
+            "url": "https://ice1.somafm.com/groovesalad-256-mp3"
+          },
+          {
+            "label": "Standard",
+            "bitrate": "128 kbps",
+            "url": "https://ice1.somafm.com/groovesalad-128-mp3"
+          },
+          {
+            "label": "Economy",
+            "bitrate": "64 kbps",
+            "url": "https://ice1.somafm.com/groovesalad-64-aac"
+          }
+        ],
+        "seo": {
+          "metaTitle": "NovaLine Radio — музика онлайн 24/7",
+          "metaDescription": "Цілодобовий музичний потік NovaLine прямо у браузері: lo-fi, chill, deep house, ambient."
+        }
+      },
+      "en": {
+        "title": "NovaLine Radio",
+        "liveLabel": "ON AIR",
+        "subtitle": "Your musical backdrop from NovaLine — a 24/7 stream right in your browser, no apps or downloads.",
+        "genres": [
+          {
+            "text": "lo-fi"
+          },
+          {
+            "text": "chill"
+          },
+          {
+            "text": "deep house"
+          },
+          {
+            "text": "ambient"
+          }
+        ],
+        "nowPlayingTitle": "NovaLine Live Mix",
+        "nowPlayingArtist": "Continuous stream · lo-fi & chill",
+        "hint": "The stream runs 24/7. Your volume is saved in this browser.",
+        "streams": [
+          {
+            "label": "HQ",
+            "bitrate": "320 kbps",
+            "url": "https://ice1.somafm.com/groovesalad-256-mp3"
+          },
+          {
+            "label": "Standard",
+            "bitrate": "128 kbps",
+            "url": "https://ice1.somafm.com/groovesalad-128-mp3"
+          },
+          {
+            "label": "Economy",
+            "bitrate": "64 kbps",
+            "url": "https://ice1.somafm.com/groovesalad-64-aac"
+          }
+        ],
+        "seo": {
+          "metaTitle": "NovaLine Radio — music online 24/7",
+          "metaDescription": "The NovaLine 24/7 music stream in your browser: lo-fi, chill, deep house, ambient."
+        }
+      }
+    }
+  },
+  "collections": [
+    [
+      "api::service.service",
+      [
+        {
+          "key": "gpon",
+          "shared": {
+            "icon": "net",
+            "order": 1
+          },
+          "uk": {
+            "title": "Інтернет GPON / EPON",
+            "description": "Оптика заходить безпосередньо у ваш будинок — і в багатоповерхівку, і в приватний сектор."
+          },
+          "en": {
+            "title": "GPON / EPON internet",
+            "description": "Fibre runs directly into your building — apartment blocks and private homes alike."
+          }
+        },
+        {
+          "key": "ott-tv",
+          "shared": {
+            "icon": "tv",
+            "order": 2
+          },
+          "uk": {
+            "title": "Телебачення OTT",
+            "description": "Сотні каналів у якості HD спільно з Triniti TV — на ТБ, смартфоні чи планшеті."
+          },
+          "en": {
+            "title": "OTT television",
+            "description": "Hundreds of HD channels together with Triniti TV — on your TV, phone or tablet."
+          }
+        },
+        {
+          "key": "installation",
+          "shared": {
+            "icon": "install",
+            "order": 3
+          },
+          "uk": {
+            "title": "Монтаж кабельних систем",
+            "description": "Прокладання мережі у квартирах і приватних будинках. Акуратно й надійно."
+          },
+          "en": {
+            "title": "In-home cable installation",
+            "description": "Cable runs in apartments and private houses. Neat and dependable."
+          }
+        },
+        {
+          "key": "equipment",
+          "shared": {
+            "icon": "consult",
+            "order": 4
+          },
+          "uk": {
+            "title": "Обладнання",
+            "description": "У мережі працюють роутери з WAN-портом будь-яких виробників — обмежень за брендом немає."
+          },
+          "en": {
+            "title": "Equipment",
+            "description": "Routers from any manufacturer with a WAN port work on our network — no brand restrictions."
+          }
+        },
+        {
+          "key": "public-ipv4",
+          "shared": {
+            "icon": "ip4",
+            "order": 5
+          },
+          "uk": {
+            "title": "Публічна IPv4-адреса",
+            "description": "Зовнішній доступ до відеореєстратора, ігрового чи робочого сервера."
+          },
+          "en": {
+            "title": "Public IPv4 address",
+            "description": "External access to a DVR, game or work server."
+          }
+        },
+        {
+          "key": "public-ipv6",
+          "shared": {
+            "icon": "ip6",
+            "order": 6
+          },
+          "uk": {
+            "title": "Публічна IPv6-адреса",
+            "description": "IPv6-prefix за технологією dual-stack — готові до майбутнього вже сьогодні."
+          },
+          "en": {
+            "title": "Public IPv6 address",
+            "description": "IPv6 prefix over dual-stack — ready for the future today."
+          }
+        }
+      ]
+    ],
+    [
+      "api::plan.plan",
+      [
+        {
+          "key": "private-start",
+          "shared": {
+            "segment": "private",
+            "price": 210,
+            "popular": false,
+            "availableForCoverage": true,
+            "order": 1
+          },
+          "uk": {
+            "name": "Старт",
+            "speedLabel": "150 Мбіт/с",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Оптика в дім (GPON)"
+              },
+              {
+                "text": "Стабільний пінг"
+              },
+              {
+                "text": "Підтримка 24/7"
+              }
+            ],
+            "coverageCaption": "Оптика в дім"
+          },
+          "en": {
+            "name": "Start",
+            "speedLabel": "150 Mbps",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Fiber to home (GPON)"
+              },
+              {
+                "text": "Low, stable ping"
+              },
+              {
+                "text": "24/7 support"
+              }
+            ],
+            "coverageCaption": "Fiber to home"
+          }
+        },
+        {
+          "key": "private-max",
+          "shared": {
+            "segment": "private",
+            "price": 270,
+            "popular": true,
+            "availableForCoverage": true,
+            "order": 2
+          },
+          "uk": {
+            "name": "Максимум",
+            "speedLabel": "1000 Мбіт/с",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Гігабіт у приватний дім"
+              },
+              {
+                "text": "Резервне живлення на вузлах"
+              },
+              {
+                "text": "Підтримка 24/7"
+              }
+            ],
+            "coverageCaption": "Гігабіт у дім"
+          },
+          "en": {
+            "name": "Maximum",
+            "speedLabel": "1000 Mbps",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Gigabit to a private home"
+              },
+              {
+                "text": "Backup power at nodes"
+              },
+              {
+                "text": "24/7 support"
+              }
+            ],
+            "coverageCaption": "Gigabit to home"
+          }
+        },
+        {
+          "key": "private-connection",
+          "shared": {
+            "segment": "private",
+            "price": 1500,
+            "popular": false,
+            "availableForCoverage": false,
+            "order": 3
+          },
+          "uk": {
+            "name": "Підключення",
+            "speedLabel": "Все включено",
+            "periodLabel": "грн разово",
+            "features": [
+              {
+                "text": "Монтаж «оптика в дім»"
+              },
+              {
+                "text": "1 місяць інтернету у подарунок"
+              },
+              {
+                "text": "Налаштування обладнання"
+              }
+            ]
+          },
+          "en": {
+            "name": "Connection",
+            "speedLabel": "All-in",
+            "periodLabel": "UAH once",
+            "features": [
+              {
+                "text": "Fiber-to-home install"
+              },
+              {
+                "text": "1 free month of internet"
+              },
+              {
+                "text": "Equipment setup"
+              }
+            ]
+          }
+        },
+        {
+          "key": "apartment-home",
+          "shared": {
+            "segment": "apartment",
+            "price": 180,
+            "popular": false,
+            "availableForCoverage": false,
+            "order": 4
+          },
+          "uk": {
+            "name": "Дім",
+            "speedLabel": "100 Мбіт/с",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Оптика у квартиру"
+              },
+              {
+                "text": "Wi-Fi по всій квартирі"
+              },
+              {
+                "text": "Підтримка 24/7"
+              }
+            ]
+          },
+          "en": {
+            "name": "Home",
+            "speedLabel": "100 Mbps",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Fiber to apartment"
+              },
+              {
+                "text": "Wi-Fi everywhere"
+              },
+              {
+                "text": "24/7 support"
+              }
+            ]
+          }
+        },
+        {
+          "key": "apartment-comfort",
+          "shared": {
+            "segment": "apartment",
+            "price": 230,
+            "popular": true,
+            "availableForCoverage": false,
+            "order": 5
+          },
+          "uk": {
+            "name": "Комфорт",
+            "speedLabel": "500 Мбіт/с",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Швидкість для 4K та ігор"
+              },
+              {
+                "text": "Стабільний пінг"
+              },
+              {
+                "text": "Підтримка 24/7"
+              }
+            ]
+          },
+          "en": {
+            "name": "Comfort",
+            "speedLabel": "500 Mbps",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Speed for 4K & gaming"
+              },
+              {
+                "text": "Low ping"
+              },
+              {
+                "text": "24/7 support"
+              }
+            ]
+          }
+        },
+        {
+          "key": "apartment-giga",
+          "shared": {
+            "segment": "apartment",
+            "price": 270,
+            "popular": false,
+            "availableForCoverage": false,
+            "order": 6
+          },
+          "uk": {
+            "name": "Гіга",
+            "speedLabel": "1000 Мбіт/с",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Максимальний гігабіт"
+              },
+              {
+                "text": "Симетрична швидкість"
+              },
+              {
+                "text": "Пріоритетна підтримка"
+              }
+            ]
+          },
+          "en": {
+            "name": "Giga",
+            "speedLabel": "1000 Mbps",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Full gigabit"
+              },
+              {
+                "text": "Symmetric speed"
+              },
+              {
+                "text": "Priority support"
+              }
+            ]
+          }
+        },
+        {
+          "key": "business-500",
+          "shared": {
+            "segment": "business",
+            "price": 450,
+            "popular": false,
+            "availableForCoverage": false,
+            "order": 7
+          },
+          "uk": {
+            "name": "Бізнес 500",
+            "speedLabel": "500 Мбіт/с",
+            "pricePrefix": "від",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Симетрична швидкість"
+              },
+              {
+                "text": "Публічна IPv4 / IPv6"
+              },
+              {
+                "text": "Пріоритетна підтримка"
+              }
+            ]
+          },
+          "en": {
+            "name": "Business 500",
+            "speedLabel": "500 Mbps",
+            "pricePrefix": "from",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Symmetric speed"
+              },
+              {
+                "text": "Public IPv4 / IPv6"
+              },
+              {
+                "text": "Priority support"
+              }
+            ]
+          }
+        },
+        {
+          "key": "business-1000",
+          "shared": {
+            "segment": "business",
+            "price": 650,
+            "popular": true,
+            "availableForCoverage": false,
+            "order": 8
+          },
+          "uk": {
+            "name": "Бізнес 1000",
+            "speedLabel": "1000 Мбіт/с",
+            "pricePrefix": "від",
+            "periodLabel": "грн/міс",
+            "features": [
+              {
+                "text": "Гарантована смуга"
+              },
+              {
+                "text": "Резервний канал"
+              },
+              {
+                "text": "Персональний менеджер"
+              }
+            ]
+          },
+          "en": {
+            "name": "Business 1000",
+            "speedLabel": "1000 Mbps",
+            "pricePrefix": "from",
+            "periodLabel": "UAH/mo",
+            "features": [
+              {
+                "text": "Guaranteed bandwidth"
+              },
+              {
+                "text": "Backup channel"
+              },
+              {
+                "text": "Dedicated manager"
+              }
+            ]
+          }
+        },
+        {
+          "key": "business-custom",
+          "shared": {
+            "segment": "business",
+            "price": null,
+            "popular": false,
+            "availableForCoverage": false,
+            "order": 9
+          },
+          "uk": {
+            "name": "Індивідуально",
+            "speedLabel": "Виділений канал",
+            "priceLabel": "договірна",
+            "periodLabel": "",
+            "features": [
+              {
+                "text": "Кілька публічних IP"
+              },
+              {
+                "text": "SLA під ваш офіс"
+              },
+              {
+                "text": "Рішення під задачу"
+              }
+            ]
+          },
+          "en": {
+            "name": "Custom",
+            "speedLabel": "Dedicated line",
+            "priceLabel": "on request",
+            "periodLabel": "",
+            "features": [
+              {
+                "text": "Multiple public IPs"
+              },
+              {
+                "text": "SLA for your office"
+              },
+              {
+                "text": "Solution built to fit"
+              }
+            ]
+          }
+        }
+      ]
+    ],
+    [
+      "api::addon.addon",
+      [
+        {
+          "key": "public-ipv4",
+          "shared": {
+            "price": 60,
+            "highlighted": true,
+            "order": 1
+          },
+          "uk": {
+            "title": "Публічна IPv4-адреса",
+            "description": "Зовнішній доступ до відеореєстратора або сервера. Доступна на всіх тарифах.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Public IPv4 address",
+            "description": "External access to a DVR or server. Available on every plan.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "public-ipv6",
+          "shared": {
+            "price": null,
+            "highlighted": false,
+            "order": 2
+          },
+          "uk": {
+            "title": "Публічна IPv6-адреса",
+            "description": "IPv6-prefix за технологією dual-stack.",
+            "priceLabel": "безкоштовно"
+          },
+          "en": {
+            "title": "Public IPv6 address",
+            "description": "IPv6 prefix over dual-stack.",
+            "priceLabel": "free"
+          }
+        },
+        {
+          "key": "ott-tv",
+          "shared": {
+            "price": 60,
+            "highlighted": false,
+            "order": 3
+          },
+          "uk": {
+            "title": "Телебачення OTT",
+            "description": "Пакет каналів Triniti TV на будь-якому екрані.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "OTT television",
+            "description": "Triniti TV channel package on any screen.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "router-rental",
+          "shared": {
+            "price": 50,
+            "highlighted": false,
+            "order": 4
+          },
+          "uk": {
+            "title": "Wi-Fi-роутер в оренду",
+            "description": "Обладнання з налаштуванням і заміною у разі поломки.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Wi-Fi router rental",
+            "description": "Equipment with setup and free replacement if it fails.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "static-ip",
+          "shared": {
+            "price": 30,
+            "highlighted": false,
+            "order": 5
+          },
+          "uk": {
+            "title": "Фіксована IP у межах мережі",
+            "description": "Для відеонагляду та локальних сервісів.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Fixed in-network IP",
+            "description": "For video surveillance and local services.",
+            "unitLabel": "UAH/mo"
+          }
+        }
+      ]
+    ],
+    [
+      "api::tv-package.tv-package",
+      [
+        {
+          "key": "minimal",
+          "shared": {
+            "channelsLabel": "60",
+            "price": 60,
+            "popular": false,
+            "order": 1
+          },
+          "uk": {
+            "name": "Мінімальний",
+            "features": [
+              {
+                "text": "Основні українські канали"
+              },
+              {
+                "text": "Новини та регіональне ТБ"
+              },
+              {
+                "text": "HD-якість"
+              },
+              {
+                "text": "До 5 пристроїв"
+              }
+            ]
+          },
+          "en": {
+            "name": "Minimal",
+            "features": [
+              {
+                "text": "Core Ukrainian channels"
+              },
+              {
+                "text": "News and regional TV"
+              },
+              {
+                "text": "HD quality"
+              },
+              {
+                "text": "Up to 5 devices"
+              }
+            ]
+          }
+        },
+        {
+          "key": "medium",
+          "shared": {
+            "channelsLabel": "130",
+            "price": 100,
+            "popular": true,
+            "order": 2
+          },
+          "uk": {
+            "name": "Середній",
+            "features": [
+              {
+                "text": "Все з Мінімального"
+              },
+              {
+                "text": "Кіно та спорт"
+              },
+              {
+                "text": "Дитячі й пізнавальні"
+              },
+              {
+                "text": "Архів 7 днів"
+              }
+            ]
+          },
+          "en": {
+            "name": "Medium",
+            "features": [
+              {
+                "text": "Everything in Minimal"
+              },
+              {
+                "text": "Films and sport"
+              },
+              {
+                "text": "Children's and factual"
+              },
+              {
+                "text": "7-day archive"
+              }
+            ]
+          }
+        },
+        {
+          "key": "maximum",
+          "shared": {
+            "channelsLabel": "250+",
+            "price": 150,
+            "popular": false,
+            "order": 3
+          },
+          "uk": {
+            "name": "Максимальний",
+            "features": [
+              {
+                "text": "Все з Середнього"
+              },
+              {
+                "text": "Повний спортивний пакет"
+              },
+              {
+                "text": "Преміальне кіно"
+              },
+              {
+                "text": "Максимум пізнавальних"
+              }
+            ]
+          },
+          "en": {
+            "name": "Maximum",
+            "features": [
+              {
+                "text": "Everything in Medium"
+              },
+              {
+                "text": "Full sports package"
+              },
+              {
+                "text": "Premium cinema"
+              },
+              {
+                "text": "Full factual line-up"
+              }
+            ]
+          }
+        }
+      ]
+    ],
+    [
+      "api::tv-category.tv-category",
+      [
+        {
+          "key": "ukrainian",
+          "shared": {
+            "order": 1
+          },
+          "uk": {
+            "name": "Українські"
+          },
+          "en": {
+            "name": "Ukrainian"
+          }
+        },
+        {
+          "key": "news",
+          "shared": {
+            "order": 2
+          },
+          "uk": {
+            "name": "Новини"
+          },
+          "en": {
+            "name": "News"
+          }
+        },
+        {
+          "key": "films",
+          "shared": {
+            "order": 3
+          },
+          "uk": {
+            "name": "Кіно"
+          },
+          "en": {
+            "name": "Films"
+          }
+        },
+        {
+          "key": "sport",
+          "shared": {
+            "order": 4
+          },
+          "uk": {
+            "name": "Спорт"
+          },
+          "en": {
+            "name": "Sport"
+          }
+        },
+        {
+          "key": "children",
+          "shared": {
+            "order": 5
+          },
+          "uk": {
+            "name": "Дитячі"
+          },
+          "en": {
+            "name": "Children"
+          }
+        },
+        {
+          "key": "factual",
+          "shared": {
+            "order": 6
+          },
+          "uk": {
+            "name": "Пізнавальні"
+          },
+          "en": {
+            "name": "Factual"
+          }
+        },
+        {
+          "key": "music",
+          "shared": {
+            "order": 7
+          },
+          "uk": {
+            "name": "Музика"
+          },
+          "en": {
+            "name": "Music"
+          }
+        }
+      ]
+    ],
+    [
+      "api::tv-channel.tv-channel",
+      [
+        {
+          "key": "1-1",
+          "shared": {
+            "tier": "min",
+            "order": 1
+          },
+          "uk": {
+            "name": "1+1"
+          },
+          "en": {
+            "name": "1+1"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "stb",
+          "shared": {
+            "tier": "min",
+            "order": 2
+          },
+          "uk": {
+            "name": "СТБ"
+          },
+          "en": {
+            "name": "STB"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "ictv",
+          "shared": {
+            "tier": "min",
+            "order": 3
+          },
+          "uk": {
+            "name": "ICTV"
+          },
+          "en": {
+            "name": "ICTV"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "novyi-kanal",
+          "shared": {
+            "tier": "min",
+            "order": 4
+          },
+          "uk": {
+            "name": "Новий канал"
+          },
+          "en": {
+            "name": "Novyi Kanal"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "inter",
+          "shared": {
+            "tier": "min",
+            "order": 5
+          },
+          "uk": {
+            "name": "Інтер"
+          },
+          "en": {
+            "name": "Inter"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "2-2",
+          "shared": {
+            "tier": "min",
+            "order": 6
+          },
+          "uk": {
+            "name": "2+2"
+          },
+          "en": {
+            "name": "2+2"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "ntn",
+          "shared": {
+            "tier": "min",
+            "order": 7
+          },
+          "uk": {
+            "name": "НТН"
+          },
+          "en": {
+            "name": "NTN"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "k1",
+          "shared": {
+            "tier": "mid",
+            "order": 8
+          },
+          "uk": {
+            "name": "К1"
+          },
+          "en": {
+            "name": "K1"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "mega",
+          "shared": {
+            "tier": "mid",
+            "order": 9
+          },
+          "uk": {
+            "name": "Мега"
+          },
+          "en": {
+            "name": "Mega"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "ukrainian"
+            }
+          }
+        },
+        {
+          "key": "suspilne",
+          "shared": {
+            "tier": "min",
+            "order": 10
+          },
+          "uk": {
+            "name": "Суспільне"
+          },
+          "en": {
+            "name": "Suspilne"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "news"
+            }
+          }
+        },
+        {
+          "key": "espreso",
+          "shared": {
+            "tier": "min",
+            "order": 11
+          },
+          "uk": {
+            "name": "Еспресо"
+          },
+          "en": {
+            "name": "Espreso"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "news"
+            }
+          }
+        },
+        {
+          "key": "pryamiy",
+          "shared": {
+            "tier": "min",
+            "order": 12
+          },
+          "uk": {
+            "name": "Прямий"
+          },
+          "en": {
+            "name": "Pryamiy"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "news"
+            }
+          }
+        },
+        {
+          "key": "rada",
+          "shared": {
+            "tier": "min",
+            "order": 13
+          },
+          "uk": {
+            "name": "Рада"
+          },
+          "en": {
+            "name": "Rada"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "news"
+            }
+          }
+        },
+        {
+          "key": "euronews",
+          "shared": {
+            "tier": "mid",
+            "order": 14
+          },
+          "uk": {
+            "name": "Euronews"
+          },
+          "en": {
+            "name": "Euronews"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "news"
+            }
+          }
+        },
+        {
+          "key": "bbc-world-news",
+          "shared": {
+            "tier": "max",
+            "order": 15
+          },
+          "uk": {
+            "name": "BBC World News"
+          },
+          "en": {
+            "name": "BBC World News"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "news"
+            }
+          }
+        },
+        {
+          "key": "kinotochka",
+          "shared": {
+            "tier": "mid",
+            "order": 16
+          },
+          "uk": {
+            "name": "Кіноточка"
+          },
+          "en": {
+            "name": "Kinotochka"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "films"
+            }
+          }
+        },
+        {
+          "key": "bolt-cinema",
+          "shared": {
+            "tier": "mid",
+            "order": 17
+          },
+          "uk": {
+            "name": "Bolt Cinema"
+          },
+          "en": {
+            "name": "Bolt Cinema"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "films"
+            }
+          }
+        },
+        {
+          "key": "enter-film",
+          "shared": {
+            "tier": "mid",
+            "order": 18
+          },
+          "uk": {
+            "name": "Enter-фільм"
+          },
+          "en": {
+            "name": "Enter-film"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "films"
+            }
+          }
+        },
+        {
+          "key": "amc",
+          "shared": {
+            "tier": "max",
+            "order": 19
+          },
+          "uk": {
+            "name": "AMC"
+          },
+          "en": {
+            "name": "AMC"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "films"
+            }
+          }
+        },
+        {
+          "key": "paramount-channel",
+          "shared": {
+            "tier": "max",
+            "order": 20
+          },
+          "uk": {
+            "name": "Paramount Channel"
+          },
+          "en": {
+            "name": "Paramount Channel"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "films"
+            }
+          }
+        },
+        {
+          "key": "tv1000",
+          "shared": {
+            "tier": "max",
+            "order": 21
+          },
+          "uk": {
+            "name": "TV1000"
+          },
+          "en": {
+            "name": "TV1000"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "films"
+            }
+          }
+        },
+        {
+          "key": "xsport",
+          "shared": {
+            "tier": "mid",
+            "order": 22
+          },
+          "uk": {
+            "name": "XSport"
+          },
+          "en": {
+            "name": "XSport"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "sport"
+            }
+          }
+        },
+        {
+          "key": "setanta-sports",
+          "shared": {
+            "tier": "mid",
+            "order": 23
+          },
+          "uk": {
+            "name": "Setanta Sports"
+          },
+          "en": {
+            "name": "Setanta Sports"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "sport"
+            }
+          }
+        },
+        {
+          "key": "eurosport-1",
+          "shared": {
+            "tier": "max",
+            "order": 24
+          },
+          "uk": {
+            "name": "Eurosport 1"
+          },
+          "en": {
+            "name": "Eurosport 1"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "sport"
+            }
+          }
+        },
+        {
+          "key": "eurosport-2",
+          "shared": {
+            "tier": "max",
+            "order": 25
+          },
+          "uk": {
+            "name": "Eurosport 2"
+          },
+          "en": {
+            "name": "Eurosport 2"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "sport"
+            }
+          }
+        },
+        {
+          "key": "viasat-sport",
+          "shared": {
+            "tier": "max",
+            "order": 26
+          },
+          "uk": {
+            "name": "Viasat Sport"
+          },
+          "en": {
+            "name": "Viasat Sport"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "sport"
+            }
+          }
+        },
+        {
+          "key": "piksel-tv",
+          "shared": {
+            "tier": "mid",
+            "order": 27
+          },
+          "uk": {
+            "name": "Піксель TV"
+          },
+          "en": {
+            "name": "Piksel TV"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "children"
+            }
+          }
+        },
+        {
+          "key": "maliatko-tv",
+          "shared": {
+            "tier": "mid",
+            "order": 28
+          },
+          "uk": {
+            "name": "Малятко TV"
+          },
+          "en": {
+            "name": "Maliatko TV"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "children"
+            }
+          }
+        },
+        {
+          "key": "plusplus",
+          "shared": {
+            "tier": "mid",
+            "order": 29
+          },
+          "uk": {
+            "name": "ПлюсПлюс"
+          },
+          "en": {
+            "name": "PlusPlus"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "children"
+            }
+          }
+        },
+        {
+          "key": "nickelodeon",
+          "shared": {
+            "tier": "max",
+            "order": 30
+          },
+          "uk": {
+            "name": "Nickelodeon"
+          },
+          "en": {
+            "name": "Nickelodeon"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "children"
+            }
+          }
+        },
+        {
+          "key": "cartoon-network",
+          "shared": {
+            "tier": "max",
+            "order": 31
+          },
+          "uk": {
+            "name": "Cartoon Network"
+          },
+          "en": {
+            "name": "Cartoon Network"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "children"
+            }
+          }
+        },
+        {
+          "key": "discovery-channel",
+          "shared": {
+            "tier": "mid",
+            "order": 32
+          },
+          "uk": {
+            "name": "Discovery Channel"
+          },
+          "en": {
+            "name": "Discovery Channel"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "factual"
+            }
+          }
+        },
+        {
+          "key": "animal-planet",
+          "shared": {
+            "tier": "mid",
+            "order": 33
+          },
+          "uk": {
+            "name": "Animal Planet"
+          },
+          "en": {
+            "name": "Animal Planet"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "factual"
+            }
+          }
+        },
+        {
+          "key": "da-vinci",
+          "shared": {
+            "tier": "mid",
+            "order": 34
+          },
+          "uk": {
+            "name": "Da Vinci"
+          },
+          "en": {
+            "name": "Da Vinci"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "factual"
+            }
+          }
+        },
+        {
+          "key": "national-geographic",
+          "shared": {
+            "tier": "max",
+            "order": 35
+          },
+          "uk": {
+            "name": "National Geographic"
+          },
+          "en": {
+            "name": "National Geographic"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "factual"
+            }
+          }
+        },
+        {
+          "key": "history",
+          "shared": {
+            "tier": "max",
+            "order": 36
+          },
+          "uk": {
+            "name": "History"
+          },
+          "en": {
+            "name": "History"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "factual"
+            }
+          }
+        },
+        {
+          "key": "indigo-tv",
+          "shared": {
+            "tier": "max",
+            "order": 37
+          },
+          "uk": {
+            "name": "Індиго TV"
+          },
+          "en": {
+            "name": "Indigo TV"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "factual"
+            }
+          }
+        },
+        {
+          "key": "m1",
+          "shared": {
+            "tier": "min",
+            "order": 38
+          },
+          "uk": {
+            "name": "M1"
+          },
+          "en": {
+            "name": "M1"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "music"
+            }
+          }
+        },
+        {
+          "key": "m2",
+          "shared": {
+            "tier": "mid",
+            "order": 39
+          },
+          "uk": {
+            "name": "M2"
+          },
+          "en": {
+            "name": "M2"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "music"
+            }
+          }
+        },
+        {
+          "key": "music-box-ua",
+          "shared": {
+            "tier": "mid",
+            "order": 40
+          },
+          "uk": {
+            "name": "Music Box UA"
+          },
+          "en": {
+            "name": "Music Box UA"
+          },
+          "relations": {
+            "category": {
+              "uid": "api::tv-category.tv-category",
+              "field": "key",
+              "value": "music"
+            }
+          }
+        }
+      ]
+    ],
+    [
+      "api::promo.promo",
+      [
+        {
+          "key": "connection-gift",
+          "shared": {
+            "validUntil": "2026-12-31",
+            "accent": "violet",
+            "order": 1
+          },
+          "uk": {
+            "title": "+1 місяць інтернету у подарунок",
+            "tag": "Підключення",
+            "description": "Підключіться до будь-якого тарифу — і перший місяць доступу до Інтернету вже входить у вартість монтажу.",
+            "terms": "Діє для нових абонентів приватного сектору та квартир. Не поєднується з іншими акціями на монтаж."
+          },
+          "en": {
+            "title": "+1 month of internet free",
+            "tag": "Connection",
+            "description": "Sign up for any plan and your first month of internet access is already included in the installation price.",
+            "terms": "For new private-home and apartment subscribers. Cannot be combined with other installation offers."
+          }
+        },
+        {
+          "key": "refer-a-friend",
+          "shared": {
+            "validUntil": "2026-11-30",
+            "accent": "coral",
+            "order": 2
+          },
+          "uk": {
+            "title": "Приведи друга — 100 грн обом",
+            "tag": "Бонус",
+            "description": "Порекомендуйте NovaLine сусідові чи другові. Після його підключення ви обидва отримаєте 100 грн на рахунок.",
+            "terms": "Бонус зараховується після першої оплати новим абонентом. Кількість запрошених не обмежена."
+          },
+          "en": {
+            "title": "Refer a friend — 100 UAH each",
+            "tag": "Bonus",
+            "description": "Recommend NovaLine to a neighbour or friend. Once they are connected, you both get 100 UAH on your account.",
+            "terms": "The bonus is credited after the new subscriber's first payment. No limit on referrals."
+          }
+        },
+        {
+          "key": "gigabit-for-500",
+          "shared": {
+            "validUntil": "2026-10-31",
+            "accent": "violet",
+            "order": 3
+          },
+          "uk": {
+            "title": "Гігабіт за ціною 500 Мбіт/с",
+            "tag": "Швидкість",
+            "description": "Перші три місяці користуйтесь тарифом 1000 Мбіт/с, а платіть як за 500 Мбіт/с.",
+            "terms": "Для нових підключень у квартирах. З четвертого місяця діє стандартна абонплата тарифу."
+          },
+          "en": {
+            "title": "Gigabit at the 500 Mbps price",
+            "tag": "Speed",
+            "description": "For your first three months, use the 1000 Mbps plan and pay the 500 Mbps rate.",
+            "terms": "For new apartment connections. Standard plan pricing applies from the fourth month."
+          }
+        },
+        {
+          "key": "router-instalments",
+          "shared": {
+            "validUntil": "2026-12-31",
+            "accent": "coral",
+            "order": 4
+          },
+          "uk": {
+            "title": "Wi-Fi 6 роутер частинами 0%",
+            "tag": "Обладнання",
+            "description": "Розсрочка на роутер із магазину NovaLine на шість місяців без відсотків і переплат.",
+            "terms": "Оформлюється разом із договором на підключення. Обладнання переходить у власність абонента."
+          },
+          "en": {
+            "title": "Wi-Fi 6 router, 0% instalments",
+            "tag": "Equipment",
+            "description": "Pay for a router from the NovaLine shop over six months with no interest and no mark-up.",
+            "terms": "Arranged together with the connection contract. The equipment becomes the subscriber's property."
+          }
+        }
+      ]
+    ],
+    [
+      "api::article-category.article-category",
+      [
+        {
+          "key": "network",
+          "shared": {
+            "slug": "network",
+            "order": 1
+          },
+          "uk": {
+            "name": "Мережа"
+          },
+          "en": {
+            "name": "Network"
+          }
+        },
+        {
+          "key": "advice",
+          "shared": {
+            "slug": "advice",
+            "order": 2
+          },
+          "uk": {
+            "name": "Поради"
+          },
+          "en": {
+            "name": "Advice"
+          }
+        },
+        {
+          "key": "technology",
+          "shared": {
+            "slug": "technology",
+            "order": 3
+          },
+          "uk": {
+            "name": "Технології"
+          },
+          "en": {
+            "name": "Technology"
+          }
+        },
+        {
+          "key": "plans",
+          "shared": {
+            "slug": "plans",
+            "order": 4
+          },
+          "uk": {
+            "name": "Тарифи"
+          },
+          "en": {
+            "name": "Plans"
+          }
+        },
+        {
+          "key": "tv",
+          "shared": {
+            "slug": "tv",
+            "order": 5
+          },
+          "uk": {
+            "name": "Телебачення"
+          },
+          "en": {
+            "name": "Television"
+          }
+        },
+        {
+          "key": "service",
+          "shared": {
+            "slug": "service",
+            "order": 6
+          },
+          "uk": {
+            "name": "Сервіс"
+          },
+          "en": {
+            "name": "Service"
+          }
+        }
+      ]
+    ],
+    [
+      "api::article.article",
+      [
+        {
+          "key": "expanding-coverage-in-the-poltava-district",
+          "shared": {
+            "publishedDate": "2026-08-28"
+          },
+          "uk": {
+            "title": "Розширюємо покриття у Полтавському районі",
+            "slug": "rozshyriuiemo-pokryttia-u-poltavskomu-raioni",
+            "excerpt": "Завершили будівництво магістралі до Щербанів, Розсошенців і Супрунівки. Приймаємо заявки на підключення.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Завершили будівництво магістралі до Щербанів, Розсошенців і Супрунівки. Приймаємо заявки на підключення."
+                  }
+                ]
+              }
+            ]
+          },
+          "en": {
+            "title": "Expanding coverage in the Poltava district",
+            "slug": "expanding-coverage-in-the-poltava-district",
+            "excerpt": "We finished the backbone build to Shcherbani, Rozsoshentsi and Suprunivka. Connection requests are open.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We finished the backbone build to Shcherbani, Rozsoshentsi and Suprunivka. Connection requests are open."
+                  }
+                ]
+              }
+            ]
+          },
+          "relations": {
+            "category": {
+              "uid": "api::article-category.article-category",
+              "field": "key",
+              "value": "network"
+            }
+          }
+        },
+        {
+          "key": "how-to-choose-a-router-what-matters",
+          "shared": {
+            "publishedDate": "2026-08-14"
+          },
+          "uk": {
+            "title": "Як обрати роутер: на що дивитись",
+            "slug": "yak-obraty-router-na-shcho-dyvytys",
+            "excerpt": "Розбираємо, чому WAN-порт важливіший за кількість антен, і коли справді потрібен Wi-Fi 6.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Розбираємо, чому WAN-порт важливіший за кількість антен, і коли справді потрібен Wi-Fi 6."
+                  }
+                ]
+              }
+            ]
+          },
+          "en": {
+            "title": "How to choose a router: what matters",
+            "slug": "how-to-choose-a-router-what-matters",
+            "excerpt": "Why the WAN port matters more than the number of antennas, and when you actually need Wi-Fi 6.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Why the WAN port matters more than the number of antennas, and when you actually need Wi-Fi 6."
+                  }
+                ]
+              }
+            ]
+          },
+          "relations": {
+            "category": {
+              "uid": "api::article-category.article-category",
+              "field": "key",
+              "value": "advice"
+            }
+          }
+        },
+        {
+          "key": "how-we-keep-the-network-up-during-outages",
+          "shared": {
+            "publishedDate": "2026-08-02"
+          },
+          "uk": {
+            "title": "Як ми тримаємо мережу під час відключень",
+            "slug": "yak-my-trymaiemo-merezhu-pid-chas-vidkliuchen",
+            "excerpt": "Резервні акумулятори на вузлах, генератори на ключових майданчиках і схема пріоритетів живлення.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Резервні акумулятори на вузлах, генератори на ключових майданчиках і схема пріоритетів живлення."
+                  }
+                ]
+              }
+            ]
+          },
+          "en": {
+            "title": "How we keep the network up during outages",
+            "slug": "how-we-keep-the-network-up-during-outages",
+            "excerpt": "Backup batteries at nodes, generators at key sites, and how we prioritise power across the network.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Backup batteries at nodes, generators at key sites, and how we prioritise power across the network."
+                  }
+                ]
+              }
+            ]
+          },
+          "relations": {
+            "category": {
+              "uid": "api::article-category.article-category",
+              "field": "key",
+              "value": "technology"
+            }
+          }
+        },
+        {
+          "key": "updated-plans-for-private-homes",
+          "shared": {
+            "publishedDate": "2026-07-21"
+          },
+          "uk": {
+            "title": "Оновлення тарифів для приватного сектору",
+            "slug": "onovlennia-taryfiv-dlia-pryvatnoho-sektoru",
+            "excerpt": "Швидкості зросли без зміни абонплати. Що це означає для діючих абонентів і чи потрібно щось робити.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Швидкості зросли без зміни абонплати. Що це означає для діючих абонентів і чи потрібно щось робити."
+                  }
+                ]
+              }
+            ]
+          },
+          "en": {
+            "title": "Updated plans for private homes",
+            "slug": "updated-plans-for-private-homes",
+            "excerpt": "Speeds went up with no change to the monthly fee. What it means for existing subscribers.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Speeds went up with no change to the monthly fee. What it means for existing subscribers."
+                  }
+                ]
+              }
+            ]
+          },
+          "relations": {
+            "category": {
+              "uid": "api::article-category.article-category",
+              "field": "key",
+              "value": "plans"
+            }
+          }
+        },
+        {
+          "key": "triniti-tv-new-channels-in-the-packages",
+          "shared": {
+            "publishedDate": "2026-07-09"
+          },
+          "uk": {
+            "title": "Triniti TV: у пакетах з’явились нові канали",
+            "slug": "triniti-tv-u-paketakh-ziavylys-novi-kanaly",
+            "excerpt": "Додали пізнавальні та дитячі канали у Середній і Максимальний пакети без підвищення ціни.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Додали пізнавальні та дитячі канали у Середній і Максимальний пакети без підвищення ціни."
+                  }
+                ]
+              }
+            ]
+          },
+          "en": {
+            "title": "Triniti TV: new channels in the packages",
+            "slug": "triniti-tv-new-channels-in-the-packages",
+            "excerpt": "We added factual and children's channels to the Medium and Maximum packages at no extra cost.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We added factual and children's channels to the Medium and Maximum packages at no extra cost."
+                  }
+                ]
+              }
+            ]
+          },
+          "relations": {
+            "category": {
+              "uid": "api::article-category.article-category",
+              "field": "key",
+              "value": "tv"
+            }
+          }
+        },
+        {
+          "key": "scheduled-maintenance-in-kharkiv",
+          "shared": {
+            "publishedDate": "2026-06-27"
+          },
+          "uk": {
+            "title": "Графік профілактичних робіт у Харкові",
+            "slug": "hrafik-profilaktychnykh-robit-u-kharkovi",
+            "excerpt": "Плановані роботи на вузлах Салтівки та Олексіївки. Час можливих короткочасних перерв у роботі.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Плановані роботи на вузлах Салтівки та Олексіївки. Час можливих короткочасних перерв у роботі."
+                  }
+                ]
+              }
+            ]
+          },
+          "en": {
+            "title": "Scheduled maintenance in Kharkiv",
+            "slug": "scheduled-maintenance-in-kharkiv",
+            "excerpt": "Planned work on the Saltivka and Oleksiivka nodes, with expected short interruption windows.",
+            "body": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Planned work on the Saltivka and Oleksiivka nodes, with expected short interruption windows."
+                  }
+                ]
+              }
+            ]
+          },
+          "relations": {
+            "category": {
+              "uid": "api::article-category.article-category",
+              "field": "key",
+              "value": "service"
+            }
+          }
+        }
+      ]
+    ],
+    [
+      "api::dc-service.dc-service",
+      [
+        {
+          "key": "colocation",
+          "shared": {
+            "price": 1200,
+            "order": 1
+          },
+          "uk": {
+            "title": "Колокація обладнання",
+            "description": "Розміщення вашого сервера на нашому майданчику: 1U, 2U або повна стійка з окремим живленням.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Equipment colocation",
+            "description": "Host your server on our site: 1U, 2U or a full rack with dedicated power.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "vps",
+          "shared": {
+            "price": 350,
+            "order": 2
+          },
+          "uk": {
+            "title": "Віртуальні сервери (VPS)",
+            "description": "Виділені ресурси CPU та RAM, NVMe-диски, панель керування та щоденні бекапи.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Virtual servers (VPS)",
+            "description": "Dedicated CPU and RAM, NVMe storage, a control panel and daily backups.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "dedicated",
+          "shared": {
+            "price": 2500,
+            "order": 3
+          },
+          "uk": {
+            "title": "Виділені сервери",
+            "description": "Фізичний сервер під ваші задачі з обраною конфігурацією та каналом до 10 Гбіт/с.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Dedicated servers",
+            "description": "A physical server in your chosen configuration with an uplink up to 10 Gbps.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "backup",
+          "shared": {
+            "price": 200,
+            "order": 4
+          },
+          "uk": {
+            "title": "Резервне копіювання",
+            "description": "Автоматичні копії за розкладом і зберігання на окремому масиві дата-центру.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Backup service",
+            "description": "Scheduled automatic copies stored on a separate array in the data centre.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "ddos",
+          "shared": {
+            "price": 800,
+            "order": 5
+          },
+          "uk": {
+            "title": "Захист від DDoS",
+            "description": "Фільтрація атак на межі мережі без зміни ваших IP-адрес і налаштувань.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "DDoS protection",
+            "description": "Attack filtering at the network edge with no changes to your IPs or configuration.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "hosting",
+          "shared": {
+            "price": 90,
+            "order": 6
+          },
+          "uk": {
+            "title": "Хостинг сайтів",
+            "description": "Класичний веб-хостинг із SSL-сертифікатом, поштою та підтримкою PHP.",
+            "unitLabel": "грн/міс"
+          },
+          "en": {
+            "title": "Web hosting",
+            "description": "Classic web hosting with an SSL certificate, mail and PHP support.",
+            "unitLabel": "UAH/mo"
+          }
+        },
+        {
+          "key": "ip-subnets",
+          "shared": {
+            "price": null,
+            "order": 7
+          },
+          "uk": {
+            "title": "Оренда IP-підмереж",
+            "description": "Блоки публічних IPv4 та IPv6-префікси для операторів і великих проєктів."
+          },
+          "en": {
+            "title": "IP subnet leasing",
+            "description": "Public IPv4 blocks and IPv6 prefixes for carriers and large projects."
+          }
+        }
+      ]
+    ],
+    [
+      "api::dc-fact.dc-fact",
+      [
+        {
+          "key": "backup-power",
+          "shared": {
+            "order": 1
+          },
+          "uk": {
+            "title": "Резервне живлення",
+            "text": "ДБЖ і дизель-генератор на майданчику"
+          },
+          "en": {
+            "title": "Backup power",
+            "text": "UPS and a diesel generator on site"
+          }
+        },
+        {
+          "key": "climate",
+          "shared": {
+            "order": 2
+          },
+          "uk": {
+            "title": "Кліматконтроль",
+            "text": "Промислове охолодження та контроль вологості"
+          },
+          "en": {
+            "title": "Climate control",
+            "text": "Industrial cooling and humidity control"
+          }
+        },
+        {
+          "key": "carriers",
+          "shared": {
+            "order": 3
+          },
+          "uk": {
+            "title": "Кілька операторів",
+            "text": "Незалежні магістральні канали й BGP"
+          },
+          "en": {
+            "title": "Multiple carriers",
+            "text": "Independent backbone uplinks and BGP"
+          }
+        },
+        {
+          "key": "access",
+          "shared": {
+            "order": 4
+          },
+          "uk": {
+            "title": "Доступ 24/7",
+            "text": "Охорона, відеонагляд і супровід інженера"
+          },
+          "en": {
+            "title": "24/7 access",
+            "text": "Security, CCTV and engineer escort"
+          }
+        }
+      ]
+    ],
+    [
+      "api::shop-item.shop-item",
+      [
+        {
+          "key": "tp-link-archer-ax23",
+          "shared": {
+            "price": 1690,
+            "order": 1
+          },
+          "uk": {
+            "name": "TP-Link Archer AX23",
+            "categoryLabel": "Wi-Fi 6 роутер",
+            "description": "Двохдіапазонний AX1800. Оптимальний вибір для гігабітного тарифу."
+          },
+          "en": {
+            "name": "TP-Link Archer AX23",
+            "categoryLabel": "Wi-Fi 6 router",
+            "description": "Dual-band AX1800. The sensible choice for a gigabit plan."
+          }
+        },
+        {
+          "key": "tp-link-archer-c6",
+          "shared": {
+            "price": 990,
+            "order": 2
+          },
+          "uk": {
+            "name": "TP-Link Archer C6",
+            "categoryLabel": "Wi-Fi 5 роутер",
+            "description": "Надійний AC1200 для квартири та швидкостей до 500 Мбіт/с."
+          },
+          "en": {
+            "name": "TP-Link Archer C6",
+            "categoryLabel": "Wi-Fi 5 router",
+            "description": "A dependable AC1200 for apartments and speeds up to 500 Mbps."
+          }
+        },
+        {
+          "key": "gpon-onu-terminal",
+          "shared": {
+            "price": 850,
+            "order": 3
+          },
+          "uk": {
+            "name": "ONU-термінал GPON",
+            "categoryLabel": "Абонентське обладнання",
+            "description": "Оптичний термінал для підключення до мережі NovaLine."
+          },
+          "en": {
+            "name": "GPON ONU terminal",
+            "categoryLabel": "Subscriber equipment",
+            "description": "The optical terminal that connects you to the NovaLine network."
+          }
+        },
+        {
+          "key": "android-tv-box",
+          "shared": {
+            "price": 1450,
+            "order": 4
+          },
+          "uk": {
+            "name": "Android TV Box",
+            "categoryLabel": "ТВ-приставка",
+            "description": "Для перегляду Triniti TV на телевізорі без Smart TV."
+          },
+          "en": {
+            "name": "Android TV Box",
+            "categoryLabel": "TV box",
+            "description": "For watching Triniti TV on a television without Smart TV."
+          }
+        },
+        {
+          "key": "mesh-kit-2-units",
+          "shared": {
+            "price": 3200,
+            "order": 5
+          },
+          "uk": {
+            "name": "Mesh-комплект, 2 шт",
+            "categoryLabel": "Wi-Fi система",
+            "description": "Єдина мережа Wi-Fi для приватного будинку або великої квартири."
+          },
+          "en": {
+            "name": "Mesh kit, 2 units",
+            "categoryLabel": "Wi-Fi system",
+            "description": "One seamless Wi-Fi network for a private house or large apartment."
+          }
+        },
+        {
+          "key": "utp-patch-cord-5-m",
+          "shared": {
+            "price": 90,
+            "order": 6
+          },
+          "uk": {
+            "name": "Патч-корд UTP, 5 м",
+            "categoryLabel": "Аксесуари",
+            "description": "Готовий кабель із конекторами для підключення роутера."
+          },
+          "en": {
+            "name": "UTP patch cord, 5 m",
+            "categoryLabel": "Accessories",
+            "description": "A ready-made cable with connectors for your router."
+          }
+        }
+      ]
+    ],
+    [
+      "api::payment-method.payment-method",
+      [
+        {
+          "key": "privat24",
+          "shared": {
+            "order": 1
+          },
+          "uk": {
+            "name": "Приват24",
+            "meta": "Картка · без комісії",
+            "steps": [
+              {
+                "text": "Відкрийте застосунок Приват24 або сайт privat24.ua."
+              },
+              {
+                "text": "Перейдіть у розділ «Платежі» та скористайтесь пошуком."
+              },
+              {
+                "text": "Введіть у пошуку NovaLine і виберіть постачальника."
+              },
+              {
+                "text": "Вкажіть номер особового рахунку та суму платежу."
+              },
+              {
+                "text": "Підтвердьте оплату — кошти зараховуються протягом кількох хвилин."
+              }
+            ]
+          },
+          "en": {
+            "name": "Privat24",
+            "meta": "Card · no fee",
+            "steps": [
+              {
+                "text": "Open the Privat24 app or privat24.ua."
+              },
+              {
+                "text": "Go to “Payments” and use the search box."
+              },
+              {
+                "text": "Search for NovaLine and select the provider."
+              },
+              {
+                "text": "Enter your personal account number and the amount."
+              },
+              {
+                "text": "Confirm the payment — funds are credited within a few minutes."
+              }
+            ]
+          }
+        },
+        {
+          "key": "monobank",
+          "shared": {
+            "order": 2
+          },
+          "uk": {
+            "name": "monobank",
+            "meta": "Картка · без комісії",
+            "steps": [
+              {
+                "text": "Відкрийте застосунок monobank."
+              },
+              {
+                "text": "Оберіть «Платежі» → «Комунальні та інші»."
+              },
+              {
+                "text": "У пошуку знайдіть NovaLine."
+              },
+              {
+                "text": "Введіть номер особового рахунку та суму."
+              },
+              {
+                "text": "Оплатіть — квитанція зберігається в історії застосунку."
+              }
+            ]
+          },
+          "en": {
+            "name": "monobank",
+            "meta": "Card · no fee",
+            "steps": [
+              {
+                "text": "Open the monobank app."
+              },
+              {
+                "text": "Choose “Payments” → “Utilities and other”."
+              },
+              {
+                "text": "Search for NovaLine."
+              },
+              {
+                "text": "Enter your personal account number and the amount."
+              },
+              {
+                "text": "Pay — the receipt is kept in your app history."
+              }
+            ]
+          }
+        },
+        {
+          "key": "terminals",
+          "shared": {
+            "order": 3
+          },
+          "uk": {
+            "name": "Термінали City24 та IBox",
+            "meta": "Готівка",
+            "steps": [
+              {
+                "text": "Знайдіть найближчий термінал City24, IBox або Easypay."
+              },
+              {
+                "text": "На головному екрані оберіть «Інтернет-провайдери»."
+              },
+              {
+                "text": "Оберіть NovaLine зі списку або скористайтесь пошуком."
+              },
+              {
+                "text": "Введіть номер особового рахунку та перевірте його на екрані."
+              },
+              {
+                "text": "Внесіть готівку та обов’язково збережіть чек."
+              }
+            ]
+          },
+          "en": {
+            "name": "City24 and IBox terminals",
+            "meta": "Cash",
+            "steps": [
+              {
+                "text": "Find your nearest City24, IBox or Easypay terminal."
+              },
+              {
+                "text": "On the home screen choose “Internet providers”."
+              },
+              {
+                "text": "Select NovaLine from the list or use the search."
+              },
+              {
+                "text": "Enter your personal account number and check it on screen."
+              },
+              {
+                "text": "Insert the cash and be sure to keep the receipt."
+              }
+            ]
+          }
+        },
+        {
+          "key": "account-area",
+          "shared": {
+            "order": 4
+          },
+          "uk": {
+            "name": "Особистий кабінет NovaLine",
+            "meta": "Картка · автоплатіж",
+            "steps": [
+              {
+                "text": "Увійдіть в особистий кабінет на novaline.net."
+              },
+              {
+                "text": "Відкрийте розділ «Поповнити рахунок»."
+              },
+              {
+                "text": "Вкажіть суму — номер рахунку підставляється автоматично."
+              },
+              {
+                "text": "Оплатіть карткою будь-якого банку."
+              },
+              {
+                "text": "За бажанням увімкніть автоплатіж, щоб оплата списувалась щомісяця."
+              }
+            ]
+          },
+          "en": {
+            "name": "NovaLine account area",
+            "meta": "Card · auto-payment",
+            "steps": [
+              {
+                "text": "Sign in to your account at novaline.net."
+              },
+              {
+                "text": "Open the “Top up” section."
+              },
+              {
+                "text": "Enter the amount — your account number is filled in automatically."
+              },
+              {
+                "text": "Pay with a card from any bank."
+              },
+              {
+                "text": "Optionally enable auto-payment so the fee is charged monthly."
+              }
+            ]
+          }
+        },
+        {
+          "key": "bank-transfer",
+          "shared": {
+            "order": 5
+          },
+          "uk": {
+            "name": "Банківський переказ",
+            "meta": "Для бізнесу",
+            "steps": [
+              {
+                "text": "Отримайте рахунок у свого менеджера або в кабінеті."
+              },
+              {
+                "text": "Сформуйте платіжне доручення за реквізитами нижче."
+              },
+              {
+                "text": "У призначенні платежу вкажіть номер особового рахунку та період."
+              },
+              {
+                "text": "Надішліть платіж — зарахування протягом операційного дня банку."
+              }
+            ]
+          },
+          "en": {
+            "name": "Bank transfer",
+            "meta": "For business",
+            "steps": [
+              {
+                "text": "Request an invoice from your manager or in the account area."
+              },
+              {
+                "text": "Prepare the payment order using the details below."
+              },
+              {
+                "text": "In the payment reference, state your personal account number and the period."
+              },
+              {
+                "text": "Send the payment — it is credited within the bank's operating day."
+              }
+            ]
+          }
+        }
+      ]
+    ],
+    [
+      "api::region.region",
+      [
+        {
+          "key": "kharkivska",
+          "shared": {
+            "slug": "kharkivska",
+            "order": 1
+          },
+          "uk": {
+            "name": "Харківська область"
+          },
+          "en": {
+            "name": "Kharkiv Oblast"
+          }
+        },
+        {
+          "key": "poltavska",
+          "shared": {
+            "slug": "poltavska",
+            "order": 2
+          },
+          "uk": {
+            "name": "Полтавська область"
+          },
+          "en": {
+            "name": "Poltava Oblast"
+          }
+        },
+        {
+          "key": "sumska",
+          "shared": {
+            "slug": "sumska",
+            "order": 3
+          },
+          "uk": {
+            "name": "Сумська область"
+          },
+          "en": {
+            "name": "Sumy Oblast"
+          }
+        },
+        {
+          "key": "dnipropetrovska",
+          "shared": {
+            "slug": "dnipropetrovska",
+            "order": 4
+          },
+          "uk": {
+            "name": "Дніпропетровська область"
+          },
+          "en": {
+            "name": "Dnipropetrovsk Oblast"
+          }
+        }
+      ]
+    ],
+    [
+      "api::district.district",
+      [
+        {
+          "key": "kharkivskyi",
+          "shared": {
+            "slug": "kharkivskyi",
+            "order": 1
+          },
+          "uk": {
+            "name": "Харківський район"
+          },
+          "en": {
+            "name": "Kharkiv Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "kharkivska"
+            }
+          }
+        },
+        {
+          "key": "chuhuivskyi",
+          "shared": {
+            "slug": "chuhuivskyi",
+            "order": 2
+          },
+          "uk": {
+            "name": "Чугуївський район"
+          },
+          "en": {
+            "name": "Chuhuiv Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "kharkivska"
+            }
+          }
+        },
+        {
+          "key": "bohodukhivskyi",
+          "shared": {
+            "slug": "bohodukhivskyi",
+            "order": 3
+          },
+          "uk": {
+            "name": "Богодухівський район"
+          },
+          "en": {
+            "name": "Bohodukhiv Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "kharkivska"
+            }
+          }
+        },
+        {
+          "key": "krasnohradskyi",
+          "shared": {
+            "slug": "krasnohradskyi",
+            "order": 4
+          },
+          "uk": {
+            "name": "Красноградський район"
+          },
+          "en": {
+            "name": "Krasnohrad Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "kharkivska"
+            }
+          }
+        },
+        {
+          "key": "poltavskyi",
+          "shared": {
+            "slug": "poltavskyi",
+            "order": 5
+          },
+          "uk": {
+            "name": "Полтавський район"
+          },
+          "en": {
+            "name": "Poltava Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "poltavska"
+            }
+          }
+        },
+        {
+          "key": "kremenchutskyi",
+          "shared": {
+            "slug": "kremenchutskyi",
+            "order": 6
+          },
+          "uk": {
+            "name": "Кременчуцький район"
+          },
+          "en": {
+            "name": "Kremenchuk Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "poltavska"
+            }
+          }
+        },
+        {
+          "key": "myrhorodskyi",
+          "shared": {
+            "slug": "myrhorodskyi",
+            "order": 7
+          },
+          "uk": {
+            "name": "Миргородський район"
+          },
+          "en": {
+            "name": "Myrhorod Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "poltavska"
+            }
+          }
+        },
+        {
+          "key": "sumskyi",
+          "shared": {
+            "slug": "sumskyi",
+            "order": 8
+          },
+          "uk": {
+            "name": "Сумський район"
+          },
+          "en": {
+            "name": "Sumy Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "sumska"
+            }
+          }
+        },
+        {
+          "key": "okhtyrskyi",
+          "shared": {
+            "slug": "okhtyrskyi",
+            "order": 9
+          },
+          "uk": {
+            "name": "Охтирський район"
+          },
+          "en": {
+            "name": "Okhtyrka Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "sumska"
+            }
+          }
+        },
+        {
+          "key": "konotopskyi",
+          "shared": {
+            "slug": "konotopskyi",
+            "order": 10
+          },
+          "uk": {
+            "name": "Конотопський район"
+          },
+          "en": {
+            "name": "Konotop Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "sumska"
+            }
+          }
+        },
+        {
+          "key": "dniprovskyi",
+          "shared": {
+            "slug": "dniprovskyi",
+            "order": 11
+          },
+          "uk": {
+            "name": "Дніпровський район"
+          },
+          "en": {
+            "name": "Dnipro Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "dnipropetrovska"
+            }
+          }
+        },
+        {
+          "key": "pavlohradskyi",
+          "shared": {
+            "slug": "pavlohradskyi",
+            "order": 12
+          },
+          "uk": {
+            "name": "Павлоградський район"
+          },
+          "en": {
+            "name": "Pavlohrad Raion"
+          },
+          "relations": {
+            "region": {
+              "uid": "api::region.region",
+              "field": "slug",
+              "value": "dnipropetrovska"
+            }
+          }
+        }
+      ]
+    ],
+    [
+      "api::settlement.settlement",
+      [
+        {
+          "key": "kharkiv",
+          "shared": {
+            "slug": "kharkiv",
+            "lat": 49.9935,
+            "lng": 36.2304,
+            "isRegionalCentre": true,
+            "order": 1
+          },
+          "uk": {
+            "name": "Харків"
+          },
+          "en": {
+            "name": "Kharkiv"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "pisochyn",
+          "shared": {
+            "slug": "pisochyn",
+            "lat": 49.9539,
+            "lng": 36.1122,
+            "isRegionalCentre": false,
+            "order": 2
+          },
+          "uk": {
+            "name": "Пісочин"
+          },
+          "en": {
+            "name": "Pisochyn"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "korotych",
+          "shared": {
+            "slug": "korotych",
+            "lat": 49.9375,
+            "lng": 36.0603,
+            "isRegionalCentre": false,
+            "order": 3
+          },
+          "uk": {
+            "name": "Коротич"
+          },
+          "en": {
+            "name": "Korotych"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "derhachi",
+          "shared": {
+            "slug": "derhachi",
+            "lat": 50.1069,
+            "lng": 36.1181,
+            "isRegionalCentre": false,
+            "order": 4
+          },
+          "uk": {
+            "name": "Дергачі"
+          },
+          "en": {
+            "name": "Derhachi"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "mala-danylivka",
+          "shared": {
+            "slug": "mala-danylivka",
+            "lat": 50.0833,
+            "lng": 36.15,
+            "isRegionalCentre": false,
+            "order": 5
+          },
+          "uk": {
+            "name": "Мала Данилівка"
+          },
+          "en": {
+            "name": "Mala Danylivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "liubotyn",
+          "shared": {
+            "slug": "liubotyn",
+            "lat": 49.9481,
+            "lng": 35.9247,
+            "isRegionalCentre": false,
+            "order": 6
+          },
+          "uk": {
+            "name": "Люботин"
+          },
+          "en": {
+            "name": "Liubotyn"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "merefa",
+          "shared": {
+            "slug": "merefa",
+            "lat": 49.8194,
+            "lng": 36.0533,
+            "isRegionalCentre": false,
+            "order": 7
+          },
+          "uk": {
+            "name": "Мерефа"
+          },
+          "en": {
+            "name": "Merefa"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kharkivskyi"
+            }
+          }
+        },
+        {
+          "key": "chuhuiv",
+          "shared": {
+            "slug": "chuhuiv",
+            "lat": 49.8356,
+            "lng": 36.6858,
+            "isRegionalCentre": true,
+            "order": 8
+          },
+          "uk": {
+            "name": "Чугуїв"
+          },
+          "en": {
+            "name": "Chuhuiv"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "chuhuivskyi"
+            }
+          }
+        },
+        {
+          "key": "kochetok",
+          "shared": {
+            "slug": "kochetok",
+            "lat": 49.8833,
+            "lng": 36.7167,
+            "isRegionalCentre": false,
+            "order": 9
+          },
+          "uk": {
+            "name": "Кочеток"
+          },
+          "en": {
+            "name": "Kochetok"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "chuhuivskyi"
+            }
+          }
+        },
+        {
+          "key": "zarozhne",
+          "shared": {
+            "slug": "zarozhne",
+            "lat": 49.8,
+            "lng": 36.6667,
+            "isRegionalCentre": false,
+            "order": 10
+          },
+          "uk": {
+            "name": "Зарожне"
+          },
+          "en": {
+            "name": "Zarozhne"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "chuhuivskyi"
+            }
+          }
+        },
+        {
+          "key": "pechenihy",
+          "shared": {
+            "slug": "pechenihy",
+            "lat": 49.8833,
+            "lng": 36.95,
+            "isRegionalCentre": false,
+            "order": 11
+          },
+          "uk": {
+            "name": "Печеніги"
+          },
+          "en": {
+            "name": "Pechenihy"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "chuhuivskyi"
+            }
+          }
+        },
+        {
+          "key": "martove",
+          "shared": {
+            "slug": "martove",
+            "lat": 49.7333,
+            "lng": 36.9333,
+            "isRegionalCentre": false,
+            "order": 12
+          },
+          "uk": {
+            "name": "Мартове"
+          },
+          "en": {
+            "name": "Martove"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "chuhuivskyi"
+            }
+          }
+        },
+        {
+          "key": "bohodukhiv",
+          "shared": {
+            "slug": "bohodukhiv",
+            "lat": 50.1631,
+            "lng": 35.5233,
+            "isRegionalCentre": false,
+            "order": 13
+          },
+          "uk": {
+            "name": "Богодухів"
+          },
+          "en": {
+            "name": "Bohodukhiv"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "bohodukhivskyi"
+            }
+          }
+        },
+        {
+          "key": "sharivka",
+          "shared": {
+            "slug": "sharivka",
+            "lat": 50.05,
+            "lng": 35.4667,
+            "isRegionalCentre": false,
+            "order": 14
+          },
+          "uk": {
+            "name": "Шарівка"
+          },
+          "en": {
+            "name": "Sharivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "bohodukhivskyi"
+            }
+          }
+        },
+        {
+          "key": "valky",
+          "shared": {
+            "slug": "valky",
+            "lat": 49.8394,
+            "lng": 35.6222,
+            "isRegionalCentre": false,
+            "order": 15
+          },
+          "uk": {
+            "name": "Валки"
+          },
+          "en": {
+            "name": "Valky"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "bohodukhivskyi"
+            }
+          }
+        },
+        {
+          "key": "staryi-merchyk",
+          "shared": {
+            "slug": "staryi-merchyk",
+            "lat": 49.9833,
+            "lng": 35.6,
+            "isRegionalCentre": false,
+            "order": 16
+          },
+          "uk": {
+            "name": "Старий Мерчик"
+          },
+          "en": {
+            "name": "Staryi Merchyk"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "bohodukhivskyi"
+            }
+          }
+        },
+        {
+          "key": "krasnohrad",
+          "shared": {
+            "slug": "krasnohrad",
+            "lat": 49.38,
+            "lng": 35.45,
+            "isRegionalCentre": false,
+            "order": 17
+          },
+          "uk": {
+            "name": "Красноград"
+          },
+          "en": {
+            "name": "Krasnohrad"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "krasnohradskyi"
+            }
+          }
+        },
+        {
+          "key": "natalyne",
+          "shared": {
+            "slug": "natalyne",
+            "lat": 49.3667,
+            "lng": 35.4,
+            "isRegionalCentre": false,
+            "order": 18
+          },
+          "uk": {
+            "name": "Наталине"
+          },
+          "en": {
+            "name": "Natalyne"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "krasnohradskyi"
+            }
+          }
+        },
+        {
+          "key": "pisky",
+          "shared": {
+            "slug": "pisky",
+            "lat": 49.4,
+            "lng": 35.5,
+            "isRegionalCentre": false,
+            "order": 19
+          },
+          "uk": {
+            "name": "Піски"
+          },
+          "en": {
+            "name": "Pisky"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "krasnohradskyi"
+            }
+          }
+        },
+        {
+          "key": "poltava",
+          "shared": {
+            "slug": "poltava",
+            "lat": 49.5883,
+            "lng": 34.5514,
+            "isRegionalCentre": true,
+            "order": 20
+          },
+          "uk": {
+            "name": "Полтава"
+          },
+          "en": {
+            "name": "Poltava"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "poltavskyi"
+            }
+          }
+        },
+        {
+          "key": "shcherbani",
+          "shared": {
+            "slug": "shcherbani",
+            "lat": 49.5333,
+            "lng": 34.4667,
+            "isRegionalCentre": false,
+            "order": 21
+          },
+          "uk": {
+            "name": "Щербані"
+          },
+          "en": {
+            "name": "Shcherbani"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "poltavskyi"
+            }
+          }
+        },
+        {
+          "key": "rozsoshentsi",
+          "shared": {
+            "slug": "rozsoshentsi",
+            "lat": 49.5667,
+            "lng": 34.45,
+            "isRegionalCentre": false,
+            "order": 22
+          },
+          "uk": {
+            "name": "Розсошенці"
+          },
+          "en": {
+            "name": "Rozsoshentsi"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "poltavskyi"
+            }
+          }
+        },
+        {
+          "key": "suprunivka",
+          "shared": {
+            "slug": "suprunivka",
+            "lat": 49.55,
+            "lng": 34.4333,
+            "isRegionalCentre": false,
+            "order": 23
+          },
+          "uk": {
+            "name": "Супрунівка"
+          },
+          "en": {
+            "name": "Suprunivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "poltavskyi"
+            }
+          }
+        },
+        {
+          "key": "kremenchuk",
+          "shared": {
+            "slug": "kremenchuk",
+            "lat": 49.07,
+            "lng": 33.42,
+            "isRegionalCentre": true,
+            "order": 24
+          },
+          "uk": {
+            "name": "Кременчук"
+          },
+          "en": {
+            "name": "Kremenchuk"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kremenchutskyi"
+            }
+          }
+        },
+        {
+          "key": "horishni-plavni",
+          "shared": {
+            "slug": "horishni-plavni",
+            "lat": 48.9833,
+            "lng": 33.65,
+            "isRegionalCentre": false,
+            "order": 25
+          },
+          "uk": {
+            "name": "Горішні Плавні"
+          },
+          "en": {
+            "name": "Horishni Plavni"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kremenchutskyi"
+            }
+          }
+        },
+        {
+          "key": "vlasivka",
+          "shared": {
+            "slug": "vlasivka",
+            "lat": 49.0667,
+            "lng": 33.4833,
+            "isRegionalCentre": false,
+            "order": 26
+          },
+          "uk": {
+            "name": "Власівка"
+          },
+          "en": {
+            "name": "Vlasivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "kremenchutskyi"
+            }
+          }
+        },
+        {
+          "key": "myrhorod",
+          "shared": {
+            "slug": "myrhorod",
+            "lat": 49.9667,
+            "lng": 33.6167,
+            "isRegionalCentre": true,
+            "order": 27
+          },
+          "uk": {
+            "name": "Миргород"
+          },
+          "en": {
+            "name": "Myrhorod"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "myrhorodskyi"
+            }
+          }
+        },
+        {
+          "key": "velyki-sorochyntsi",
+          "shared": {
+            "slug": "velyki-sorochyntsi",
+            "lat": 50.0167,
+            "lng": 33.9333,
+            "isRegionalCentre": false,
+            "order": 28
+          },
+          "uk": {
+            "name": "Великі Сорочинці"
+          },
+          "en": {
+            "name": "Velyki Sorochyntsi"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "myrhorodskyi"
+            }
+          }
+        },
+        {
+          "key": "hoholeve",
+          "shared": {
+            "slug": "hoholeve",
+            "lat": 49.9333,
+            "lng": 33.8,
+            "isRegionalCentre": false,
+            "order": 29
+          },
+          "uk": {
+            "name": "Гоголеве"
+          },
+          "en": {
+            "name": "Hoholeve"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "myrhorodskyi"
+            }
+          }
+        },
+        {
+          "key": "sumy",
+          "shared": {
+            "slug": "sumy",
+            "lat": 50.9077,
+            "lng": 34.7981,
+            "isRegionalCentre": true,
+            "order": 30
+          },
+          "uk": {
+            "name": "Суми"
+          },
+          "en": {
+            "name": "Sumy"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "sumskyi"
+            }
+          }
+        },
+        {
+          "key": "stepanivka",
+          "shared": {
+            "slug": "stepanivka",
+            "lat": 50.8667,
+            "lng": 34.65,
+            "isRegionalCentre": false,
+            "order": 31
+          },
+          "uk": {
+            "name": "Степанівка"
+          },
+          "en": {
+            "name": "Stepanivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "sumskyi"
+            }
+          }
+        },
+        {
+          "key": "khotin",
+          "shared": {
+            "slug": "khotin",
+            "lat": 51.0833,
+            "lng": 34.5333,
+            "isRegionalCentre": false,
+            "order": 32
+          },
+          "uk": {
+            "name": "Хотінь"
+          },
+          "en": {
+            "name": "Khotin"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "sumskyi"
+            }
+          }
+        },
+        {
+          "key": "bytytsia",
+          "shared": {
+            "slug": "bytytsia",
+            "lat": 50.85,
+            "lng": 34.7,
+            "isRegionalCentre": false,
+            "order": 33
+          },
+          "uk": {
+            "name": "Битиця"
+          },
+          "en": {
+            "name": "Bytytsia"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "sumskyi"
+            }
+          }
+        },
+        {
+          "key": "okhtyrka",
+          "shared": {
+            "slug": "okhtyrka",
+            "lat": 50.31,
+            "lng": 34.8989,
+            "isRegionalCentre": true,
+            "order": 34
+          },
+          "uk": {
+            "name": "Охтирка"
+          },
+          "en": {
+            "name": "Okhtyrka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "okhtyrskyi"
+            }
+          }
+        },
+        {
+          "key": "trostianets",
+          "shared": {
+            "slug": "trostianets",
+            "lat": 50.4833,
+            "lng": 34.9667,
+            "isRegionalCentre": false,
+            "order": 35
+          },
+          "uk": {
+            "name": "Тростянець"
+          },
+          "en": {
+            "name": "Trostianets"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "okhtyrskyi"
+            }
+          }
+        },
+        {
+          "key": "chupakhivka",
+          "shared": {
+            "slug": "chupakhivka",
+            "lat": 50.3833,
+            "lng": 34.7,
+            "isRegionalCentre": false,
+            "order": 36
+          },
+          "uk": {
+            "name": "Чупахівка"
+          },
+          "en": {
+            "name": "Chupakhivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "okhtyrskyi"
+            }
+          }
+        },
+        {
+          "key": "konotop",
+          "shared": {
+            "slug": "konotop",
+            "lat": 51.2372,
+            "lng": 33.2027,
+            "isRegionalCentre": true,
+            "order": 37
+          },
+          "uk": {
+            "name": "Конотоп"
+          },
+          "en": {
+            "name": "Konotop"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "konotopskyi"
+            }
+          }
+        },
+        {
+          "key": "buryn",
+          "shared": {
+            "slug": "buryn",
+            "lat": 51.2,
+            "lng": 33.8333,
+            "isRegionalCentre": false,
+            "order": 38
+          },
+          "uk": {
+            "name": "Буринь"
+          },
+          "en": {
+            "name": "Buryn"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "konotopskyi"
+            }
+          }
+        },
+        {
+          "key": "duboviazivka",
+          "shared": {
+            "slug": "duboviazivka",
+            "lat": 51.1833,
+            "lng": 33.4333,
+            "isRegionalCentre": false,
+            "order": 39
+          },
+          "uk": {
+            "name": "Дубов’язівка"
+          },
+          "en": {
+            "name": "Duboviazivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "konotopskyi"
+            }
+          }
+        },
+        {
+          "key": "dnipro",
+          "shared": {
+            "slug": "dnipro",
+            "lat": 48.4647,
+            "lng": 35.0462,
+            "isRegionalCentre": true,
+            "order": 40
+          },
+          "uk": {
+            "name": "Дніпро"
+          },
+          "en": {
+            "name": "Dnipro"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "dniprovskyi"
+            }
+          }
+        },
+        {
+          "key": "pidhorodne",
+          "shared": {
+            "slug": "pidhorodne",
+            "lat": 48.5833,
+            "lng": 35.15,
+            "isRegionalCentre": false,
+            "order": 41
+          },
+          "uk": {
+            "name": "Підгородне"
+          },
+          "en": {
+            "name": "Pidhorodne"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "dniprovskyi"
+            }
+          }
+        },
+        {
+          "key": "slobozhanske",
+          "shared": {
+            "slug": "slobozhanske",
+            "lat": 48.55,
+            "lng": 35.0833,
+            "isRegionalCentre": false,
+            "order": 42
+          },
+          "uk": {
+            "name": "Слобожанське"
+          },
+          "en": {
+            "name": "Slobozhanske"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "dniprovskyi"
+            }
+          }
+        },
+        {
+          "key": "obukhivka",
+          "shared": {
+            "slug": "obukhivka",
+            "lat": 48.5667,
+            "lng": 34.9333,
+            "isRegionalCentre": false,
+            "order": 43
+          },
+          "uk": {
+            "name": "Обухівка"
+          },
+          "en": {
+            "name": "Obukhivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "dniprovskyi"
+            }
+          }
+        },
+        {
+          "key": "pavlohrad",
+          "shared": {
+            "slug": "pavlohrad",
+            "lat": 48.535,
+            "lng": 35.87,
+            "isRegionalCentre": true,
+            "order": 44
+          },
+          "uk": {
+            "name": "Павлоград"
+          },
+          "en": {
+            "name": "Pavlohrad"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "pavlohradskyi"
+            }
+          }
+        },
+        {
+          "key": "ternivka",
+          "shared": {
+            "slug": "ternivka",
+            "lat": 48.5167,
+            "lng": 36.0833,
+            "isRegionalCentre": false,
+            "order": 45
+          },
+          "uk": {
+            "name": "Тернівка"
+          },
+          "en": {
+            "name": "Ternivka"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "pavlohradskyi"
+            }
+          }
+        },
+        {
+          "key": "pershotravensk",
+          "shared": {
+            "slug": "pershotravensk",
+            "lat": 48.3333,
+            "lng": 36.4,
+            "isRegionalCentre": false,
+            "order": 46
+          },
+          "uk": {
+            "name": "Першотравенськ"
+          },
+          "en": {
+            "name": "Pershotravensk"
+          },
+          "relations": {
+            "district": {
+              "uid": "api::district.district",
+              "field": "slug",
+              "value": "pavlohradskyi"
+            }
+          }
+        }
+      ]
+    ],
+    [
+      "api::neighbourhood.neighbourhood",
+      [
+        {
+          "key": "kharkiv-tsentr",
+          "shared": {
+            "priceModifier": 30,
+            "order": 1
+          },
+          "uk": {
+            "name": "Центр"
+          },
+          "en": {
+            "name": "Tsentr"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "kharkiv"
+            }
+          }
+        },
+        {
+          "key": "kharkiv-pavlove-pole",
+          "shared": {
+            "priceModifier": 10,
+            "order": 2
+          },
+          "uk": {
+            "name": "Павлове Поле"
+          },
+          "en": {
+            "name": "Pavlove Pole"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "kharkiv"
+            }
+          }
+        },
+        {
+          "key": "kharkiv-oleksiivka",
+          "shared": {
+            "priceModifier": 20,
+            "order": 3
+          },
+          "uk": {
+            "name": "Олексіївка"
+          },
+          "en": {
+            "name": "Oleksiivka"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "kharkiv"
+            }
+          }
+        },
+        {
+          "key": "kharkiv-kholodna-hora",
+          "shared": {
+            "priceModifier": 0,
+            "order": 4
+          },
+          "uk": {
+            "name": "Холодна Гора"
+          },
+          "en": {
+            "name": "Kholodna Hora"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "kharkiv"
+            }
+          }
+        },
+        {
+          "key": "kharkiv-levada",
+          "shared": {
+            "priceModifier": 0,
+            "order": 5
+          },
+          "uk": {
+            "name": "Левада"
+          },
+          "en": {
+            "name": "Levada"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "kharkiv"
+            }
+          }
+        },
+        {
+          "key": "kharkiv-saltivka",
+          "shared": {
+            "priceModifier": -10,
+            "order": 6
+          },
+          "uk": {
+            "name": "Салтівка"
+          },
+          "en": {
+            "name": "Saltivka"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "kharkiv"
+            }
+          }
+        },
+        {
+          "key": "poltava-tsentr",
+          "shared": {
+            "priceModifier": 15,
+            "order": 7
+          },
+          "uk": {
+            "name": "Центр"
+          },
+          "en": {
+            "name": "Tsentr"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "poltava"
+            }
+          }
+        },
+        {
+          "key": "poltava-polovky",
+          "shared": {
+            "priceModifier": 0,
+            "order": 8
+          },
+          "uk": {
+            "name": "Половки"
+          },
+          "en": {
+            "name": "Polovky"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "poltava"
+            }
+          }
+        },
+        {
+          "key": "poltava-ohnivka",
+          "shared": {
+            "priceModifier": 0,
+            "order": 9
+          },
+          "uk": {
+            "name": "Огнівка"
+          },
+          "en": {
+            "name": "Ohnivka"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "poltava"
+            }
+          }
+        },
+        {
+          "key": "dnipro-tsentr",
+          "shared": {
+            "priceModifier": 20,
+            "order": 10
+          },
+          "uk": {
+            "name": "Центр"
+          },
+          "en": {
+            "name": "Tsentr"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "dnipro"
+            }
+          }
+        },
+        {
+          "key": "dnipro-peremoha",
+          "shared": {
+            "priceModifier": 10,
+            "order": 11
+          },
+          "uk": {
+            "name": "Перемога"
+          },
+          "en": {
+            "name": "Peremoha"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "dnipro"
+            }
+          }
+        },
+        {
+          "key": "dnipro-livoberezhnyi",
+          "shared": {
+            "priceModifier": 0,
+            "order": 12
+          },
+          "uk": {
+            "name": "Лівобережний"
+          },
+          "en": {
+            "name": "Livoberezhnyi"
+          },
+          "relations": {
+            "settlement": {
+              "uid": "api::settlement.settlement",
+              "field": "slug",
+              "value": "dnipro"
+            }
+          }
+        }
+      ]
+    ]
+  ]
+}

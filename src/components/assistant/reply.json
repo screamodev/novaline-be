@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_assistant_replys",
+  "info": {
+    "displayName": "Fallback reply",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "keywords": {
+      "type": "text",
+      "required": true,
+      "description": "Comma-separated keyword stems"
+    },
+    "answer": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

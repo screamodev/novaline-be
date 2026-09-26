@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_phones",
+  "info": {
+    "displayName": "Phone",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "display": {
+      "type": "string",
+      "required": true
+    },
+    "tel": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\+\\d{10,15}$"
+    },
+    "primary": {
+      "type": "boolean",
+      "default": false
+    },
+    "viber": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

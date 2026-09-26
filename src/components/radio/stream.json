@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_radio_streams",
+  "info": {
+    "displayName": "Stream",
+    "icon": "volumeUp"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "bitrate": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "description": "PLACEHOLDER stream — replace with the real NovaLine stream"
+    }
+  }
+}

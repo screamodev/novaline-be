@@ -36,6 +36,8 @@
 
     // Do not include admin files in the server compilation
     "src/admin/",
+    // Dev scripts (seed, contract checks) run via tsx, not the Strapi build
+    "scripts/",
     // Do not include test files
     "**/*.test.*",
     // Do not include plugins in the server compilation

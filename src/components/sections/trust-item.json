@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_trust_items",
+  "info": {
+    "displayName": "Trust item",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "support",
+        "engineer",
+        "power",
+        "award"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

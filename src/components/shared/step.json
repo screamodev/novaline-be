@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_steps",
+  "info": {
+    "displayName": "Step",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

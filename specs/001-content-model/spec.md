@@ -98,7 +98,7 @@ A developer runs `docker compose up` on an empty database and the seed script fi
 
 ### Edge Cases
 
-- Settlement names with apostrophes (`Дубов’язівка`) must produce valid, stable slugs (transliterated: `dubovyazivka`).
+- Settlement names with apostrophes (`Дубов’язівка`) must produce valid, stable slugs (transliterated: `duboviazivka`, KMU 2010).
 - Same settlement name in two districts → slug is disambiguated (`name-district`).
 - A plan with non-numeric price ("договірна" / "on request") → modelled as `price: null` + localised `priceLabel`.
 - Neighbourhood modifier may be negative (Салтівка −10).

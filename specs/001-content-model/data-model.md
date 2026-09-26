@@ -48,7 +48,7 @@ Legend: **L** = localised (uk/en), **S** = shared across locales. All collection
 | `payment-method` | key, name (L), meta (L), steps (`shared.step`[]) |
 | `region` | name (L), slug (uid, S), districts (← district) |
 | `district` | name (L), slug (uid, S), region (→ region) |
-| `settlement` | name (L), nameLocative (L, for 007), slug (uid, S), lat (decimal), lng (decimal), isRegionalCentre (bool), district (→ district), intro (blocks, L, optional), seo |
+| `settlement` | name (L), nameLocative (L, for 007), slug (uid, S), lat (float), lng (float), isRegionalCentre (bool), district (→ district), intro (blocks, L, optional), seo |
 | `neighbourhood` | name (L), priceModifier (integer, S, may be negative), settlement (→ settlement) |
 | `lead` (no D&P, no i18n) | type (enum: connect, issue, callback), name, phone, reasonKey, reasonLabel, message (text), region, district, settlement, neighbourhood, locale, sourcePath, context (json: plan/promo/etc.), status (enum: new, in_progress, done, spam; default new), managerNote (text) |
 
@@ -66,3 +66,12 @@ article-category 1─* article
 - `neighbourhood.priceModifier` ∈ [−500, 500].
 - `plan.price` ≥ 0 or null; if null then `priceLabel` required (enforced in lifecycle `beforeCreate/Update`).
 - `lead.phone` stored normalised `+380XXXXXXXXX` (validated by the frontend route, re-checked in lifecycle).
+
+## Implementation notes (2026-09-26)
+
+- Strapi localises components as a whole: the L/S marks inside component tables describe intent only; numeric values inside localised components (e.g. `hero.speedValue`, `stat.value`) are seeded identically in both locales.
+- `plan` gained `pricePrefix` (L, "від" / "from") for "від 450" style prices; `priceLabel` is used only when `price` is empty.
+- `home-page` also has `tvChannelsTitle`, `tvChannelsSubtitle`; `sections.coverage-copy` has `resultNote` and `nodesLabel`.
+- `article` and `tv-channel` have a shared `key` for idempotent seeding; `tv-channel.name` is localised (EN transliterations), `article-category.slug` is shared.
+- Single types whose name ends in "s" use `-all` plural names (`payment-details-all`, `assistant-settings-all`); their REST paths stay `/payment-details`, `/assistant-settings`.
+- `settlement.lat/lng` are `float` (decimal was truncated to 2 places by Postgres).

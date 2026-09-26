@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_sections_heros",
+  "info": {
+    "displayName": "Hero",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "kicker": {
+      "type": "string"
+    },
+    "titleLine1": {
+      "type": "string",
+      "required": true
+    },
+    "titleLine2": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "promoText": {
+      "type": "string"
+    },
+    "primaryCta": {
+      "type": "string"
+    },
+    "secondaryCta": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "speedValue": {
+      "type": "string"
+    },
+    "speedUnit": {
+      "type": "string"
+    },
+    "speedCaption": {
+      "type": "string"
+    }
+  }
+}

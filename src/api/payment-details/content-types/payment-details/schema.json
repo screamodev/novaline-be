@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "payment_details",
+  "info": {
+    "singularName": "payment-details",
+    "pluralName": "payment-details-all",
+    "displayName": "Payment details"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.label-value",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "description": "Placeholder from the prototype — replace with real data"
+    }
+  }
+}

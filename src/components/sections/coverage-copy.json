@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_sections_coverage_copys",
+  "info": {
+    "displayName": "Coverage copy",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.heading"
+    },
+    "hint": {
+      "type": "string",
+      "description": "Use {count} for the number of covered settlements"
+    },
+    "resultTitle": {
+      "type": "string"
+    },
+    "technology": {
+      "type": "string"
+    },
+    "speedValue": {
+      "type": "string"
+    },
+    "resultNote": {
+      "type": "string"
+    },
+    "mapTitle": {
+      "type": "string"
+    },
+    "nodesCount": {
+      "type": "integer"
+    },
+    "nodesLabel": {
+      "type": "string"
+    },
+    "legendCity": {
+      "type": "string"
+    },
+    "legendVillage": {
+      "type": "string"
+    },
+    "mapHint": {
+      "type": "string"
+    }
+  }
+}

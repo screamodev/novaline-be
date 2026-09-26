@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Lead"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "connect",
+        "issue",
+        "callback"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "reasonKey": {
+      "type": "string"
+    },
+    "reasonLabel": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text",
+      "maxLength": 1000
+    },
+    "region": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "settlement": {
+      "type": "string"
+    },
+    "neighbourhood": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "sourcePath": {
+      "type": "string"
+    },
+    "context": {
+      "type": "json"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "in_progress",
+        "done",
+        "spam"
+      ],
+      "default": "new",
+      "required": true
+    },
+    "managerNote": {
+      "type": "text"
+    }
+  }
+}

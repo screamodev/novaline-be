@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "neighbourhoods",
+  "info": {
+    "singularName": "neighbourhood",
+    "pluralName": "neighbourhoods",
+    "displayName": "Neighbourhood"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "key": {
+      "type": "uid",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "priceModifier": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "default": 0,
+      "min": -500,
+      "max": 500,
+      "description": "UAH added to plan prices (may be negative)"
+    },
+    "settlement": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::settlement.settlement",
+      "inversedBy": "neighbourhoods"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
+}

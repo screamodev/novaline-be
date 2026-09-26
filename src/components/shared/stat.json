@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_stats",
+  "info": {
+    "displayName": "Stat",
+    "icon": "chartCircle"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "tone": {
+      "type": "enumeration",
+      "enum": [
+        "glass",
+        "coral",
+        "violet"
+      ],
+      "default": "glass"
+    }
+  }
+}
