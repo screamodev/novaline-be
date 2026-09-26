@@ -46,8 +46,8 @@
           "metaTitle": "NovaLine — швидкісний інтернет за технологією PON",
           "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, резервне живлення і підтримка 24/7. Харківська, Полтавська, Сумська та Дніпропетровська області."
         },
-        "orgLegalName": "ТОВ «НоваЛайн»",
-        "orgAreaServed": "Харківська, Полтавська, Сумська та Дніпропетровська області"
+        "orgAreaServed": "Харківська, Полтавська, Сумська та Дніпропетровська області",
+        "orgLegalName": null
       },
       "en": {
         "brandTagline": "RELIABLE\nCONNECTION\nTO THE INTERNET",
@@ -59,8 +59,8 @@
           "metaTitle": "NovaLine — high-speed PON fibre internet",
           "metaDescription": "Fibre straight to your home or office. A stable connection, backup power and 24/7 support across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
         },
-        "orgLegalName": "NovaLine LLC",
-        "orgAreaServed": "Kharkiv, Poltava, Sumy & Dnipropetrovsk regions"
+        "orgAreaServed": "Kharkiv, Poltava, Sumy & Dnipropetrovsk regions",
+        "orgLegalName": null
       }
     },
     "api::home-page.home-page": {
@@ -465,7 +465,7 @@
           },
           {
             "keywords": "не працює, немає інтернет, проблем, обрив, швидкість, зависа",
-            "answer": "Спробуйте перезавантажити роутер і перевірити індикатори на ONU-терміналі. Якщо не допомогло — зателефонуйте 0 800 або залиште заявку з темою «Немає інтернету», інженер підключиться до діагностики."
+            "answer": "Спробуйте перезавантажити роутер і перевірити індикатори на ONU-терміналі. Якщо не допомогло — зателефонуйте +38 (098) 506 06 09 або залиште заявку з темою «Немає інтернету», інженер підключиться до діагностики."
           },
           {
             "keywords": "телебач, канал, тв, ott, triniti",
@@ -643,17 +643,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "ЗАГЛУШКА: шаблонний текст. Замініть його на юридично перевірену політику конфіденційності."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "children": [
-              {
-                "type": "text",
-                "text": "Які дані ми збираємо"
+                "text": "Ця Політика пояснює, які персональні дані NovaLine (далі — «Провайдер», «ми») отримує через цей вебсайт, для чого ми їх використовуємо, кому можемо передавати та які права ви маєте. Політика підготовлена відповідно до Закону України «Про захист персональних даних»."
               }
             ]
           },
@@ -662,7 +652,35 @@
             "children": [
               {
                 "type": "text",
-                "text": "Коли ви залишаєте заявку або замовляєте зворотний дзвінок, ми отримуємо ваше ім’я, номер телефону, адресу підключення та текст повідомлення."
+                "text": "Обробка даних абонентів, які вже уклали договір, додатково регулюється "
+              },
+              {
+                "type": "link",
+                "url": "/dogovir.pdf",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Договором-офертою"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " та умовами особистого кабінету "
+              },
+              {
+                "type": "link",
+                "url": "https://stat.novaline.net/",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "stat.novaline.net"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
               }
             ]
           },
@@ -672,7 +690,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Для чого ми їх використовуємо"
+                "text": "1. Які дані ми отримуємо"
               }
             ]
           },
@@ -685,7 +703,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "щоб зв’язатися з вами щодо заявки;"
+                    "text": "Заявка на підключення або сервіс: ім’я, номер телефону, адреса (населений пункт, мікрорайон, вулиця), тема звернення та текст повідомлення."
                   }
                 ]
               },
@@ -694,7 +712,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "щоб перевірити технічну можливість підключення за вашою адресою;"
+                    "text": "Зворотний дзвінок: номер телефону."
                   }
                 ]
               },
@@ -703,7 +721,16 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "щоб надавати та підтримувати послуги NovaLine."
+                    "text": "Питання до онлайн-асистента: текст ваших повідомлень у чаті. Ми просимо не вказувати в чаті телефон, адресу чи інші персональні дані."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Технічні дані: IP-адреса та дані браузера, які сервер отримує автоматично. IP-адресу ми використовуємо лише для захисту форм від зловживань і не записуємо її до бази заявок."
                   }
                 ]
               }
@@ -715,7 +742,49 @@
             "children": [
               {
                 "type": "text",
-                "text": "Зберігання та передача"
+                "text": "2. Для чого ми використовуємо дані"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб зв’язатися з вами, перевірити технічну можливість підключення та оформити послугу;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб опрацювати звернення щодо несправності або консультацію;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб відповідати на питання в онлайн-асистенті;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб захищати сайт від спаму та автоматизованих атак."
+                  }
+                ]
               }
             ]
           },
@@ -724,7 +793,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Дані зберігаються на серверах NovaLine і не передаються третім особам, окрім випадків, передбачених законодавством України."
+                "text": "Ми не використовуємо ваші дані для розсилок без окремої згоди та не продаємо їх третім особам."
               }
             ]
           },
@@ -734,7 +803,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Ваші права"
+                "text": "3. Правові підстави"
               }
             ]
           },
@@ -743,14 +812,333 @@
             "children": [
               {
                 "type": "text",
-                "text": "Ви можете попросити оновити або видалити ваші дані, написавши нам на пошту, вказану внизу сайту."
+                "text": "Ми обробляємо дані на підставі вашої згоди, яку ви надаєте, надсилаючи форму на сайті, а також для вчинення дій, пов’язаних з укладенням і виконанням договору про надання послуг. Згоду можна відкликати в будь-який момент, написавши нам."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "4. Кому ми передаємо дані"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Працівникам NovaLine, які опрацьовують заявки: сповіщення про нову заявку надходить у робочий Telegram-чат служби підтримки."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "OpenAI (США) — лише текст повідомлень, які ви надсилаєте онлайн-асистенту, для формування відповіді. Контактні дані з форм асистенту не передаються. За умовами OpenAI дані, надіслані через API, не використовуються для навчання моделей."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "OpenStreetMap — карта покриття завантажує фрагменти карти з їхніх серверів, які при цьому отримують вашу IP-адресу."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Постачальникам хостингу, на серверах яких працює сайт."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Державним органам — лише у випадках, прямо передбачених законом."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "5. Строк зберігання"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Заявки та звернення зберігаються протягом часу, потрібного для їх опрацювання й надання послуг, але не довше 3 років з моменту останнього контакту."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Історія чату з асистентом зберігається лише у вашому браузері до закриття вкладки; на наших серверах вона не записується."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Технічні записи для захисту від зловживань автоматично видаляються протягом доби."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "6. Cookies та локальне сховище"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Сайт не використовує рекламні чи аналітичні cookies. У локальному сховищі браузера можуть зберігатися лише технічні налаштування: гучність радіоплеєра та історія чату з асистентом у межах поточної вкладки. Їх можна очистити в налаштуваннях браузера."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "7. Ваші права"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Відповідно до статті 8 Закону України «Про захист персональних даних» ви маєте право:"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "знати, які ваші дані ми обробляємо, з якою метою та кому їх передаємо;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "отримати доступ до своїх даних;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "вимагати виправлення неточних даних або їх видалення;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "відкликати згоду на обробку;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "заперечити проти обробки;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "звернутися зі скаргою до Уповноваженого Верховної Ради України з прав людини або до суду."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Щоб скористатися цими правами, напишіть на "
+              },
+              {
+                "type": "link",
+                "url": "mailto:support@novaline.net.ua",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "support@novaline.net.ua"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". Ми відповімо протягом 30 календарних днів."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "8. Захист даних"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Сайт працює лише через захищене з’єднання HTTPS. Доступ до заявок мають тільки уповноважені працівники, а ключі доступу до сервісів зберігаються лише на сервері."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "9. Контакти"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "З питань обробки персональних даних звертайтеся на "
+              },
+              {
+                "type": "link",
+                "url": "mailto:support@novaline.net.ua",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "support@novaline.net.ua"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " або за телефоном "
+              },
+              {
+                "type": "link",
+                "url": "tel:+380985060609",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "+38 (098) 506 06 09"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "10. Зміни політики"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ми можемо оновлювати цю Політику. Нова редакція набирає чинності з моменту публікації на цій сторінці."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Редакція від 27 вересня 2026 року."
               }
             ]
           }
         ],
         "seo": {
           "metaTitle": "Політика конфіденційності — NovaLine",
-          "metaDescription": "Як NovaLine обробляє персональні дані, які ви залишаєте у заявках на підключення та зворотний дзвінок."
+          "metaDescription": "Які персональні дані NovaLine отримує через сайт, навіщо їх використовує, кому передає та які права ви маєте."
         }
       },
       "en": {
@@ -761,17 +1149,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "PLACEHOLDER: template text. Replace it with a legally reviewed privacy policy."
-              }
-            ]
-          },
-          {
-            "type": "heading",
-            "level": 2,
-            "children": [
-              {
-                "type": "text",
-                "text": "What data we collect"
+                "text": "This Policy explains what personal data NovaLine (the “Provider”, “we”) receives through this website, why we use it, who we may share it with and what rights you have. It is prepared under the Law of Ukraine “On Personal Data Protection”."
               }
             ]
           },
@@ -780,7 +1158,35 @@
             "children": [
               {
                 "type": "text",
-                "text": "When you leave a request or ask for a callback, we receive your name, phone number, connection address and message."
+                "text": "Data of existing subscribers is also governed by the "
+              },
+              {
+                "type": "link",
+                "url": "/dogovir.pdf",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "public offer agreement"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " and the terms of the account area at "
+              },
+              {
+                "type": "link",
+                "url": "https://stat.novaline.net/",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "stat.novaline.net"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
               }
             ]
           },
@@ -790,7 +1196,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "How we use it"
+                "text": "1. What data we receive"
               }
             ]
           },
@@ -803,7 +1209,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "to contact you about your request;"
+                    "text": "Connection or service request: name, phone number, address (locality, neighbourhood, street), request topic and message text."
                   }
                 ]
               },
@@ -812,7 +1218,7 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "to check whether we can connect your address;"
+                    "text": "Callback request: phone number."
                   }
                 ]
               },
@@ -821,7 +1227,16 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "to provide and support NovaLine services."
+                    "text": "Questions to the online assistant: the text of your chat messages. Please do not share your phone, address or other personal data in the chat."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Technical data: IP address and browser data received by the server automatically. We use the IP address only to protect forms from abuse and do not store it with requests."
                   }
                 ]
               }
@@ -833,7 +1248,49 @@
             "children": [
               {
                 "type": "text",
-                "text": "Storage and sharing"
+                "text": "2. Why we use it"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to contact you, check whether a connection is possible and set up the service;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to handle fault reports and consultations;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to answer questions in the online assistant;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to protect the website from spam and automated attacks."
+                  }
+                ]
               }
             ]
           },
@@ -842,7 +1299,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Data is stored on NovaLine servers and is not shared with third parties except where required by Ukrainian law."
+                "text": "We do not send marketing messages without separate consent and never sell your data."
               }
             ]
           },
@@ -852,7 +1309,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "Your rights"
+                "text": "3. Legal basis"
               }
             ]
           },
@@ -861,14 +1318,333 @@
             "children": [
               {
                 "type": "text",
-                "text": "You can ask us to update or delete your data by writing to the email listed at the bottom of the site."
+                "text": "We process data based on the consent you give by submitting a form on the website, and to take steps related to concluding and performing a service agreement. You may withdraw consent at any time by writing to us."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "4. Who we share data with"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "NovaLine staff handling requests: new request notifications are delivered to the support team’s work Telegram chat."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "OpenAI (USA) — only the text of messages you send to the online assistant, to generate a reply. Contact details from forms are never sent to the assistant. Under OpenAI’s terms, data sent via the API is not used to train models."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "OpenStreetMap — the coverage map loads map tiles from their servers, which receive your IP address."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Hosting providers running the website’s servers."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Public authorities — only where required by law."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "5. Retention"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Requests are kept as long as needed to handle them and provide services, but no longer than 3 years after the last contact."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Assistant chat history is kept only in your browser until the tab is closed; it is not recorded on our servers."
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Technical anti-abuse records are deleted automatically within a day."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "6. Cookies and local storage"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "The website uses no advertising or analytics cookies. Your browser’s local storage may keep only technical settings: the radio player volume and the assistant chat history for the current tab. You can clear them in your browser settings."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "7. Your rights"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Under Article 8 of the Law of Ukraine “On Personal Data Protection” you have the right to:"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "know what data we process, for what purpose and who receives it;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "access your data;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "have inaccurate data corrected or deleted;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "withdraw your consent;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "object to processing;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "complain to the Ukrainian Parliament Commissioner for Human Rights or to a court."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "To exercise these rights, write to "
+              },
+              {
+                "type": "link",
+                "url": "mailto:support@novaline.net.ua",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "support@novaline.net.ua"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": ". We reply within 30 calendar days."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "8. Data security"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "The website works only over secure HTTPS. Requests are accessible only to authorised staff, and service access keys are kept on the server only."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "9. Contacts"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "For personal data questions, contact "
+              },
+              {
+                "type": "link",
+                "url": "mailto:support@novaline.net.ua",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "support@novaline.net.ua"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": " or call "
+              },
+              {
+                "type": "link",
+                "url": "tel:+380985060609",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "+38 (098) 506 06 09"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "text": "."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "10. Changes"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "We may update this Policy. A new version takes effect when published on this page."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Version of 27 September 2026."
               }
             ]
           }
         ],
         "seo": {
           "metaTitle": "Privacy policy — NovaLine",
-          "metaDescription": "How NovaLine processes the personal data you leave in connection and callback requests."
+          "metaDescription": "What personal data NovaLine receives through the website, why it is used, who receives it and what rights you have."
         }
       }
     }
