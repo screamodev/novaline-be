@@ -7,16 +7,16 @@
 | 003 | landing-sections | novaline-fe | ✅ implemented |
 | 004 | coverage — search, cascade, Leaflet map | novaline-fe (+be) | ✅ implemented |
 | 005 | leads — lead form, callback, Telegram | novaline-fe (+be) | ✅ implemented |
-| 006 | news — /news, /news/[slug] | novaline-fe | spec |
-| 007 | locality-pages — /internet/[slug] | novaline-fe (+be) | spec |
-| 008 | radio — /radio | novaline-fe | spec |
+| 006 | news — /news, /news/[slug] | novaline-fe | spec + plan + tasks |
+| 007 | locality-pages — /internet/[slug] | novaline-fe (+be) | spec + plan + tasks |
+| 008 | radio — /radio | novaline-fe | spec + plan + tasks |
 | 009 | ai-assistant — OpenAI via server route | novaline-fe (+be) | spec |
 | 010 | deploy — prod compose, Caddy, backups | novaline-be | spec |
 
 Constitution: `.specify/memory/constitution.md` (identical in both repos).
 REST contract: `novaline-be/specs/001-content-model/contracts/rest-api.md`.
 
-Open clarifications: 008 real stream URLs; 010 production domain.
+Open clarifications: 010 production domain.
 
 ## Implementation phases
 
