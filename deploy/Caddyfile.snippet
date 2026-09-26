@@ -1,0 +1,73 @@
+# NovaLine site blocks — append to the existing Caddyfile and reload Caddy:
+#   docker exec <caddy-container> caddy reload --config /etc/caddy/Caddyfile
+# Upstreams are the network aliases from docker-compose.prod.yml.
+
+(novaline_headers) {
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Content-Security-Policy "frame-ancestors 'self'"
+		-Server
+		-X-Powered-By
+	}
+}
+
+# ---------- Staging: dev.novaline.net (not indexed) ----------
+dev.novaline.net {
+	import novaline_headers
+	header X-Robots-Tag "noindex, nofollow"
+	encode zstd gzip
+
+	@immutable path /_nuxt/* /_fonts/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+	reverse_proxy novaline-web:3000
+
+	log {
+		output file /data/access-novaline-dev.log {
+			roll_size 50mb
+			roll_keep 7
+		}
+	}
+}
+
+cms.dev.novaline.net {
+	import novaline_headers
+	header X-Robots-Tag "noindex, nofollow"
+	encode zstd gzip
+	request_body {
+		max_size 50MB
+	}
+	reverse_proxy novaline-cms:1337
+}
+
+# ---------- Production (at launch: replace the staging blocks above) ----------
+# novaline.net {
+# 	import novaline_headers
+# 	encode zstd gzip
+# 	@immutable path /_nuxt/* /_fonts/*
+# 	header @immutable Cache-Control "public, max-age=31536000, immutable"
+# 	reverse_proxy novaline-web:3000
+# 	log {
+# 		output file /data/access-novaline.log {
+# 			roll_size 50mb
+# 			roll_keep 7
+# 		}
+# 	}
+# }
+#
+# www.novaline.net {
+# 	redir https://novaline.net{uri} permanent
+# }
+#
+# cms.novaline.net {
+# 	import novaline_headers
+# 	header X-Robots-Tag "noindex, nofollow"
+# 	encode zstd gzip
+# 	request_body {
+# 		max_size 50MB
+# 	}
+# 	reverse_proxy novaline-cms:1337
+# }

@@ -1,0 +1,99 @@
+# NovaLine production stack: PostgreSQL + Strapi (this repo) + Nuxt (../../novaline-fe).
+# Services join the existing Caddy network; nothing is published on host ports.
+#
+#   cd /opt/novaline/novaline-be/deploy
+#   docker compose -f docker-compose.prod.yml --env-file .env up -d --build
+#
+# See DEPLOY.md for the full procedure.
+name: novaline
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME:-novaline}
+      POSTGRES_USER: ${DATABASE_USERNAME:-novaline}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:?set DATABASE_PASSWORD in deploy/.env}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+    networks: [internal]
+
+  cms:
+    build: ..
+    image: novaline-be:latest
+    restart: unless-stopped
+    env_file: ${CMS_ENV_FILE:-../.env}
+    environment:
+      NODE_ENV: production
+      DATABASE_CLIENT: postgres
+      DATABASE_HOST: db
+      DATABASE_PORT: "5432"
+      DATABASE_NAME: ${DATABASE_NAME:-novaline}
+      DATABASE_USERNAME: ${DATABASE_USERNAME:-novaline}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      PUBLIC_URL: https://${CMS_DOMAIN}
+      IS_PROXIED: "true"
+      # Revalidate webhook goes over the internal network.
+      FRONTEND_URL: http://web:3000
+    volumes:
+      - uploads:/opt/app/public/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:1337/_health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      start_period: 60s
+      retries: 10
+    mem_limit: 1g
+    networks:
+      internal:
+      caddy:
+        aliases: [novaline-cms]
+
+  web:
+    build: ../../novaline-fe
+    image: novaline-fe:latest
+    restart: unless-stopped
+    env_file: ${WEB_ENV_FILE:-../../novaline-fe/.env}
+    environment:
+      NODE_ENV: production
+      NODE_OPTIONS: --max-old-space-size=384
+      NUXT_STRAPI_URL: http://cms:1337
+      NUXT_PUBLIC_SITE_URL: https://${DOMAIN}
+      NUXT_SITE_URL: https://${DOMAIN}
+      NUXT_PUBLIC_I18N_BASE_URL: https://${DOMAIN}
+      NUXT_SITE_ENV: ${SITE_ENV:-staging}
+    # Start only when Strapi answers, so the first SSR renders and image optimisation find it.
+    depends_on:
+      cms:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:3000/robots.txt || exit 1"]
+      interval: 15s
+      timeout: 5s
+      start_period: 30s
+      retries: 5
+    mem_limit: 512m
+    networks:
+      internal:
+      caddy:
+        aliases: [novaline-web]
+
+volumes:
+  db-data:
+  uploads:
+
+networks:
+  internal:
+  caddy:
+    external: true
+    name: ${CADDY_NETWORK:?set CADDY_NETWORK in deploy/.env}

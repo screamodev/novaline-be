@@ -4,7 +4,7 @@
 
 **Created**: 2026-09-26
 
-**Status**: Draft
+**Status**: Implemented (2026-09-27), awaiting first server deploy
 
 **Input**: User description: "Pack everything in Docker and deploy to the VPS behind the existing Caddy reverse proxy, like devquorum: main domain → Nuxt, cms subdomain → Strapi."
 
@@ -39,7 +39,7 @@ Postgres is not exposed; Strapi admin is reachable only via `cms.` over HTTPS; N
 
 ## Requirements *(mandatory)*
 
-- **FR-001**: `therecom/docker-compose.prod.yml` override: no host ports for db/cms/web, `caddy_net` external network, env files per service, resource limits, healthchecks.
+- **FR-001**: `novaline-be/deploy/docker-compose.prod.yml` (the parent folder is not versioned): no host ports for db/cms/web, `caddy_net` external network, env files per service, resource limits, healthchecks.
 - **FR-002**: Caddyfile snippet: `{$DOMAIN}` → `web:3000` (compression, security headers, `www` → apex redirect), `cms.{$DOMAIN}` → `cms:1337`, uploads cache headers.
 - **FR-003**: Env checklist (`.env.example` in each repo) with secret generation commands.
 - **FR-004**: Backup script + cron example; restore doc.
@@ -53,5 +53,5 @@ Postgres is not exposed; Strapi admin is reachable only via `cms.` over HTTPS; N
 
 ## Assumptions
 
-- [NEEDS CLARIFICATION: production domain — prototype links to novaline.net; confirm the site will replace novaline.net or live on another domain.]
+- Domain: the site replaces novaline.net. Staging first on `dev.novaline.net` / `cms.dev.novaline.net` (noindex); switching is an env + Caddy change (DEPLOY.md §10). Old WordPress URLs are 301-redirected by the frontend.
 - The VPS already runs Caddy in Docker (same as devquorum / pasteria-be).
