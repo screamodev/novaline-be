@@ -666,6 +666,245 @@
           "metaDescription": "The NovaLine 24/7 music stream in your browser: lo-fi, chill, deep house, ambient."
         }
       }
+    },
+    "api::privacy-page.privacy-page": {
+      "shared": {},
+      "uk": {
+        "title": "Політика конфіденційності",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "ЗАГЛУШКА: шаблонний текст. Замініть його на юридично перевірену політику конфіденційності."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Які дані ми збираємо"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Коли ви залишаєте заявку або замовляєте зворотний дзвінок, ми отримуємо ваше ім’я, номер телефону, адресу підключення та текст повідомлення."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Для чого ми їх використовуємо"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб зв’язатися з вами щодо заявки;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб перевірити технічну можливість підключення за вашою адресою;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "щоб надавати та підтримувати послуги NovaLine."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Зберігання та передача"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Дані зберігаються на серверах NovaLine і не передаються третім особам, окрім випадків, передбачених законодавством України."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Ваші права"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Ви можете попросити оновити або видалити ваші дані, написавши нам на пошту, вказану внизу сайту."
+              }
+            ]
+          }
+        ],
+        "seo": {
+          "metaTitle": "Політика конфіденційності — NovaLine",
+          "metaDescription": "Як NovaLine обробляє персональні дані, які ви залишаєте у заявках на підключення та зворотний дзвінок."
+        }
+      },
+      "en": {
+        "title": "Privacy policy",
+        "body": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "PLACEHOLDER: template text. Replace it with a legally reviewed privacy policy."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "What data we collect"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "When you leave a request or ask for a callback, we receive your name, phone number, connection address and message."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "How we use it"
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "format": "unordered",
+            "children": [
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to contact you about your request;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to check whether we can connect your address;"
+                  }
+                ]
+              },
+              {
+                "type": "list-item",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "to provide and support NovaLine services."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Storage and sharing"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "Data is stored on NovaLine servers and is not shared with third parties except where required by Ukrainian law."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "level": 2,
+            "children": [
+              {
+                "type": "text",
+                "text": "Your rights"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "text": "You can ask us to update or delete your data by writing to the email listed at the bottom of the site."
+              }
+            ]
+          }
+        ],
+        "seo": {
+          "metaTitle": "Privacy policy — NovaLine",
+          "metaDescription": "How NovaLine processes the personal data you leave in connection and callback requests."
+        }
+      }
     }
   },
   "collections": [

@@ -1557,6 +1557,56 @@ export interface ApiPlanPlan extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiPrivacyPagePrivacyPage extends Struct.SingleTypeSchema {
+  collectionName: 'privacy_page';
+  info: {
+    displayName: 'Privacy policy';
+    pluralName: 'privacy-pages';
+    singularName: 'privacy-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    body: Schema.Attribute.Blocks &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::privacy-page.privacy-page'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPromoPromo extends Struct.CollectionTypeSchema {
   collectionName: 'promos';
   info: {
@@ -2754,6 +2804,7 @@ declare module '@strapi/strapi' {
       'api::payment-details.payment-details': ApiPaymentDetailsPaymentDetails;
       'api::payment-method.payment-method': ApiPaymentMethodPaymentMethod;
       'api::plan.plan': ApiPlanPlan;
+      'api::privacy-page.privacy-page': ApiPrivacyPagePrivacyPage;
       'api::promo.promo': ApiPromoPromo;
       'api::radio.radio': ApiRadioRadio;
       'api::region.region': ApiRegionRegion;

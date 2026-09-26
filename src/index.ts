@@ -38,13 +38,28 @@ async function ensurePublicPermissions(strapi: Core.Strapi) {
 
 async function ensureFrontendToken(strapi: Core.Strapi) {
   const tokens = strapi.service('admin::api-token');
-  if (await tokens.exists({ name: FRONTEND_TOKEN_NAME })) return;
+  const permissions = [...readActions(strapi), 'api::lead.lead.create'];
+  const existing = await tokens.getByName(FRONTEND_TOKEN_NAME);
+
+  if (existing) {
+    // Keep the token in sync with content types added after it was created.
+    const current = await strapi.db
+      .query('admin::api-token-permission')
+      .findMany({ where: { token: existing.id }, select: ['action'] });
+    const have = new Set(current.map((p: { action: string }) => p.action));
+    if (permissions.some((a) => !have.has(a))) {
+      await tokens.update(existing.id, { permissions });
+      strapi.log.info(`[bootstrap] Updated permissions of API token "${FRONTEND_TOKEN_NAME}"`);
+    }
+    return;
+  }
+
   const token = await tokens.create({
     name: FRONTEND_TOKEN_NAME,
     description: 'Server-side token for novaline-fe (read content, create leads)',
     type: 'custom',
     lifespan: null,
-    permissions: [...readActions(strapi), 'api::lead.lead.create'],
+    permissions,
   });
   strapi.log.warn(`[bootstrap] Created API token "${FRONTEND_TOKEN_NAME}". Put it into novaline-fe/.env as NUXT_STRAPI_TOKEN:`);
   strapi.log.warn(`[bootstrap] ${token.accessKey}`);
@@ -74,6 +89,12 @@ async function ensureRevalidateWebhook(strapi: Core.Strapi) {
   }
 }
 
+function warnMissingTelegram(strapi: Core.Strapi) {
+  if (!process.env.TELEGRAM_BOT_TOKEN || !process.env.TELEGRAM_CHAT_ID) {
+    strapi.log.warn('[bootstrap] TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set — lead notifications are disabled');
+  }
+}
+
 export default {
   register() {},
 
@@ -82,5 +103,6 @@ export default {
     await ensurePublicPermissions(strapi);
     await ensureFrontendToken(strapi);
     await ensureRevalidateWebhook(strapi);
+    warnMissingTelegram(strapi);
   },
 };

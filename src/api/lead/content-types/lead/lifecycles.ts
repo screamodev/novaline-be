@@ -1,4 +1,5 @@
 import { errors } from '@strapi/utils';
+import { formatLeadMessage, sendTelegram, telegramConfigured } from '../../utils/telegram';
 
 interface LifecycleEvent {
   params: { data: Record<string, any> };
@@ -13,6 +14,9 @@ export const normalizeUaPhone = (raw: string): string | null => {
   return null;
 };
 
+const adminUrl = (documentId: string) =>
+  `${(process.env.PUBLIC_URL || 'http://localhost:1337').replace(/\/$/, '')}/admin/content-manager/collection-types/api::lead.lead/${documentId}`;
+
 export default {
   beforeCreate(event: LifecycleEvent) {
     const data = event.params.data;
@@ -20,8 +24,13 @@ export default {
     if (!phone) throw new errors.ValidationError('Invalid Ukrainian phone number');
     data.phone = phone;
   },
-  async afterCreate(event: LifecycleEvent) {
-    // Telegram notification is implemented in feature 005 (leads).
-    strapi.log.info(`[lead] new ${event.result.type} lead ${event.result.documentId}`);
+  afterCreate(event: LifecycleEvent) {
+    const lead = event.result;
+    strapi.log.info(`[lead] new ${lead.type} lead ${lead.documentId}`);
+    if (!telegramConfigured() || lead.status === 'spam') return;
+    // Fire and forget: the visitor's request never waits for (or fails because of) Telegram.
+    void sendTelegram(formatLeadMessage(lead, adminUrl(lead.documentId))).then((ok) => {
+      if (!ok) strapi.log.error(`[lead] Telegram notification failed for ${lead.documentId}`);
+    });
   },
 };

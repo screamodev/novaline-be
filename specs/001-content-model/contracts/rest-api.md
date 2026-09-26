@@ -30,6 +30,7 @@ If a localised request returns `data: null` (single type) or an entry is missing
 | R18 | `GET /settlements` | `filters[slug][$eq]=<slug>&populate[district][populate]=region&populate[neighbourhoods]=true&populate[seo]=true` | Settlement (0..1) |
 | R19 | `GET /assistant-settings` | `populate=*` | AssistantSettings |
 | R20 | `GET /radio` | `populate=*` | Radio |
+| R21 | `GET /privacy-page` | `populate[seo][populate]=ogImage` | PrivacyPage (title, body blocks, seo) — added by 005 |
 
 ### CoverageTree (R17)
 ```json

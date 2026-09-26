@@ -14,7 +14,8 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
     "seed": "tsx scripts/seed.ts",
     "verify:contract": "tsx scripts/verify-contract.ts",
-    "types": "strapi ts:generate-types"
+    "types": "strapi ts:generate-types",
+    "test": "tsx --test scripts/tests/*.test.ts"
   },
   "dependencies": {
     "@strapi/database": "5.55.1",

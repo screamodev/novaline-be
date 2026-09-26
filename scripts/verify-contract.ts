@@ -39,6 +39,7 @@ const READS: Check[] = [
   },
   { id: 'R19', path: '/assistant-settings?populate=*', expect: single('greeting') },
   { id: 'R20', path: '/radio?populate=*', expect: single('streams') },
+  { id: 'R21', path: '/privacy-page?populate[seo][populate]=ogImage', expect: single('body') },
 ];
 
 async function call(path: string, init: RequestInit = {}, auth = true): Promise<{ status: number; body: any }> {
