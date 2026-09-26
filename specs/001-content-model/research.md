@@ -15,7 +15,7 @@
 - **Alternatives**: Deep populate on `region` — 4 levels, heavier payload, harder to filter drafts.
 
 ## R4. Plans vs. coverage pricing
-- **Decision (provisional)**: Same plan set everywhere; `plan.availableForCoverage` marks which plans appear in the coverage result; price = base + neighbourhood modifier. Pending clarification FR-007.
+- **Decision**: Same plan set everywhere; `plan.availableForCoverage` marks which plans appear in the coverage result; price = base + neighbourhood modifier (clarified 2026-09-26).
 
 ## R5. Seed approach
 - **Decision**: `scripts/seed.ts` run via `strapi console`-like programmatic boot (`createStrapi().load()`), using the Document Service; entries matched by stable `key`/`slug` fields; creates `uk` then `en` localisation of the same document; publishes.

@@ -16,4 +16,14 @@
 Constitution: `.specify/memory/constitution.md` (identical in both repos).
 REST contract: `novaline-be/specs/001-content-model/contracts/rest-api.md`.
 
-Open clarifications (run `/speckit-clarify`): 001 FR-007 plan set per settlement; 005 FR-007 privacy policy; 008 real stream URLs; 010 production domain.
+Open clarifications: 005 FR-007 privacy policy; 008 real stream URLs; 010 production domain.
+
+## Implementation phases
+
+1. Foundation — 001 + 002
+2. Landing — 003
+3. Conversion — 004 + 005
+4. SEO pages — 006 + 007 + 008
+5. AI & production — 009 + 010 + final audit
+
+Dev stack: `docker compose -f docker-compose.dev.yml up` in `therecom/`.

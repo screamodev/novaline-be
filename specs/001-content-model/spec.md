@@ -106,6 +106,13 @@ A developer runs `docker compose up` on an empty database and the seed script fi
 - EN localisation missing for an entry → API returns nothing for `en`; frontend falls back to UA (rule in contract).
 - Media deleted while referenced → frontend must tolerate `null` images.
 
+## Clarifications
+
+### Session 2026-09-26
+
+- Q: Does the plan set differ per settlement? → A: No. One plan set (`availableForCoverage`), price = base + neighbourhood modifier.
+- Q: Real contacts in seed? → A: Seed prototype values, marked as placeholders in admin.
+
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
@@ -116,7 +123,7 @@ A developer runs `docker compose up` on an empty database and the seed script fi
 - **FR-004**: System MUST provide collections: `service` (icon key, title, description, order), `plan` (segment: private|apartment|business, name, speedLabel, price, priceLabel, period label, popular, features[], order, `availableForCoverage` flag), `addon` (title, description, price, priceLabel, unit, highlighted, order), `tv-package` (name, channelsLabel, price, popular, features[], order), `tv-category` (name, order), `tv-channel` (name, category, tier: min|mid|max, order), `promo` (title, tag, description, terms, validUntil, accent: violet|coral, order), `article` (title, slug, excerpt, category, cover, body blocks, publishedDate, SEO), `article-category`, `dc-service` (title, description, price|null, unit, order), `dc-fact` (title, text, order), `shop-item` (name, category label, description, price, image, order), `payment-method` (name, meta, steps[], order), single `payment-details` (items: label/value).
 - **FR-005**: System MUST model coverage as `region` → `district` → `settlement` → `neighbourhood`: settlement has name, slug, lat, lng, isRegionalCentre, optional SEO intro text for its locality page; neighbourhood has name and integer `priceModifier` (UAH).
 - **FR-006**: System MUST expose a single read endpoint returning the full published coverage tree (for search, cascading selects and map) in one request, localised.
-- **FR-007**: The coverage result MUST be able to show which plans apply and at what price for a chosen location. [NEEDS CLARIFICATION: does the plan set differ per settlement (e.g. some villages only EPON / only "Старт"), or is it the same plan set everywhere with only the neighbourhood modifier changing the price? Prototype shows the same two plans (150 / 1000 Мбіт/с) + modifier.]
+- **FR-007**: The coverage result MUST show the same plan set everywhere: plans flagged `availableForCoverage`, priced as base price + the selected neighbourhood's `priceModifier` (0 when the settlement has no neighbourhoods). Per-settlement plan sets are out of scope.
 - **FR-008**: System MUST provide a `lead` collection (not localised): type (connect|issue|callback), name, phone, reason, message, location (region/district/settlement/neighbourhood text), locale, source page, status (new|in_progress|done|spam), createdAt; public read is forbidden; a dedicated API token has create-only permission.
 - **FR-009**: System MUST provide `assistant-settings` single type (system prompt addendum, greeting, quick questions[], offline fallback answers with keywords) and `radio` single type (title, subtitle, genres[], streams[]: label, bitrate, url, now-playing labels).
 - **FR-010**: Public role MUST have `find`/`findOne` on all content types except `lead`; no write permissions.
@@ -155,6 +162,6 @@ A developer runs `docker compose up` on an empty database and the seed script fi
 
 - Strapi 5 built-in i18n and Content Manager are sufficient; no custom admin UI.
 - Settlement coordinates are entered manually (seed provides prototype coordinates).
-- Real phone numbers, IBAN, EDRPOU in the prototype are placeholders; the manager replaces them.
+- Contacts and bank details are seeded from the prototype (phones, email, IBAN/EDRPOU placeholders); their admin field descriptions mark them as placeholders for the manager to replace.
 - Media is stored locally in a Docker volume; ~hundreds of images at most.
 - Frontend consumes REST (not GraphQL).

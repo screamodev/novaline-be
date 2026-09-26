@@ -1,6 +1,7 @@
 <!--
 Sync Impact Report
-- Version: 0.0.0 → 1.0.0 (initial ratification)
+- Version: 1.0.0 → 1.0.1 (PATCH: workflow — commits go straight to main)
+- Previous: 0.0.0 → 1.0.0 (initial ratification)
 - Principles added: I–VIII
 - Sections added: Technology Constraints, Development Workflow, Governance
 - Templates: plan-template "Constitution Check" gates map to principles I–VIII ✅
@@ -86,7 +87,7 @@ idempotently so every environment starts in a known state. YAGNI: no feature bey
    `/speckit-tasks` → `/speckit-analyze` → `/speckit-implement`.
 2. Feature numbers are global across both repos (001–0NN). A spec lives in the repo that owns the
    user-facing outcome; cross-repo tasks are labelled `[be]` / `[fe]` in `tasks.md`.
-3. One branch per feature (`NNN-short-name`), PR into `main`. Conventional Commits.
+3. Work is committed directly to `main` (no feature branches/PRs) and pushed after each completed task block. Conventional Commits; the spec directory `specs/NNN-short-name` identifies the feature.
 4. Quality gates before merge: `pnpm build && pnpm typecheck` (fe), `npm run build` (be), stack boots
    with `docker compose up --build`, acceptance scenarios from the spec verified, Lighthouse
    SEO/A11y ≥ 95 and Performance ≥ 90 on mobile for pages touched.
@@ -98,4 +99,4 @@ principles I–VIII; violations must be listed in its Complexity Tracking table 
 Amendments: edit this file in both repos in the same change, bump the version (MAJOR: principle
 removed/redefined, MINOR: principle/section added, PATCH: wording), and update the Sync Impact Report.
 
-**Version**: 1.0.0 | **Ratified**: 2026-09-26 | **Last Amended**: 2026-09-26
+**Version**: 1.0.1 | **Ratified**: 2026-09-26 | **Last Amended**: 2026-09-26
