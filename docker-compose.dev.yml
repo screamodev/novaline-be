@@ -24,6 +24,8 @@ services:
       - cms_tmp:/opt/app/.tmp
       - cms_dist:/opt/app/dist
       - cms_strapi:/opt/app/.strapi
+      # Same named volume as the production stack, so media survives switching between dev and prod images.
+      - uploads:/opt/app/public/uploads
     ports:
       - "1337:1337"
     depends_on:
@@ -48,6 +50,7 @@ services:
 
 volumes:
   db-data:
+  uploads:
   cms_node_modules:
   cms_tmp:
   cms_dist:
