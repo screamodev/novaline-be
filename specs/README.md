@@ -2,11 +2,11 @@
 
 | # | Feature | Owner repo | Status |
 |---|---|---|---|
-| 001 | content-model — Strapi types, coverage tree, leads, seed, REST contract | novaline-be | spec + plan + tasks |
-| 002 | foundation — tokens, shell, i18n, SEO base, BFF + cache | novaline-fe | spec + plan + tasks |
-| 003 | landing-sections | novaline-fe | spec |
-| 004 | coverage — search, cascade, Leaflet map | novaline-fe (+be) | spec + plan + tasks |
-| 005 | leads — lead form, callback, Telegram | novaline-fe (+be) | spec + plan + tasks |
+| 001 | content-model — Strapi types, coverage tree, leads, seed, REST contract | novaline-be | ✅ implemented |
+| 002 | foundation — tokens, shell, i18n, SEO base, BFF + cache | novaline-fe | ✅ implemented |
+| 003 | landing-sections | novaline-fe | ✅ implemented |
+| 004 | coverage — search, cascade, Leaflet map | novaline-fe (+be) | ✅ implemented |
+| 005 | leads — lead form, callback, Telegram | novaline-fe (+be) | ✅ implemented |
 | 006 | news — /news, /news/[slug] | novaline-fe | spec |
 | 007 | locality-pages — /internet/[slug] | novaline-fe (+be) | spec |
 | 008 | radio — /radio | novaline-fe | spec |
