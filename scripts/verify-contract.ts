@@ -38,7 +38,7 @@ const READS: Check[] = [
     expect: (b) => (b.data?.settlementCount > 0 && Array.isArray(b.data.regions) ? null : 'empty coverage tree'),
   },
   { id: 'R19', path: '/assistant-settings?populate=*', expect: single('greeting') },
-  { id: 'R20', path: '/radio?populate=*', expect: single('streams') },
+  { id: 'R20', path: '/radio?populate=*', expect: (b) => (b.data?.statusUrl && b.data.streams?.[0]?.url?.includes('novaline') ? null : 'radio streams/statusUrl missing') },
   { id: 'R21', path: '/privacy-page?populate[seo][populate]=ogImage', expect: single('body') },
 ];
 
@@ -64,8 +64,8 @@ async function main() {
 
   // R15 / R18: lookup by slug using the first article / settlement.
   const article = (await call('/articles?pagination[pageSize]=1')).body?.data?.[0];
-  const r15 = await call(`/articles?filters[slug][$eq]=${article?.slug}&populate=*`);
-  report('R15', r15.status === 200 && r15.body.data.length === 1);
+  const r15 = await call(`/articles?filters[slug][$eq]=${article?.slug}&populate[localizations][fields][0]=slug&populate[localizations][fields][1]=locale`);
+  report('R15', r15.status === 200 && r15.body.data.length === 1 && r15.body.data[0].localizations?.[0]?.locale === 'en', '(with EN localization slug)');
   const r18 = await call('/settlements?filters[slug][$eq]=kharkiv&populate[district][populate]=region&populate[neighbourhoods]=true');
   report('R18', r18.status === 200 && r18.body.data[0]?.district?.region?.slug === 'kharkivska');
 

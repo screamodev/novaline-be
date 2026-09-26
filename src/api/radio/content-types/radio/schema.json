@@ -47,7 +47,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "description": "Уточнити жанри станції"
     },
     "nowPlayingTitle": {
       "type": "string",
@@ -116,6 +117,25 @@
           "localized": true
         }
       }
+    },
+    "indexable": {
+      "type": "boolean",
+      "default": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "description": "Show /radio in search engines and the sitemap"
+    },
+    "statusUrl": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "description": "Icecast status JSON (status-json.xsl) for the live \"now playing\" title"
     }
   }
 }

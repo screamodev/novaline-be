@@ -5,6 +5,11 @@
  *
  * Entries are matched by a stable key (`key` attribute, or `slug` for geography). Existing entries are never
  * overwritten, so manual edits in the admin survive re-runs; missing locales are added.
+ *
+ *   npm run seed -- --refresh=api::article.article,api::radio.radio
+ *
+ * `--refresh` deliberately overwrites the listed types with the seed content (both locales), e.g. after
+ * the seed data itself changed. Use it only where manual edits may be discarded.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -21,7 +26,10 @@ const SEED_DIR = path.join(process.cwd(), 'scripts', 'seed-data');
 const LOCALES = ['uk', 'en'] as const;
 type Locale = (typeof LOCALES)[number];
 
-const stats = { created: 0, localised: 0, skipped: 0 };
+const stats = { created: 0, localised: 0, refreshed: 0, skipped: 0 };
+const REFRESH = new Set(
+  (process.argv.find((a) => a.startsWith('--refresh='))?.slice('--refresh='.length) ?? '').split(',').filter(Boolean),
+);
 
 const docs = (strapi: Core.Strapi, uid: string) => strapi.documents(uid as any) as any;
 
@@ -75,6 +83,11 @@ async function seedSingle(strapi: Core.Strapi, uid: string, single: Single) {
     const created = await docs(strapi, uid).create({ locale: 'uk', status: 'published', data: withMedia({ ...single.shared, ...single.uk }) });
     documentId = created.documentId;
     stats.created++;
+  } else if (REFRESH.has(uid)) {
+    await docs(strapi, uid).update({ documentId, locale: 'uk', status: 'published', data: withMedia({ ...single.shared, ...single.uk }) });
+    await docs(strapi, uid).update({ documentId, locale: 'en', status: 'published', data: withMedia({ ...single.shared, ...single.en }) });
+    stats.refreshed++;
+    return;
   } else stats.skipped++;
 
   if (!(await docs(strapi, uid).findOne({ documentId, locale: 'en' }))) {
@@ -109,6 +122,17 @@ async function seedCollection(strapi: Core.Strapi, uid: string, entries: Entry[]
       });
       documentId = created.documentId;
       stats.created++;
+    } else if (REFRESH.has(uid)) {
+      for (const locale of LOCALES) {
+        await docs(strapi, uid).update({
+          documentId,
+          locale,
+          status: 'published',
+          data: { ...identity, ...entry.shared, ...entry[locale], ...(await resolveRelations(strapi, entry.relations, locale)) },
+        });
+      }
+      stats.refreshed++;
+      continue;
     } else stats.skipped++;
 
     if (!(await docs(strapi, uid).findOne({ documentId, locale: 'en' }))) {
@@ -131,7 +155,7 @@ async function main() {
   try {
     for (const [uid, single] of Object.entries(content.singles)) await seedSingle(app, uid, single);
     for (const [uid, entries] of content.collections) await seedCollection(app, uid, entries);
-    app.log.info(`[seed] done — created ${stats.created}, localised ${stats.localised}, skipped ${stats.skipped}`);
+    app.log.info(`[seed] done — created ${stats.created}, localised ${stats.localised}, refreshed ${stats.refreshed}, skipped ${stats.skipped}`);
   } finally {
     await app.destroy();
   }

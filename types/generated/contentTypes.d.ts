@@ -1730,6 +1730,13 @@ export interface ApiRadioRadio extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    indexable: Schema.Attribute.Boolean &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }> &
+      Schema.Attribute.DefaultTo<false>;
     liveLabel: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1755,6 +1762,12 @@ export interface ApiRadioRadio extends Struct.SingleTypeSchema {
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
+        };
+      }>;
+    statusUrl: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
         };
       }>;
     streams: Schema.Attribute.Component<'radio.stream', true> &

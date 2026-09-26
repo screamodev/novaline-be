@@ -579,7 +579,10 @@
       }
     },
     "api::radio.radio": {
-      "shared": {},
+      "shared": {
+        "indexable": true,
+        "statusUrl": "https://stream.novaline.net.ua/status-json.xsl"
+      },
       "uk": {
         "title": "NovaLine Radio",
         "liveLabel": "У ЕФІРІ",
@@ -605,17 +608,17 @@
           {
             "label": "HQ",
             "bitrate": "320 kbps",
-            "url": "https://ice1.somafm.com/groovesalad-256-mp3"
+            "url": "https://stream.novaline.net.ua/Novaline_320"
           },
           {
             "label": "Standard",
-            "bitrate": "128 kbps",
-            "url": "https://ice1.somafm.com/groovesalad-128-mp3"
+            "bitrate": "192 kbps",
+            "url": "https://stream.novaline.net.ua/Novaline_192"
           },
           {
             "label": "Economy",
-            "bitrate": "64 kbps",
-            "url": "https://ice1.somafm.com/groovesalad-64-aac"
+            "bitrate": "128 kbps",
+            "url": "https://stream.novaline.net.ua/Novaline_128"
           }
         ],
         "seo": {
@@ -648,17 +651,17 @@
           {
             "label": "HQ",
             "bitrate": "320 kbps",
-            "url": "https://ice1.somafm.com/groovesalad-256-mp3"
+            "url": "https://stream.novaline.net.ua/Novaline_320"
           },
           {
             "label": "Standard",
-            "bitrate": "128 kbps",
-            "url": "https://ice1.somafm.com/groovesalad-128-mp3"
+            "bitrate": "192 kbps",
+            "url": "https://stream.novaline.net.ua/Novaline_192"
           },
           {
             "label": "Economy",
-            "bitrate": "64 kbps",
-            "url": "https://ice1.somafm.com/groovesalad-64-aac"
+            "bitrate": "128 kbps",
+            "url": "https://stream.novaline.net.ua/Novaline_128"
           }
         ],
         "seo": {
@@ -2705,11 +2708,152 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Завершили будівництво магістралі до Щербанів, Розсошенців і Супрунівки. Приймаємо заявки на підключення."
+                    "text": "Демо-текст: замініть цю статтю в адмінці сайту.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ми завершили будівництво нової магістральної лінії, яка з’єднала Щербані, Розсошенці та Супрунівку з вузлом у Полтаві. Тепер мешканці цих сіл можуть підключити оптичний інтернет GPON зі швидкістю до 1000 Мбіт/с."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Що змінилося"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "прокладено понад 18 км оптоволоконного кабелю;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "встановлено три нові вузли доступу з резервним живленням;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "для приватних будинків доступні всі тарифи приватного сектору."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Будівництво тривало два місяці. Ми прокладали кабель уздовж існуючих опор, щоб мінімально втручатися у благоустрій вулиць, і відразу закладали запас ємності під майбутні підключення."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Як підключитися"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Перевірте свою адресу у блоці «Покриття і тарифи»."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Залиште заявку — менеджер зв’яжеться з вами протягом робочого дня."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Узгодьте зручний час монтажу: зазвичай він займає 2–3 години."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Кожне нове село в мережі — це ще сотні родин, які можуть працювати й навчатися з дому без обмежень."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Перевірити покриття можна "
+                  },
+                  {
+                    "type": "link",
+                    "url": "/#coverage",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "на головній сторінці"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": ". Якщо вашої адреси ще немає у списку, залиште заявку — ми врахуємо її при плануванні наступних ділянок."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Розширюємо покриття у Полтавському районі — NovaLine",
+              "metaDescription": "Завершили будівництво магістралі до Щербанів, Розсошенців і Супрунівки. Приймаємо заявки на підключення."
+            }
           },
           "en": {
             "title": "Expanding coverage in the Poltava district",
@@ -2721,11 +2865,152 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "We finished the backbone build to Shcherbani, Rozsoshentsi and Suprunivka. Connection requests are open."
+                    "text": "Demo text: replace this article in the site admin.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We have finished a new backbone line connecting Shcherbani, Rozsoshentsi and Suprunivka to our node in Poltava. Residents of these villages can now get GPON fibre internet at up to 1000 Mbps."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "What changed"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "more than 18 km of fibre-optic cable laid;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "three new access nodes with backup power installed;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "every private-home plan is available for houses."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "The build took two months. We ran the cable along existing poles to keep disruption to streets to a minimum and reserved capacity for future connections right away."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "How to connect"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Check your address in the “Coverage & plans” section."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Leave a request — a manager will contact you within one business day."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Agree on a convenient installation time: it usually takes 2–3 hours."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Every new village on the network means hundreds more families who can work and study from home without limits."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "You can check coverage "
+                  },
+                  {
+                    "type": "link",
+                    "url": "/#coverage",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "on the home page"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": ". If your address is not listed yet, leave a request — we will take it into account when planning the next areas."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Expanding coverage in the Poltava district — NovaLine",
+              "metaDescription": "We finished the backbone build to Shcherbani, Rozsoshentsi and Suprunivka. Connection requests are open."
+            }
           },
           "relations": {
             "category": {
@@ -2750,11 +3035,124 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Розбираємо, чому WAN-порт важливіший за кількість антен, і коли справді потрібен Wi-Fi 6."
+                    "text": "Демо-текст: замініть цю статтю в адмінці сайту.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Роутер — це серце домашньої мережі. Навіть на гігабітному тарифі слабкий роутер «з’їдає» швидкість і створює обриви. Розповідаємо, на що справді варто дивитися під час вибору."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "WAN-порт важливіший за антени"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Для тарифів 500–1000 Мбіт/с потрібен гігабітний WAN-порт. Кількість антен на корпусі мало що говорить про реальну швидкість: важливіше, який стандарт Wi-Fi підтримує пристрій і наскільки потужний у нього процесор."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Коли потрібен Wi-Fi 6"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "у квартирі або будинку більше 10 підключених пристроїв;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "ви граєте онлайн або часто проводите відеодзвінки;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "тариф 500 Мбіт/с і вище — Wi-Fi 5 просто не передасть таку швидкість по повітрю."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Великий будинок — mesh-система"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Якщо сигнал слабшає вже за двома стінами, один потужний роутер не допоможе. Mesh-система з двох-трьох модулів створює єдину мережу Wi-Fi без «мертвих зон» і перемикає пристрої між модулями автоматично."
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "У мережі NovaLine працюють роутери будь-яких виробників із WAN-портом — обмежень за брендом немає."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Не впевнені, що обрати? Залиште заявку з темою «Консультація з обладнання» — інженер підкаже модель під вашу площу й тариф."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Як обрати роутер: на що дивитись — NovaLine",
+              "metaDescription": "Розбираємо, чому WAN-порт важливіший за кількість антен, і коли справді потрібен Wi-Fi 6."
+            }
           },
           "en": {
             "title": "How to choose a router: what matters",
@@ -2766,11 +3164,124 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Why the WAN port matters more than the number of antennas, and when you actually need Wi-Fi 6."
+                    "text": "Demo text: replace this article in the site admin.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "The router is the heart of your home network. Even on a gigabit plan a weak router “eats” speed and causes dropouts. Here is what actually matters when choosing one."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "The WAN port matters more than antennas"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Plans of 500–1000 Mbps need a gigabit WAN port. The number of antennas says little about real speed: what matters is the Wi-Fi standard the device supports and how powerful its processor is."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "When you need Wi-Fi 6"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "there are more than 10 connected devices at home;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "you game online or often make video calls;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "your plan is 500 Mbps or faster — Wi-Fi 5 simply cannot carry that over the air."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Large house — go mesh"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "If the signal fades after two walls, one powerful router will not help. A mesh system of two or three units creates one seamless Wi-Fi network without dead zones and moves devices between units automatically."
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Routers from any manufacturer with a WAN port work on the NovaLine network — there are no brand restrictions."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Not sure what to pick? Leave a request with the topic “Equipment consultation” and an engineer will suggest a model for your space and plan."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "How to choose a router: what matters — NovaLine",
+              "metaDescription": "Why the WAN port matters more than the number of antennas, and when you actually need Wi-Fi 6."
+            }
           },
           "relations": {
             "category": {
@@ -2795,11 +3306,138 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Резервні акумулятори на вузлах, генератори на ключових майданчиках і схема пріоритетів живлення."
+                    "text": "Демо-текст: замініть цю статтю в адмінці сайту.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Відключення електроенергії стали частиною життя, і ми побудували мережу так, щоб інтернет працював навіть тоді, коли в будинку немає світла."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Три рівні захисту"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Акумулятори на кожному вузлі доступу тримають обладнання кілька годин без мережі."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Генератори на ключових майданчиках вмикаються автоматично при тривалих відключеннях."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Схема пріоритетів живлення: магістраль і вузли, що обслуговують найбільше абонентів, отримують резерв першими."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Технологія GPON пасивна: між вузлом і вашим будинком немає активного обладнання, якому потрібне живлення. Тому достатньо, щоб працював вузол і ваш ONU-термінал."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Що зробити вдома"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "під’єднайте ONU-термінал і роутер до павербанку чи ДБЖ на 12 В;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "збережіть у телефоні номер технічної підтримки;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "перевірте, що роутер не «засинає» при переході на резервне живлення."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Наша мета — щоб ви дізнавалися про відключення світла з новин, а не з того, що зник інтернет."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Питання щодо резервного живлення можна поставити нашому асистенту або залишити заявку — підкажемо рішення під ваше обладнання."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Як ми тримаємо мережу під час відключень — NovaLine",
+              "metaDescription": "Резервні акумулятори на вузлах, генератори на ключових майданчиках і схема пріоритетів живлення."
+            }
           },
           "en": {
             "title": "How we keep the network up during outages",
@@ -2811,11 +3449,138 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Backup batteries at nodes, generators at key sites, and how we prioritise power across the network."
+                    "text": "Demo text: replace this article in the site admin.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Power cuts have become part of life, so we built the network to keep the internet running even when your home has no electricity."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Three layers of protection"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Batteries at every access node keep equipment running for several hours without mains power."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Generators at key sites start automatically during long outages."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "A power priority scheme: the backbone and the nodes serving the most subscribers get backup first."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "GPON is a passive technology: there is no active equipment between the node and your house that needs power. All that has to run is the node and your ONU terminal."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "What to do at home"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "connect the ONU terminal and router to a power bank or a 12 V UPS;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "save the technical support number in your phone;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "check that your router does not go to sleep when it switches to backup power."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Our goal is for you to learn about a power cut from the news, not from losing the internet."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ask our assistant about backup power or leave a request — we will suggest a setup for your equipment."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "How we keep the network up during outages — NovaLine",
+              "metaDescription": "Backup batteries at nodes, generators at key sites, and how we prioritise power across the network."
+            }
           },
           "relations": {
             "category": {
@@ -2840,11 +3605,128 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Швидкості зросли без зміни абонплати. Що це означає для діючих абонентів і чи потрібно щось робити."
+                    "text": "Демо-текст: замініть цю статтю в адмінці сайту.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ми оновили тарифи для приватного сектору: швидкості зросли, а абонплата залишилася незмінною. Діючим абонентам нічого робити не потрібно — нові швидкості вже застосовано."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Що змінилося"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "«Старт» — тепер 150 Мбіт/с за 210 грн/міс;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "«Максимум» — 1000 Мбіт/с за 270 грн/міс;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "вартість підключення та 1 місяць інтернету в подарунок залишаються без змін."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Оновлення стало можливим завдяки модернізації вузлів і переходу приватного сектору на технологію GPON, яка має значний запас пропускної здатності."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Чи потрібно міняти роутер"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Якщо ваш роутер має гігабітний WAN-порт і підтримує Wi-Fi 5 або новіший, заміна не потрібна. Для тарифу «Максимум» радимо роутер із Wi-Fi 6, щоб отримати повну швидкість бездротово."
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Прозорі тарифи — це коли в абонплаті немає прихованих платежів, а всі додаткові послуги вказані окремо."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Порівняти всі тарифи можна "
+                  },
+                  {
+                    "type": "link",
+                    "url": "/#plans",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "у розділі «Тарифи»"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Оновлення тарифів для приватного сектору — NovaLine",
+              "metaDescription": "Швидкості зросли без зміни абонплати. Що це означає для діючих абонентів і чи потрібно щось робити."
+            }
           },
           "en": {
             "title": "Updated plans for private homes",
@@ -2856,11 +3738,128 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Speeds went up with no change to the monthly fee. What it means for existing subscribers."
+                    "text": "Demo text: replace this article in the site admin.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We have updated our private-home plans: speeds went up while monthly fees stayed the same. Existing subscribers do not need to do anything — the new speeds are already active."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "What changed"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "“Start” — now 150 Mbps for 210 UAH/mo;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "“Maximum” — 1000 Mbps for 270 UAH/mo;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "the connection fee and the free first month stay the same."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "The upgrade became possible after modernising our nodes and moving private homes to GPON, which has plenty of spare capacity."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Do I need a new router"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "If your router has a gigabit WAN port and supports Wi-Fi 5 or newer, you do not need a new one. For the “Maximum” plan we recommend a Wi-Fi 6 router to get the full speed wirelessly."
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Transparent plans mean no hidden charges in the monthly fee, with every add-on listed separately."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Compare every plan "
+                  },
+                  {
+                    "type": "link",
+                    "url": "/#plans",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "in the “Plans” section"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Updated plans for private homes — NovaLine",
+              "metaDescription": "Speeds went up with no change to the monthly fee. What it means for existing subscribers."
+            }
           },
           "relations": {
             "category": {
@@ -2885,11 +3884,143 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Додали пізнавальні та дитячі канали у Середній і Максимальний пакети без підвищення ціни."
+                    "text": "Демо-текст: замініть цю статтю в адмінці сайту.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "У пакетах телебачення Triniti TV з’явилися нові пізнавальні та дитячі канали. Ціна пакетів не змінилася, а нові канали вже доступні на всіх ваших пристроях."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Що додалося"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "у «Середньому» — два нові дитячі та пізнавальний канал;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "у «Максимальному» — ще три пізнавальні канали в HD;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "архів передач тепер зберігається 7 днів для всіх нових каналів."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Дивитися телебачення можна на Smart TV, смартфоні, планшеті чи у браузері. Один пакет працює одночасно на п’яти пристроях — зручно для всієї родини."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Як увімкнути"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Відкрийте застосунок Triniti TV або оновіть список каналів."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Нові канали з’являться у відповідних категоріях автоматично."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Якщо канал не відображається, перезапустіть застосунок."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Повний перелік каналів — "
+                  },
+                  {
+                    "type": "link",
+                    "url": "/#tv",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "у розділі «Телебачення»"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Triniti TV: у пакетах з’явились нові канали — NovaLine",
+              "metaDescription": "Додали пізнавальні та дитячі канали у Середній і Максимальний пакети без підвищення ціни."
+            }
           },
           "en": {
             "title": "Triniti TV: new channels in the packages",
@@ -2901,11 +4032,143 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "We added factual and children's channels to the Medium and Maximum packages at no extra cost."
+                    "text": "Demo text: replace this article in the site admin.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "New factual and children’s channels have been added to the Triniti TV packages. Package prices did not change, and the new channels are already available on all your devices."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "What is new"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "“Medium” — two new children’s channels and a factual channel;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "“Maximum” — three more factual channels in HD;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "a 7-day programme archive for all new channels."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Watch on a Smart TV, phone, tablet or in a browser. One package works on five devices at once — handy for the whole family."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "How to turn them on"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Open the Triniti TV app or refresh the channel list."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "The new channels appear in their categories automatically."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "If a channel is missing, restart the app."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "The full channel list is "
+                  },
+                  {
+                    "type": "link",
+                    "url": "/#tv",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "in the “Television” section"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Triniti TV: new channels in the packages — NovaLine",
+              "metaDescription": "We added factual and children's channels to the Medium and Maximum packages at no extra cost."
+            }
           },
           "relations": {
             "category": {
@@ -2930,11 +4193,129 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Плановані роботи на вузлах Салтівки та Олексіївки. Час можливих короткочасних перерв у роботі."
+                    "text": "Демо-текст: замініть цю статтю в адмінці сайту.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Наступного тижня ми проведемо планові роботи на вузлах Салтівки та Олексіївки в Харкові. Роботи потрібні, щоб встановити нове обладнання й збільшити запас пропускної здатності."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Коли можливі перерви"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "вівторок, 02:00–05:00 — Салтівка;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "четвер, 02:00–05:00 — Олексіївка;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "кожна перерва триватиме не довше 15 хвилин."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ми обрали нічний час, коли навантаження на мережу мінімальне. Більшість абонентів не помітять робіт: перемикання відбувається по черзі для окремих груп будинків."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Якщо інтернет не відновився"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Перезавантажте роутер і ONU-термінал."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Перевірте індикатори на терміналі: PON має світитися постійно."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Зателефонуйте в підтримку або залиште заявку з темою «Немає інтернету»."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Профілактика вночі — щоб удень мережа працювала без збоїв."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Графік профілактичних робіт у Харкові — NovaLine",
+              "metaDescription": "Плановані роботи на вузлах Салтівки та Олексіївки. Час можливих короткочасних перерв у роботі."
+            }
           },
           "en": {
             "title": "Scheduled maintenance in Kharkiv",
@@ -2946,11 +4327,129 @@
                 "children": [
                   {
                     "type": "text",
-                    "text": "Planned work on the Saltivka and Oleksiivka nodes, with expected short interruption windows."
+                    "text": "Demo text: replace this article in the site admin.",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Next week we will carry out planned maintenance on the Saltivka and Oleksiivka nodes in Kharkiv to install new equipment and add capacity."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "When short interruptions are possible"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "unordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Tuesday, 02:00–05:00 — Saltivka;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Thursday, 02:00–05:00 — Oleksiivka;"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "each interruption will last no more than 15 minutes."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We chose night hours when network load is lowest. Most subscribers will not notice anything: switching happens in turn for separate groups of buildings."
+                  }
+                ]
+              },
+              {
+                "type": "heading",
+                "level": 2,
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "If the internet does not come back"
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "format": "ordered",
+                "children": [
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Restart your router and ONU terminal."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Check the terminal lights: PON should stay on."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list-item",
+                    "children": [
+                      {
+                        "type": "text",
+                        "text": "Call support or leave a request with the topic “No internet”."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "quote",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Maintenance at night so the network runs smoothly during the day."
                   }
                 ]
               }
-            ]
+            ],
+            "seo": {
+              "metaTitle": "Scheduled maintenance in Kharkiv — NovaLine",
+              "metaDescription": "Planned work on the Saltivka and Oleksiivka nodes, with expected short interruption windows."
+            }
           },
           "relations": {
             "category": {
@@ -3806,10 +5305,12 @@
             "order": 1
           },
           "uk": {
-            "name": "Харків"
+            "name": "Харків",
+            "nameLocative": "у Харкові"
           },
           "en": {
-            "name": "Kharkiv"
+            "name": "Kharkiv",
+            "nameLocative": "in Kharkiv"
           },
           "relations": {
             "district": {
@@ -3829,10 +5330,12 @@
             "order": 2
           },
           "uk": {
-            "name": "Пісочин"
+            "name": "Пісочин",
+            "nameLocative": "у Пісочині"
           },
           "en": {
-            "name": "Pisochyn"
+            "name": "Pisochyn",
+            "nameLocative": "in Pisochyn"
           },
           "relations": {
             "district": {
@@ -3852,10 +5355,12 @@
             "order": 3
           },
           "uk": {
-            "name": "Коротич"
+            "name": "Коротич",
+            "nameLocative": "у Коротичі"
           },
           "en": {
-            "name": "Korotych"
+            "name": "Korotych",
+            "nameLocative": "in Korotych"
           },
           "relations": {
             "district": {
@@ -3875,10 +5380,12 @@
             "order": 4
           },
           "uk": {
-            "name": "Дергачі"
+            "name": "Дергачі",
+            "nameLocative": "у Дергачах"
           },
           "en": {
-            "name": "Derhachi"
+            "name": "Derhachi",
+            "nameLocative": "in Derhachi"
           },
           "relations": {
             "district": {
@@ -3898,10 +5405,12 @@
             "order": 5
           },
           "uk": {
-            "name": "Мала Данилівка"
+            "name": "Мала Данилівка",
+            "nameLocative": "у Малій Данилівці"
           },
           "en": {
-            "name": "Mala Danylivka"
+            "name": "Mala Danylivka",
+            "nameLocative": "in Mala Danylivka"
           },
           "relations": {
             "district": {
@@ -3921,10 +5430,12 @@
             "order": 6
           },
           "uk": {
-            "name": "Люботин"
+            "name": "Люботин",
+            "nameLocative": "у Люботині"
           },
           "en": {
-            "name": "Liubotyn"
+            "name": "Liubotyn",
+            "nameLocative": "in Liubotyn"
           },
           "relations": {
             "district": {
@@ -3944,10 +5455,12 @@
             "order": 7
           },
           "uk": {
-            "name": "Мерефа"
+            "name": "Мерефа",
+            "nameLocative": "у Мерефі"
           },
           "en": {
-            "name": "Merefa"
+            "name": "Merefa",
+            "nameLocative": "in Merefa"
           },
           "relations": {
             "district": {
@@ -3967,10 +5480,12 @@
             "order": 8
           },
           "uk": {
-            "name": "Чугуїв"
+            "name": "Чугуїв",
+            "nameLocative": "у Чугуєві"
           },
           "en": {
-            "name": "Chuhuiv"
+            "name": "Chuhuiv",
+            "nameLocative": "in Chuhuiv"
           },
           "relations": {
             "district": {
@@ -3990,10 +5505,12 @@
             "order": 9
           },
           "uk": {
-            "name": "Кочеток"
+            "name": "Кочеток",
+            "nameLocative": "у Кочетку"
           },
           "en": {
-            "name": "Kochetok"
+            "name": "Kochetok",
+            "nameLocative": "in Kochetok"
           },
           "relations": {
             "district": {
@@ -4013,10 +5530,12 @@
             "order": 10
           },
           "uk": {
-            "name": "Зарожне"
+            "name": "Зарожне",
+            "nameLocative": "у Зарожному"
           },
           "en": {
-            "name": "Zarozhne"
+            "name": "Zarozhne",
+            "nameLocative": "in Zarozhne"
           },
           "relations": {
             "district": {
@@ -4036,10 +5555,12 @@
             "order": 11
           },
           "uk": {
-            "name": "Печеніги"
+            "name": "Печеніги",
+            "nameLocative": "у Печенігах"
           },
           "en": {
-            "name": "Pechenihy"
+            "name": "Pechenihy",
+            "nameLocative": "in Pechenihy"
           },
           "relations": {
             "district": {
@@ -4059,10 +5580,12 @@
             "order": 12
           },
           "uk": {
-            "name": "Мартове"
+            "name": "Мартове",
+            "nameLocative": "у Мартовому"
           },
           "en": {
-            "name": "Martove"
+            "name": "Martove",
+            "nameLocative": "in Martove"
           },
           "relations": {
             "district": {
@@ -4082,10 +5605,12 @@
             "order": 13
           },
           "uk": {
-            "name": "Богодухів"
+            "name": "Богодухів",
+            "nameLocative": "у Богодухові"
           },
           "en": {
-            "name": "Bohodukhiv"
+            "name": "Bohodukhiv",
+            "nameLocative": "in Bohodukhiv"
           },
           "relations": {
             "district": {
@@ -4105,10 +5630,12 @@
             "order": 14
           },
           "uk": {
-            "name": "Шарівка"
+            "name": "Шарівка",
+            "nameLocative": "у Шарівці"
           },
           "en": {
-            "name": "Sharivka"
+            "name": "Sharivka",
+            "nameLocative": "in Sharivka"
           },
           "relations": {
             "district": {
@@ -4128,10 +5655,12 @@
             "order": 15
           },
           "uk": {
-            "name": "Валки"
+            "name": "Валки",
+            "nameLocative": "у Валках"
           },
           "en": {
-            "name": "Valky"
+            "name": "Valky",
+            "nameLocative": "in Valky"
           },
           "relations": {
             "district": {
@@ -4151,10 +5680,12 @@
             "order": 16
           },
           "uk": {
-            "name": "Старий Мерчик"
+            "name": "Старий Мерчик",
+            "nameLocative": "у Старому Мерчику"
           },
           "en": {
-            "name": "Staryi Merchyk"
+            "name": "Staryi Merchyk",
+            "nameLocative": "in Staryi Merchyk"
           },
           "relations": {
             "district": {
@@ -4174,10 +5705,12 @@
             "order": 17
           },
           "uk": {
-            "name": "Красноград"
+            "name": "Красноград",
+            "nameLocative": "у Краснограді"
           },
           "en": {
-            "name": "Krasnohrad"
+            "name": "Krasnohrad",
+            "nameLocative": "in Krasnohrad"
           },
           "relations": {
             "district": {
@@ -4197,10 +5730,12 @@
             "order": 18
           },
           "uk": {
-            "name": "Наталине"
+            "name": "Наталине",
+            "nameLocative": "у Наталиному"
           },
           "en": {
-            "name": "Natalyne"
+            "name": "Natalyne",
+            "nameLocative": "in Natalyne"
           },
           "relations": {
             "district": {
@@ -4220,10 +5755,12 @@
             "order": 19
           },
           "uk": {
-            "name": "Піски"
+            "name": "Піски",
+            "nameLocative": "у Пісках"
           },
           "en": {
-            "name": "Pisky"
+            "name": "Pisky",
+            "nameLocative": "in Pisky"
           },
           "relations": {
             "district": {
@@ -4243,10 +5780,12 @@
             "order": 20
           },
           "uk": {
-            "name": "Полтава"
+            "name": "Полтава",
+            "nameLocative": "у Полтаві"
           },
           "en": {
-            "name": "Poltava"
+            "name": "Poltava",
+            "nameLocative": "in Poltava"
           },
           "relations": {
             "district": {
@@ -4266,10 +5805,12 @@
             "order": 21
           },
           "uk": {
-            "name": "Щербані"
+            "name": "Щербані",
+            "nameLocative": "у Щербанях"
           },
           "en": {
-            "name": "Shcherbani"
+            "name": "Shcherbani",
+            "nameLocative": "in Shcherbani"
           },
           "relations": {
             "district": {
@@ -4289,10 +5830,12 @@
             "order": 22
           },
           "uk": {
-            "name": "Розсошенці"
+            "name": "Розсошенці",
+            "nameLocative": "у Розсошенцях"
           },
           "en": {
-            "name": "Rozsoshentsi"
+            "name": "Rozsoshentsi",
+            "nameLocative": "in Rozsoshentsi"
           },
           "relations": {
             "district": {
@@ -4312,10 +5855,12 @@
             "order": 23
           },
           "uk": {
-            "name": "Супрунівка"
+            "name": "Супрунівка",
+            "nameLocative": "у Супрунівці"
           },
           "en": {
-            "name": "Suprunivka"
+            "name": "Suprunivka",
+            "nameLocative": "in Suprunivka"
           },
           "relations": {
             "district": {
@@ -4335,10 +5880,12 @@
             "order": 24
           },
           "uk": {
-            "name": "Кременчук"
+            "name": "Кременчук",
+            "nameLocative": "у Кременчуці"
           },
           "en": {
-            "name": "Kremenchuk"
+            "name": "Kremenchuk",
+            "nameLocative": "in Kremenchuk"
           },
           "relations": {
             "district": {
@@ -4358,10 +5905,12 @@
             "order": 25
           },
           "uk": {
-            "name": "Горішні Плавні"
+            "name": "Горішні Плавні",
+            "nameLocative": "у Горішніх Плавнях"
           },
           "en": {
-            "name": "Horishni Plavni"
+            "name": "Horishni Plavni",
+            "nameLocative": "in Horishni Plavni"
           },
           "relations": {
             "district": {
@@ -4381,10 +5930,12 @@
             "order": 26
           },
           "uk": {
-            "name": "Власівка"
+            "name": "Власівка",
+            "nameLocative": "у Власівці"
           },
           "en": {
-            "name": "Vlasivka"
+            "name": "Vlasivka",
+            "nameLocative": "in Vlasivka"
           },
           "relations": {
             "district": {
@@ -4404,10 +5955,12 @@
             "order": 27
           },
           "uk": {
-            "name": "Миргород"
+            "name": "Миргород",
+            "nameLocative": "у Миргороді"
           },
           "en": {
-            "name": "Myrhorod"
+            "name": "Myrhorod",
+            "nameLocative": "in Myrhorod"
           },
           "relations": {
             "district": {
@@ -4427,10 +5980,12 @@
             "order": 28
           },
           "uk": {
-            "name": "Великі Сорочинці"
+            "name": "Великі Сорочинці",
+            "nameLocative": "у Великих Сорочинцях"
           },
           "en": {
-            "name": "Velyki Sorochyntsi"
+            "name": "Velyki Sorochyntsi",
+            "nameLocative": "in Velyki Sorochyntsi"
           },
           "relations": {
             "district": {
@@ -4450,10 +6005,12 @@
             "order": 29
           },
           "uk": {
-            "name": "Гоголеве"
+            "name": "Гоголеве",
+            "nameLocative": "у Гоголевому"
           },
           "en": {
-            "name": "Hoholeve"
+            "name": "Hoholeve",
+            "nameLocative": "in Hoholeve"
           },
           "relations": {
             "district": {
@@ -4473,10 +6030,12 @@
             "order": 30
           },
           "uk": {
-            "name": "Суми"
+            "name": "Суми",
+            "nameLocative": "у Сумах"
           },
           "en": {
-            "name": "Sumy"
+            "name": "Sumy",
+            "nameLocative": "in Sumy"
           },
           "relations": {
             "district": {
@@ -4496,10 +6055,12 @@
             "order": 31
           },
           "uk": {
-            "name": "Степанівка"
+            "name": "Степанівка",
+            "nameLocative": "у Степанівці"
           },
           "en": {
-            "name": "Stepanivka"
+            "name": "Stepanivka",
+            "nameLocative": "in Stepanivka"
           },
           "relations": {
             "district": {
@@ -4519,10 +6080,12 @@
             "order": 32
           },
           "uk": {
-            "name": "Хотінь"
+            "name": "Хотінь",
+            "nameLocative": "у Хотіні"
           },
           "en": {
-            "name": "Khotin"
+            "name": "Khotin",
+            "nameLocative": "in Khotin"
           },
           "relations": {
             "district": {
@@ -4542,10 +6105,12 @@
             "order": 33
           },
           "uk": {
-            "name": "Битиця"
+            "name": "Битиця",
+            "nameLocative": "у Битиці"
           },
           "en": {
-            "name": "Bytytsia"
+            "name": "Bytytsia",
+            "nameLocative": "in Bytytsia"
           },
           "relations": {
             "district": {
@@ -4565,10 +6130,12 @@
             "order": 34
           },
           "uk": {
-            "name": "Охтирка"
+            "name": "Охтирка",
+            "nameLocative": "в Охтирці"
           },
           "en": {
-            "name": "Okhtyrka"
+            "name": "Okhtyrka",
+            "nameLocative": "in Okhtyrka"
           },
           "relations": {
             "district": {
@@ -4588,10 +6155,12 @@
             "order": 35
           },
           "uk": {
-            "name": "Тростянець"
+            "name": "Тростянець",
+            "nameLocative": "у Тростянці"
           },
           "en": {
-            "name": "Trostianets"
+            "name": "Trostianets",
+            "nameLocative": "in Trostianets"
           },
           "relations": {
             "district": {
@@ -4611,10 +6180,12 @@
             "order": 36
           },
           "uk": {
-            "name": "Чупахівка"
+            "name": "Чупахівка",
+            "nameLocative": "у Чупахівці"
           },
           "en": {
-            "name": "Chupakhivka"
+            "name": "Chupakhivka",
+            "nameLocative": "in Chupakhivka"
           },
           "relations": {
             "district": {
@@ -4634,10 +6205,12 @@
             "order": 37
           },
           "uk": {
-            "name": "Конотоп"
+            "name": "Конотоп",
+            "nameLocative": "у Конотопі"
           },
           "en": {
-            "name": "Konotop"
+            "name": "Konotop",
+            "nameLocative": "in Konotop"
           },
           "relations": {
             "district": {
@@ -4657,10 +6230,12 @@
             "order": 38
           },
           "uk": {
-            "name": "Буринь"
+            "name": "Буринь",
+            "nameLocative": "у Бурині"
           },
           "en": {
-            "name": "Buryn"
+            "name": "Buryn",
+            "nameLocative": "in Buryn"
           },
           "relations": {
             "district": {
@@ -4680,10 +6255,12 @@
             "order": 39
           },
           "uk": {
-            "name": "Дубов’язівка"
+            "name": "Дубов’язівка",
+            "nameLocative": "у Дубов’язівці"
           },
           "en": {
-            "name": "Duboviazivka"
+            "name": "Duboviazivka",
+            "nameLocative": "in Duboviazivka"
           },
           "relations": {
             "district": {
@@ -4703,10 +6280,12 @@
             "order": 40
           },
           "uk": {
-            "name": "Дніпро"
+            "name": "Дніпро",
+            "nameLocative": "у Дніпрі"
           },
           "en": {
-            "name": "Dnipro"
+            "name": "Dnipro",
+            "nameLocative": "in Dnipro"
           },
           "relations": {
             "district": {
@@ -4726,10 +6305,12 @@
             "order": 41
           },
           "uk": {
-            "name": "Підгородне"
+            "name": "Підгородне",
+            "nameLocative": "у Підгородному"
           },
           "en": {
-            "name": "Pidhorodne"
+            "name": "Pidhorodne",
+            "nameLocative": "in Pidhorodne"
           },
           "relations": {
             "district": {
@@ -4749,10 +6330,12 @@
             "order": 42
           },
           "uk": {
-            "name": "Слобожанське"
+            "name": "Слобожанське",
+            "nameLocative": "у Слобожанському"
           },
           "en": {
-            "name": "Slobozhanske"
+            "name": "Slobozhanske",
+            "nameLocative": "in Slobozhanske"
           },
           "relations": {
             "district": {
@@ -4772,10 +6355,12 @@
             "order": 43
           },
           "uk": {
-            "name": "Обухівка"
+            "name": "Обухівка",
+            "nameLocative": "в Обухівці"
           },
           "en": {
-            "name": "Obukhivka"
+            "name": "Obukhivka",
+            "nameLocative": "in Obukhivka"
           },
           "relations": {
             "district": {
@@ -4795,10 +6380,12 @@
             "order": 44
           },
           "uk": {
-            "name": "Павлоград"
+            "name": "Павлоград",
+            "nameLocative": "у Павлограді"
           },
           "en": {
-            "name": "Pavlohrad"
+            "name": "Pavlohrad",
+            "nameLocative": "in Pavlohrad"
           },
           "relations": {
             "district": {
@@ -4818,10 +6405,12 @@
             "order": 45
           },
           "uk": {
-            "name": "Тернівка"
+            "name": "Тернівка",
+            "nameLocative": "у Тернівці"
           },
           "en": {
-            "name": "Ternivka"
+            "name": "Ternivka",
+            "nameLocative": "in Ternivka"
           },
           "relations": {
             "district": {
@@ -4841,10 +6430,12 @@
             "order": 46
           },
           "uk": {
-            "name": "Першотравенськ"
+            "name": "Першотравенськ",
+            "nameLocative": "у Першотравенську"
           },
           "en": {
-            "name": "Pershotravensk"
+            "name": "Pershotravensk",
+            "nameLocative": "in Pershotravensk"
           },
           "relations": {
             "district": {

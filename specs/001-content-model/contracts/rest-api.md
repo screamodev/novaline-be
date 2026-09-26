@@ -24,12 +24,12 @@ If a localised request returns `data: null` (single type) or an entry is missing
 | R12 | `GET /payment-methods` | `sort=order:asc&populate=steps` | PaymentMethod[] |
 | R13 | `GET /payment-details` | `populate=items` | PaymentDetails |
 | R14 | `GET /articles` | `sort=publishedDate:desc&populate[category]=true&populate[cover]=true&pagination[page]=N&pagination[pageSize]=12[&filters[category][slug][$eq]=x]` | Article[] + pagination meta |
-| R15 | `GET /articles` | `filters[slug][$eq]=<slug>&populate=*` | Article (0..1) |
+| R15 | `GET /articles` | `filters[slug][$eq]=<slug>&populate[category]=true&populate[cover]=true&populate[seo][populate]=ogImage&populate[localizations][fields][0]=slug&populate[localizations][fields][1]=locale` | Article (0..1) incl. other-locale slug |
 | R16 | `GET /article-categories` | `sort=order:asc` | ArticleCategory[] |
 | R17 | `GET /coverage` *(custom)* | `locale` | CoverageTree (below) |
-| R18 | `GET /settlements` | `filters[slug][$eq]=<slug>&populate[district][populate]=region&populate[neighbourhoods]=true&populate[seo]=true` | Settlement (0..1) |
+| R18 | `GET /settlements` | `filters[slug][$eq]=<slug>&populate[seo][populate]=ogImage` | Settlement (0..1): nameLocative, intro (blocks), seo |
 | R19 | `GET /assistant-settings` | `populate=*` | AssistantSettings |
-| R20 | `GET /radio` | `populate=*` | Radio |
+| R20 | `GET /radio` | `populate=*` | Radio incl. `indexable`, `statusUrl` |
 | R21 | `GET /privacy-page` | `populate[seo][populate]=ogImage` | PrivacyPage (title, body blocks, seo) — added by 005 |
 
 ### CoverageTree (R17)

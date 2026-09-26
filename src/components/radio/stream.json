@@ -16,8 +16,7 @@
     },
     "url": {
       "type": "string",
-      "required": true,
-      "description": "PLACEHOLDER stream — replace with the real NovaLine stream"
+      "required": true
     }
   }
 }
