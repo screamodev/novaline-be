@@ -7,9 +7,9 @@
 | 003 | landing-sections | novaline-fe | ✅ implemented |
 | 004 | coverage — search, cascade, Leaflet map | novaline-fe (+be) | ✅ implemented |
 | 005 | leads — lead form, callback, Telegram | novaline-fe (+be) | ✅ implemented |
-| 006 | news — /news, /news/[slug] | novaline-fe | spec + plan + tasks |
-| 007 | locality-pages — /internet/[slug] | novaline-fe (+be) | spec + plan + tasks |
-| 008 | radio — /radio | novaline-fe | spec + plan + tasks |
+| 006 | news — /news, /news/[slug] | novaline-fe | ✅ implemented |
+| 007 | locality-pages — /internet/[slug] | novaline-fe (+be) | ✅ implemented |
+| 008 | radio — /radio | novaline-fe | ✅ implemented |
 | 009 | ai-assistant — OpenAI via server route | novaline-fe (+be) | spec |
 | 010 | deploy — prod compose, Caddy, backups | novaline-be | spec |
 
