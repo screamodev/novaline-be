@@ -50,7 +50,7 @@ Use `openssl rand -base64 32` for every secret below. Never reuse the dev values
 - `APP_KEYS` (two values, comma-separated);
 - `API_TOKEN_SALT`, `ADMIN_JWT_SECRET`, `TRANSFER_TOKEN_SALT`, `JWT_SECRET`, `ENCRYPTION_KEY`;
 - `FRONTEND_REVALIDATE_SECRET`: the same value as `NUXT_REVALIDATE_SECRET` below;
-- `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`: optional, for lead notifications.
+- `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`: optional, for lead notifications; how to get them is in [TELEGRAM.md](TELEGRAM.md).
 
 Leave these to the compose file: the database host and credentials, `PUBLIC_URL`, `FRONTEND_URL`.
 
