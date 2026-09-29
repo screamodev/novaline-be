@@ -44,7 +44,7 @@
         "perMonthLabel": "грн/міс",
         "defaultSeo": {
           "metaTitle": "NovaLine — швидкісний інтернет за технологією PON",
-          "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, резервне живлення і підтримка 24/7. Харківська, Полтавська, Сумська та Дніпропетровська області."
+          "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання та резервне живлення. Харківська, Полтавська, Сумська та Дніпропетровська області."
         },
         "orgAreaServed": "Харківська, Полтавська, Сумська та Дніпропетровська області",
         "orgLegalName": null
@@ -57,7 +57,7 @@
         "perMonthLabel": "UAH/mo",
         "defaultSeo": {
           "metaTitle": "NovaLine — high-speed PON fibre internet",
-          "metaDescription": "Fibre straight to your home or office. A stable connection, backup power and 24/7 support across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
+          "metaDescription": "Fibre straight to your home or office. A stable connection and backup power across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
         },
         "orgAreaServed": "Kharkiv, Poltava, Sumy & Dnipropetrovsk regions",
         "orgLegalName": null
@@ -73,8 +73,8 @@
           "kicker": "GPON / EPON · до 10 Гбіт/с",
           "titleLine1": "Швидкісний інтернет",
           "titleLine2": "за технологією PON",
-          "subtitle": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, сучасне обладнання з резервним живленням і підтримка 24/7.",
-          "promoText": "+1 місяць інтернету у подарунок при підключенні",
+          "subtitle": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання та сучасне обладнання з резервним живленням.",
+          "promoText": null,
           "primaryCta": "Перевірити покриття",
           "secondaryCta": "Отримати консультацію",
           "imageAlt": "Задоволена клієнтка користується інтернетом NovaLine",
@@ -83,11 +83,6 @@
           "speedCaption": "оптика прямо у дім"
         },
         "trustItems": [
-          {
-            "icon": "support",
-            "title": "Технічна підтримка 24/7",
-            "text": "Інженери на зв’язку вдень і вночі"
-          },
           {
             "icon": "engineer",
             "title": "Кваліфіковані інженери",
@@ -222,14 +217,9 @@
               "tone": "coral"
             },
             {
-              "value": "300+",
+              "value": "250+",
               "label": "населених пунктів",
               "tone": "violet"
-            },
-            {
-              "value": "24/7",
-              "label": "підтримка",
-              "tone": "glass"
             }
           ]
         },
@@ -240,7 +230,7 @@
         },
         "seo": {
           "metaTitle": "NovaLine — швидкісний інтернет за технологією PON",
-          "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання, резервне живлення і підтримка 24/7. Харківська, Полтавська, Сумська та Дніпропетровська області."
+          "metaDescription": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання та резервне живлення. Харківська, Полтавська, Сумська та Дніпропетровська області."
         }
       },
       "en": {
@@ -248,8 +238,8 @@
           "kicker": "GPON / EPON · up to 10 Gbps",
           "titleLine1": "High-speed internet",
           "titleLine2": "on PON technology",
-          "subtitle": "Fiber straight to your home or office. A stable connection, modern equipment with backup power, and 24/7 support.",
-          "promoText": "+1 month of internet free with every connection",
+          "subtitle": "Fibre straight to your home or office. A stable connection and modern equipment with backup power.",
+          "promoText": null,
           "primaryCta": "Check coverage",
           "secondaryCta": "Get a consultation",
           "imageAlt": "A happy customer using NovaLine internet at home",
@@ -258,11 +248,6 @@
           "speedCaption": "fiber straight to your home"
         },
         "trustItems": [
-          {
-            "icon": "support",
-            "title": "24/7 technical support",
-            "text": "Real engineers, day and night"
-          },
           {
             "icon": "engineer",
             "title": "Qualified engineers",
@@ -397,14 +382,9 @@
               "tone": "coral"
             },
             {
-              "value": "300+",
+              "value": "250+",
               "label": "localities",
               "tone": "violet"
-            },
-            {
-              "value": "24/7",
-              "label": "support",
-              "tone": "glass"
             }
           ]
         },
@@ -415,7 +395,7 @@
         },
         "seo": {
           "metaTitle": "NovaLine — high-speed PON fibre internet",
-          "metaDescription": "Fibre straight to your home or office. A stable connection, backup power and 24/7 support across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
+          "metaDescription": "Fibre straight to your home or office. A stable connection and backup power across Kharkiv, Poltava, Sumy and Dnipropetrovsk regions."
         }
       }
     },
@@ -481,7 +461,7 @@
           },
           {
             "keywords": "акці, знижк, подарунок, промо",
-            "answer": "Зараз діють: +1 місяць інтернету у подарунок при підключенні, «Приведи друга» — 100 грн обом, гігабіт за ціною 500 Мбіт/с на 3 місяці. Терміни дії — у розділі «Акції»."
+            "answer": "Зараз діє акція «Приведи друга»: порекомендуйте NovaLine сусідові чи другові — після його підключення ви обидва отримаєте 100 грн на рахунок. Деталі — у розділі «Акції»."
           }
         ]
       },
@@ -536,7 +516,7 @@
           },
           {
             "keywords": "offer, promo, discount, gift",
-            "answer": "Currently running: +1 free month of internet on connection, “Refer a friend” — 100 UAH for both, and gigabit at the 500 Mbps price for 3 months. Validity dates are in the “Offers” section."
+            "answer": "Our current offer is “Refer a friend”: recommend NovaLine to a neighbour or friend and once they connect you both get 100 UAH on your account. Details are in the “Offers” section."
           }
         ]
       }
@@ -1767,9 +1747,6 @@
               },
               {
                 "text": "Стабільний пінг"
-              },
-              {
-                "text": "Підтримка 24/7"
               }
             ],
             "coverageCaption": "Оптика в дім"
@@ -1784,9 +1761,6 @@
               },
               {
                 "text": "Low, stable ping"
-              },
-              {
-                "text": "24/7 support"
               }
             ],
             "coverageCaption": "Fiber to home"
@@ -1811,9 +1785,6 @@
               },
               {
                 "text": "Резервне живлення на вузлах"
-              },
-              {
-                "text": "Підтримка 24/7"
               }
             ],
             "coverageCaption": "Гігабіт у дім"
@@ -1828,9 +1799,6 @@
               },
               {
                 "text": "Backup power at nodes"
-              },
-              {
-                "text": "24/7 support"
               }
             ],
             "coverageCaption": "Gigabit to home"
@@ -1897,9 +1865,6 @@
               },
               {
                 "text": "Wi-Fi по всій квартирі"
-              },
-              {
-                "text": "Підтримка 24/7"
               }
             ]
           },
@@ -1913,9 +1878,6 @@
               },
               {
                 "text": "Wi-Fi everywhere"
-              },
-              {
-                "text": "24/7 support"
               }
             ]
           }
@@ -1939,9 +1901,6 @@
               },
               {
                 "text": "Стабільний пінг"
-              },
-              {
-                "text": "Підтримка 24/7"
               }
             ]
           },
@@ -1955,9 +1914,6 @@
               },
               {
                 "text": "Low ping"
-              },
-              {
-                "text": "24/7 support"
               }
             ]
           }
@@ -3265,31 +3221,11 @@
       "api::promo.promo",
       [
         {
-          "key": "connection-gift",
-          "shared": {
-            "validUntil": "2026-12-31",
-            "accent": "violet",
-            "order": 1
-          },
-          "uk": {
-            "title": "+1 місяць інтернету у подарунок",
-            "tag": "Підключення",
-            "description": "Підключіться до будь-якого тарифу — і перший місяць доступу до Інтернету вже входить у вартість монтажу.",
-            "terms": "Діє для нових абонентів приватного сектору та квартир. Не поєднується з іншими акціями на монтаж."
-          },
-          "en": {
-            "title": "+1 month of internet free",
-            "tag": "Connection",
-            "description": "Sign up for any plan and your first month of internet access is already included in the installation price.",
-            "terms": "For new private-home and apartment subscribers. Cannot be combined with other installation offers."
-          }
-        },
-        {
           "key": "refer-a-friend",
           "shared": {
             "validUntil": "2026-11-30",
             "accent": "coral",
-            "order": 2
+            "order": 1
           },
           "uk": {
             "title": "Приведи друга — 100 грн обом",
@@ -3302,46 +3238,6 @@
             "tag": "Bonus",
             "description": "Recommend NovaLine to a neighbour or friend. Once they are connected, you both get 100 UAH on your account.",
             "terms": "The bonus is credited after the new subscriber's first payment. No limit on referrals."
-          }
-        },
-        {
-          "key": "gigabit-for-500",
-          "shared": {
-            "validUntil": "2026-10-31",
-            "accent": "violet",
-            "order": 3
-          },
-          "uk": {
-            "title": "Гігабіт за ціною 500 Мбіт/с",
-            "tag": "Швидкість",
-            "description": "Перші три місяці користуйтесь тарифом 1000 Мбіт/с, а платіть як за 500 Мбіт/с.",
-            "terms": "Для нових підключень у квартирах. З четвертого місяця діє стандартна абонплата тарифу."
-          },
-          "en": {
-            "title": "Gigabit at the 500 Mbps price",
-            "tag": "Speed",
-            "description": "For your first three months, use the 1000 Mbps plan and pay the 500 Mbps rate.",
-            "terms": "For new apartment connections. Standard plan pricing applies from the fourth month."
-          }
-        },
-        {
-          "key": "router-instalments",
-          "shared": {
-            "validUntil": "2026-12-31",
-            "accent": "coral",
-            "order": 4
-          },
-          "uk": {
-            "title": "Wi-Fi 6 роутер частинами 0%",
-            "tag": "Обладнання",
-            "description": "Розсрочка на роутер із магазину NovaLine на шість місяців без відсотків і переплат.",
-            "terms": "Оформлюється разом із договором на підключення. Обладнання переходить у власність абонента."
-          },
-          "en": {
-            "title": "Wi-Fi 6 router, 0% instalments",
-            "tag": "Equipment",
-            "description": "Pay for a router from the NovaLine shop over six months with no interest and no mark-up.",
-            "terms": "Arranged together with the connection contract. The equipment becomes the subscriber's property."
           }
         }
       ]
