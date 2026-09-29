@@ -1,0 +1,63 @@
+{
+  "collectionName": "components_coverage_offers",
+  "info": {
+    "displayName": "Connection offer",
+    "icon": "wifi",
+    "description": "Connection terms available at a locality: technology, tariffs and one-off connection price"
+  },
+  "options": {},
+  "attributes": {
+    "technology": {
+      "type": "enumeration",
+      "enum": [
+        "GPON",
+        "EPON",
+        "Ethernet",
+        "WiFi"
+      ],
+      "required": true,
+      "default": "GPON"
+    },
+    "audience": {
+      "type": "enumeration",
+      "enum": [
+        "private",
+        "apartment",
+        "private_apartment"
+      ],
+      "required": true,
+      "default": "private",
+      "description": "private — private houses; apartment — apartment buildings; private_apartment — both"
+    },
+    "tariffs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coverage.tariff",
+      "required": true,
+      "min": 1
+    },
+    "connectionPrice": {
+      "type": "integer",
+      "min": 0,
+      "description": "One-off connection price, UAH"
+    },
+    "connectionPriceOld": {
+      "type": "integer",
+      "min": 0,
+      "description": "Previous connection price, shown crossed out (optional)"
+    },
+    "connectionPromo": {
+      "type": "boolean",
+      "default": false,
+      "description": "Shows the \"Акційна ціна!\" badge next to the connection price"
+    },
+    "note": {
+      "type": "text",
+      "description": "What the connection includes (Ukrainian)"
+    },
+    "noteEn": {
+      "type": "text",
+      "description": "Same note in English (optional; Ukrainian is shown when empty)"
+    }
+  }
+}

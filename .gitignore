@@ -115,7 +115,7 @@ yarn-error.log
 # Tests
 ############################
 
-coverage
+/coverage
 
 ############################
 # Strapi

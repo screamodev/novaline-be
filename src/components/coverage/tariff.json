@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_coverage_tariffs",
+  "info": {
+    "displayName": "Tariff",
+    "icon": "priceTag",
+    "description": "Speed and monthly price of one tariff"
+  },
+  "options": {},
+  "attributes": {
+    "speed": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "description": "Mbit/s"
+    },
+    "price": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "description": "UAH per month"
+    },
+    "extra": {
+      "type": "string",
+      "maxLength": 40,
+      "description": "Bundled extra shown after the speed, e.g. IPTV"
+    }
+  }
+}
