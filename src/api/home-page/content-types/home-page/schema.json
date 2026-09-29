@@ -65,14 +65,6 @@
         }
       }
     },
-    "plansConnectionNote": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "addons": {
       "type": "component",
       "repeatable": false,

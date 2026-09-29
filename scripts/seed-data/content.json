@@ -118,7 +118,6 @@
           "title": "Тарифи NovaLine",
           "subtitle": "Ціни для дому залежать від населеного пункту — оберіть його, щоб побачити свої тарифи. Для бізнесу умови єдині."
         },
-        "plansConnectionNote": "Підключення 1500 грн — 1 місяць доступу до Інтернету вже у вартості.",
         "addons": {
           "title": "Додаткові послуги",
           "subtitle": "Підключаються за бажанням до будь-якого тарифу. Ціна вказана окремо від абонплати."
@@ -275,7 +274,6 @@
           "title": "NovaLine plans",
           "subtitle": "Home prices depend on your locality — choose it to see your plans. Business terms are the same everywhere."
         },
-        "plansConnectionNote": "Connection 1500 UAH — the first month of internet is already included.",
         "addons": {
           "title": "Optional add-ons",
           "subtitle": "Added to any plan on request. Priced separately from the monthly fee."
@@ -417,11 +415,11 @@
         "fallbackReplies": [
           {
             "keywords": "тариф, ціна, скільк, коштує, план",
-            "answer": "Для приватного сектору: Старт 150 Мбіт/с — 210 грн/міс, Максимум 1000 Мбіт/с — 270 грн/міс. Для квартир: від 180 грн/міс. Підключення — 1500 грн, перший місяць інтернету вже включений. Публічна IPv4 — окремо, 60 грн/міс."
+            "answer": "Тарифи та вартість підключення залежать від населеного пункту. Оберіть свій у розділі «Покриття» — покажемо технологію, тарифи й ціну підключення саме для вашої адреси. [[coverage]]"
           },
           {
             "keywords": "покрит, адрес, підключ, район, місто, село",
-            "answer": "Перевірити покриття можна у розділі «Покриття і тарифи» — там є пошук за назвою населеного пункту та карта. Якщо вашої адреси немає у списку, залиште заявку: ми перевіримо можливість підключення вручну."
+            "answer": "Перевірити покриття можна у розділі «Покриття» — там є пошук за назвою населеного пункту та вибір області, району й населеного пункту. Якщо вашої адреси немає у списку, залиште заявку: ми перевіримо можливість підключення вручну. [[coverage]]"
           },
           {
             "keywords": "оплат, поповн, платіж, рахунок, приват, моно",
@@ -472,11 +470,11 @@
         "fallbackReplies": [
           {
             "keywords": "plan, price, cost, how much, tariff",
-            "answer": "For private homes: Start 150 Mbps — 210 UAH/mo, Maximum 1000 Mbps — 270 UAH/mo. Apartments start at 180 UAH/mo. Installation is 1500 UAH with the first month of internet included. A public IPv4 is a separate add-on at 60 UAH/mo."
+            "answer": "Plans and the connection price depend on your locality. Choose it in the “Coverage” section and we will show the technology, plans and connection price for your address. [[coverage]]"
           },
           {
             "keywords": "cover, address, connect, area, city, village",
-            "answer": "You can check coverage in the “Coverage & plans” section — it has a search by locality name and a map. If your address is not listed, leave a request and we will check the connection manually."
+            "answer": "You can check coverage in the “Coverage” section — search by locality name or choose the region, district and locality. If your address is not listed, leave a request and we will check the connection manually. [[coverage]]"
           },
           {
             "keywords": "pay, top up, payment, account, privat, mono",

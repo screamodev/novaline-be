@@ -1144,12 +1144,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
-    plansConnectionNote: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     promos: Schema.Attribute.Component<'sections.heading', false> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
