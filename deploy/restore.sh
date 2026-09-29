@@ -7,7 +7,7 @@ set -a; . "${ENV_FILE:-./.env}"; set +a
 
 DB_DUMP="${1:?usage: restore.sh <db-*.dump> <uploads-*.tar.gz>}"
 UPLOADS="${2:?usage: restore.sh <db-*.dump> <uploads-*.tar.gz>}"
-COMPOSE="docker compose -f docker-compose.prod.yml --env-file ${ENV_FILE:-.env}"
+COMPOSE="docker compose -f ${COMPOSE_FILE:-docker-compose.prod.yml} --env-file ${ENV_FILE:-.env}"
 
 echo "This replaces the database '$DATABASE_NAME' and all uploads. Type 'restore' to continue:"
 read -r answer

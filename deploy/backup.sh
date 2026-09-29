@@ -9,7 +9,7 @@ set -a; . "${ENV_FILE:-./.env}"; set +a
 DIR="${BACKUP_DIR:-./backups}"
 KEEP="${BACKUP_KEEP_DAYS:-14}"
 STAMP="$(date +%Y%m%d-%H%M%S)"
-COMPOSE="docker compose -f docker-compose.prod.yml --env-file ${ENV_FILE:-.env}"
+COMPOSE="docker compose -f ${COMPOSE_FILE:-docker-compose.prod.yml} --env-file ${ENV_FILE:-.env}"
 mkdir -p "$DIR"
 
 $COMPOSE exec -T db pg_dump -U "$DATABASE_USERNAME" -d "$DATABASE_NAME" --format=custom --no-owner > "$DIR/db-$STAMP.dump"

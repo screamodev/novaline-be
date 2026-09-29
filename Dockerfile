@@ -6,6 +6,9 @@ COPY package.json package-lock.json ./
 RUN npm ci --no-audit --no-fund
 COPY . .
 ENV NODE_ENV=production
+# The admin panel bakes in its public URL at build time (e.g. https://new.novaline.net/cms when served under /cms).
+ARG PUBLIC_URL=http://localhost:1337
+ENV PUBLIC_URL=$PUBLIC_URL
 RUN npm run build && npm prune --omit=dev
 
 FROM node:22-alpine AS runner
