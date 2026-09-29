@@ -14,6 +14,7 @@ export interface LeadForMessage {
   district?: string | null;
   settlement?: string | null;
   neighbourhood?: string | null;
+  street?: string | null;
   locale?: string | null;
   sourcePath?: string | null;
   context?: { label?: string } | null;
@@ -30,7 +31,7 @@ export const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, 
 /** Builds the HTML message managers receive (Telegram `parse_mode=HTML`). */
 export function formatLeadMessage(lead: LeadForMessage, adminUrl?: string): string {
   const line = (label: string, value?: string | null) => (value ? `<b>${label}:</b> ${escapeHtml(value)}` : null);
-  const address = [lead.settlement, lead.neighbourhood, lead.district, lead.region].filter(Boolean).join(', ');
+  const address = [lead.street, lead.settlement, lead.neighbourhood, lead.district, lead.region].filter(Boolean).join(', ');
   return [
     `<b>${TYPE_LABEL[lead.type ?? ''] ?? 'Заявка'}</b>`,
     line('Імʼя', lead.name),

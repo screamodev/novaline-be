@@ -109,23 +109,6 @@
         }
       }
     },
-    "availableForCoverage": {
-      "type": "boolean",
-      "default": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "coverageCaption": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "order": {
       "type": "integer",
       "default": 0,

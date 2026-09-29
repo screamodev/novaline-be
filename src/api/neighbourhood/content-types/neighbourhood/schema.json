@@ -33,17 +33,16 @@
         }
       }
     },
-    "priceModifier": {
-      "type": "integer",
+    "offers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coverage.offer",
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
-      "default": 0,
-      "min": -500,
-      "max": 500,
-      "description": "UAH added to plan prices (may be negative)"
+      "description": "Connection terms at this locality (shared by both languages)"
     },
     "settlement": {
       "type": "relation",

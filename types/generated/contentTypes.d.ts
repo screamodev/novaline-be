@@ -1267,6 +1267,10 @@ export interface ApiLeadLead extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'new'>;
+    street: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
     type: Schema.Attribute.Enumeration<['connect', 'issue', 'callback']> &
       Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
@@ -1314,26 +1318,18 @@ export interface ApiNeighbourhoodNeighbourhood
           localized: true;
         };
       }>;
+    offers: Schema.Attribute.Component<'coverage.offer', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     order: Schema.Attribute.Integer &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
         };
       }> &
-      Schema.Attribute.DefaultTo<0>;
-    priceModifier: Schema.Attribute.Integer &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }> &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 500;
-          min: -500;
-        },
-        number
-      > &
       Schema.Attribute.DefaultTo<0>;
     publishedAt: Schema.Attribute.DateTime;
     settlement: Schema.Attribute.Relation<
@@ -1471,19 +1467,6 @@ export interface ApiPlanPlan extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
-    availableForCoverage: Schema.Attribute.Boolean &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }> &
-      Schema.Attribute.DefaultTo<false>;
-    coverageCaption: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2004,6 +1987,12 @@ export interface ApiSettlementSettlement extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::neighbourhood.neighbourhood'
     >;
+    offers: Schema.Attribute.Component<'coverage.offer', true> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     order: Schema.Attribute.Integer &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

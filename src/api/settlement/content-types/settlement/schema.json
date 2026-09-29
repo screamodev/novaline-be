@@ -83,6 +83,17 @@
       "target": "api::neighbourhood.neighbourhood",
       "mappedBy": "settlement"
     },
+    "offers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coverage.offer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "description": "Connection terms at this locality (shared by both languages)"
+    },
     "intro": {
       "type": "blocks",
       "pluginOptions": {

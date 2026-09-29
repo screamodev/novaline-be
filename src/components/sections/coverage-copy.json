@@ -18,31 +18,7 @@
     "resultTitle": {
       "type": "string"
     },
-    "technology": {
-      "type": "string"
-    },
-    "speedValue": {
-      "type": "string"
-    },
     "resultNote": {
-      "type": "string"
-    },
-    "mapTitle": {
-      "type": "string"
-    },
-    "nodesCount": {
-      "type": "integer"
-    },
-    "nodesLabel": {
-      "type": "string"
-    },
-    "legendCity": {
-      "type": "string"
-    },
-    "legendVillage": {
-      "type": "string"
-    },
-    "mapHint": {
       "type": "string"
     }
   }

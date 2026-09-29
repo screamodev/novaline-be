@@ -19,7 +19,7 @@ const READS: Check[] = [
   { id: 'R1', path: '/global?populate[phones]=true&populate[socials]=true&populate[defaultSeo][populate]=ogImage&populate[logo]=true&populate[offerDocument]=true', expect: single('phones') },
   { id: 'R2', path: '/home-page?populate[hero][populate]=image&populate[about][populate]=stats&populate[seo][populate]=ogImage', expect: single('hero') },
   { id: 'R3', path: '/services?sort=order:asc', expect: list(6) },
-  { id: 'R4', path: '/plans?sort=order:asc&populate=features&pagination[pageSize]=100', expect: list(9) },
+  { id: 'R4', path: '/plans?sort=order:asc&populate=features&pagination[pageSize]=100', expect: list(3) },
   { id: 'R5', path: '/addons?sort=order:asc', expect: list(5) },
   { id: 'R6', path: '/tv-packages?sort=order:asc&populate=features', expect: list(3) },
   { id: 'R7', path: '/tv-categories?sort=order:asc', expect: list(7) },
@@ -35,7 +35,14 @@ const READS: Check[] = [
   {
     id: 'R17',
     path: '/coverage?locale=en',
-    expect: (b) => (b.data?.settlementCount > 0 && Array.isArray(b.data.regions) ? null : 'empty coverage tree'),
+    expect: (b) => {
+      if (!(b.data?.settlementCount > 200) || !Array.isArray(b.data.regions)) return 'coverage tree too small';
+      const settlements = b.data.regions.flatMap((r: any) => r.districts.flatMap((d: any) => d.settlements));
+      const kharkiv = settlements.find((s: any) => s.slug === 'kharkiv');
+      const withOffers = settlements.filter((s: any) => s.offers?.[0]?.tariffs?.length).length;
+      if (!kharkiv?.neighbourhoods?.every((n: any) => n.offers?.length)) return 'Kharkiv neighbourhoods without offers';
+      return withOffers === settlements.length - 1 ? null : `${settlements.length - 1 - withOffers} settlements without offers`;
+    },
   },
   { id: 'R19', path: '/assistant-settings?populate=*', expect: single('greeting') },
   { id: 'R20', path: '/radio?populate=*', expect: (b) => (b.data?.statusUrl && b.data.streams?.[0]?.url?.includes('novaline') ? null : 'radio streams/statusUrl missing') },

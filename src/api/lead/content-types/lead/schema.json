@@ -49,6 +49,11 @@
     "neighbourhood": {
       "type": "string"
     },
+    "street": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Street and house number"
+    },
     "locale": {
       "type": "string"
     },

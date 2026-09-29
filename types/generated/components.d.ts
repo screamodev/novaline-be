@@ -12,6 +12,84 @@ export interface AssistantReply extends Struct.ComponentSchema {
   };
 }
 
+export interface CoverageOffer extends Struct.ComponentSchema {
+  collectionName: 'components_coverage_offers';
+  info: {
+    description: 'Connection terms available at a locality: technology, tariffs and one-off connection price';
+    displayName: 'Connection offer';
+    icon: 'wifi';
+  };
+  attributes: {
+    audience: Schema.Attribute.Enumeration<
+      ['private', 'apartment', 'private_apartment']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'private'>;
+    connectionPrice: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
+    connectionPriceOld: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
+    connectionPromo: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    note: Schema.Attribute.Text;
+    noteEn: Schema.Attribute.Text;
+    tariffs: Schema.Attribute.Component<'coverage.tariff', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    technology: Schema.Attribute.Enumeration<
+      ['GPON', 'EPON', 'Ethernet', 'WiFi']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'GPON'>;
+  };
+}
+
+export interface CoverageTariff extends Struct.ComponentSchema {
+  collectionName: 'components_coverage_tariffs';
+  info: {
+    description: 'Speed and monthly price of one tariff';
+    displayName: 'Tariff';
+    icon: 'priceTag';
+  };
+  attributes: {
+    extra: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 40;
+      }>;
+    price: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 0;
+        },
+        number
+      >;
+    speed: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+  };
+}
+
 export interface RadioStream extends Struct.ComponentSchema {
   collectionName: 'components_radio_streams';
   info: {
@@ -47,16 +125,8 @@ export interface SectionsCoverageCopy extends Struct.ComponentSchema {
   attributes: {
     heading: Schema.Attribute.Component<'sections.heading', false>;
     hint: Schema.Attribute.String;
-    legendCity: Schema.Attribute.String;
-    legendVillage: Schema.Attribute.String;
-    mapHint: Schema.Attribute.String;
-    mapTitle: Schema.Attribute.String;
-    nodesCount: Schema.Attribute.Integer;
-    nodesLabel: Schema.Attribute.String;
     resultNote: Schema.Attribute.String;
     resultTitle: Schema.Attribute.String;
-    speedValue: Schema.Attribute.String;
-    technology: Schema.Attribute.String;
   };
 }
 
@@ -212,6 +282,8 @@ declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
       'assistant.reply': AssistantReply;
+      'coverage.offer': CoverageOffer;
+      'coverage.tariff': CoverageTariff;
       'radio.stream': RadioStream;
       'sections.about': SectionsAbout;
       'sections.coverage-copy': SectionsCoverageCopy;
