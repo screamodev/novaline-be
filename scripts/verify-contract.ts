@@ -15,6 +15,10 @@ const list = (min: number) => (b: any) => (Array.isArray(b.data) && b.data.lengt
 const single = (field: string) => (b: any) => (b.data && field in b.data ? null : `missing field "${field}"`);
 
 const today = new Date().toISOString().slice(0, 10);
+/** Slides with no dates are always active; otherwise today must be within activeFrom…activeUntil. */
+const ACTIVE_SLIDES =
+  `filters[$and][0][$or][0][activeFrom][$null]=true&filters[$and][0][$or][1][activeFrom][$lte]=${today}` +
+  `&filters[$and][1][$or][0][activeUntil][$null]=true&filters[$and][1][$or][1][activeUntil][$gte]=${today}`;
 const READS: Check[] = [
   { id: 'R1', path: '/global?populate[phones]=true&populate[socials]=true&populate[defaultSeo][populate]=ogImage&populate[logo]=true&populate[offerDocument]=true', expect: single('phones') },
   { id: 'R2', path: '/home-page?populate[hero][populate]=image&populate[about][populate]=stats&populate[seo][populate]=ogImage', expect: single('hero') },
@@ -47,6 +51,9 @@ const READS: Check[] = [
   { id: 'R19', path: '/assistant-settings?populate=*', expect: single('greeting') },
   { id: 'R20', path: '/radio?populate=*', expect: (b) => (b.data?.statusUrl && b.data.streams?.[0]?.url?.includes('novaline') ? null : 'radio streams/statusUrl missing') },
   { id: 'R21', path: '/privacy-page?populate[seo][populate]=ogImage', expect: single('body') },
+  { id: 'R22', path: `/hero-slides?sort=order:asc&populate[image]=true&populate[primaryCta]=true&populate[secondaryCta]=true&${ACTIVE_SLIDES}`, expect: list(1) },
+  { id: 'R23', path: '/careers-page?populate[hero]=true&populate[heroImage]=true&populate[benefits]=true&populate[hrPhone]=true&populate[seo][populate]=ogImage', expect: single('benefits') },
+  { id: 'R24', path: '/vacancies?sort=order:asc&populate[responsibilities]=true&populate[requirements]=true&populate[offer]=true&pagination[pageSize]=100', expect: list(1) },
 ];
 
 async function call(path: string, init: RequestInit = {}, auth = true): Promise<{ status: number; body: any }> {

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_careers_benefits",
+  "info": {
+    "displayName": "Benefit",
+    "icon": "star",
+    "description": "A reason to join NovaLine, shown as an icon card on the vacancies page."
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "award",
+        "bolt",
+        "calendar",
+        "headset",
+        "wrench",
+        "net",
+        "consult",
+        "check"
+      ],
+      "default": "check",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

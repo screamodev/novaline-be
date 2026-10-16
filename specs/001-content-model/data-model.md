@@ -75,3 +75,12 @@ article-category 1─* article
 - `article` and `tv-channel` have a shared `key` for idempotent seeding; `tv-channel.name` is localised (EN transliterations), `article-category.slug` is shared.
 - Single types whose name ends in "s" use `-all` plural names (`payment-details-all`, `assistant-settings-all`); their REST paths stay `/payment-details`, `/assistant-settings`.
 - `settlement.lat/lng` are `float` (decimal was truncated to 2 places by Postgres).
+
+## Additions (2026-10-16)
+
+- `shared.cta` — label, action (enum: order, callback, coverage, link), url (for link), variant (enum: violet, coral, white). Added by 012.
+- `hero-slide` (collection) — key, order (S), activeFrom / activeUntil (date, S, empty = no limit), theme (enum light/violet/navy, S), image (S), imageAlt, kicker, title, titleAccent, subtitle, highlightValue/Unit/Caption, primaryCta / secondaryCta (`shared.cta`). Lifecycle: activeFrom ≤ activeUntil, link CTAs need a URL. Added by 012.
+- `careers.benefit` — icon (enum of site icons), title, text. Added by 013.
+- `careers-page` (single) — hero (`sections.heading`), heroImage (S), benefitsTitle, benefits, listTitle, contactsTitle/Text, hrName, hrPhone (`shared.phone`, S), hrEmail (S), hrTelegram (S), emptyTitle/Text, seo. Added by 013.
+- `vacancy` (collection) — key, order, title, city, department, employmentType (enum, S), workFormat (enum, S), salaryFrom/To (int, S), salaryLabel, isHot (S), summary, description (blocks), responsibilities / requirements / offer (`shared.feature`[]), contactName, contactPhone (S), contactTelegram (S). Lifecycle: salaryFrom ≤ salaryTo; no salary → salaryLabel. Added by 013.
+- Seed: collection entries accept `media: { field: file }` like singles.

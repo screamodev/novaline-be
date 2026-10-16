@@ -31,6 +31,9 @@ If a localised request returns `data: null` (single type) or an entry is missing
 | R19 | `GET /assistant-settings` | `populate=*` | AssistantSettings |
 | R20 | `GET /radio` | `populate=*` | Radio incl. `indexable`, `statusUrl` |
 | R21 | `GET /privacy-page` | `populate[seo][populate]=ogImage` | PrivacyPage (title, body blocks, seo) — added by 005 |
+| R22 | `GET /hero-slides` | `sort=order:asc&populate[image]=true&populate[primaryCta]=true&populate[secondaryCta]=true` + active filter: `filters[$and][0][$or][0][activeFrom][$null]=true&filters[$and][0][$or][1][activeFrom][$lte]=<today>&filters[$and][1][$or][0][activeUntil][$null]=true&filters[$and][1][$or][1][activeUntil][$gte]=<today>` | HeroSlide[] — added by 012. Empty → the frontend falls back to `home-page.hero` |
+| R23 | `GET /careers-page` | `populate[hero]=true&populate[heroImage]=true&populate[benefits]=true&populate[hrPhone]=true&populate[seo][populate]=ogImage` | CareersPage (copy, benefits, HR contacts, seo) — added by 013 |
+| R24 | `GET /vacancies` | `sort=order:asc&populate[responsibilities]=true&populate[requirements]=true&populate[offer]=true&pagination[pageSize]=100` | Vacancy[] — added by 013. Unpublished = closed |
 
 ### CoverageTree (R17)
 ```json

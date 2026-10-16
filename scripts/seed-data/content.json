@@ -1609,6 +1609,97 @@
           "metaDescription": "What personal data NovaLine receives through the website, why it is used, who receives it and what rights you have."
         }
       }
+    },
+    "api::careers-page.careers-page": {
+      "shared": {
+        "hrPhone": {
+          "display": "+38 (098) 506 06 09",
+          "tel": "+380985060609",
+          "primary": true,
+          "viber": false
+        },
+        "hrEmail": "support@novaline.net.ua"
+      },
+      "uk": {
+        "hero": {
+          "kicker": "Кар’єра в NovaLine",
+          "title": "Будуємо швидкий інтернет разом",
+          "subtitle": "Шукаємо людей, які люблять техніку, клієнтів і результат. Офіційне працевлаштування, навчання та команда, що тримає зв’язок навіть без світла."
+        },
+        "benefitsTitle": "Чому з нами добре працювати",
+        "benefits": [
+          {
+            "icon": "award",
+            "title": "Офіційно та вчасно",
+            "text": "Офіційне працевлаштування, зарплата двічі на місяць без затримок."
+          },
+          {
+            "icon": "wrench",
+            "title": "Сучасне обладнання",
+            "text": "Інструмент, спецодяг і транспорт для виїзних фахівців — за рахунок компанії."
+          },
+          {
+            "icon": "consult",
+            "title": "Навчання і ріст",
+            "text": "Наставник на старті, внутрішні курси з GPON та зрозумілий шлях до старшої посади."
+          },
+          {
+            "icon": "bolt",
+            "title": "Енергонезалежність",
+            "text": "Офіси з генераторами та Starlink: працюємо навіть під час відключень."
+          }
+        ],
+        "listTitle": "Відкриті вакансії",
+        "contactsTitle": "Не знайшли свою вакансію?",
+        "contactsText": "Надішліть резюме або зателефонуйте — розповімо, де зараз потрібні люди, і запросимо на співбесіду.",
+        "hrName": "Відділ персоналу",
+        "emptyTitle": "Зараз відкритих вакансій немає",
+        "emptyText": "Але ми постійно ростемо. Надішліть резюме — зв’яжемося, щойно з’явиться відповідна посада.",
+        "seo": {
+          "metaTitle": "Вакансії NovaLine — робота в інтернет-провайдері",
+          "metaDescription": "Відкриті вакансії NovaLine: монтажники ВОЛС, інженери мережі, оператори підтримки та менеджери з продажу. Офіційне працевлаштування та навчання."
+        }
+      },
+      "en": {
+        "hero": {
+          "kicker": "Careers at NovaLine",
+          "title": "Let’s build fast internet together",
+          "subtitle": "We are looking for people who love technology, customers and results. Official employment, training and a team that stays connected even during blackouts."
+        },
+        "benefitsTitle": "Why people enjoy working with us",
+        "benefits": [
+          {
+            "icon": "award",
+            "title": "Official and on time",
+            "text": "Official employment, salary paid twice a month without delays."
+          },
+          {
+            "icon": "wrench",
+            "title": "Modern equipment",
+            "text": "Tools, workwear and transport for field specialists — paid by the company."
+          },
+          {
+            "icon": "consult",
+            "title": "Training and growth",
+            "text": "A mentor from day one, in-house GPON courses and a clear path to a senior role."
+          },
+          {
+            "icon": "bolt",
+            "title": "Energy independence",
+            "text": "Offices with generators and Starlink: we keep working during power cuts."
+          }
+        ],
+        "listTitle": "Open positions",
+        "contactsTitle": "Didn’t find your role?",
+        "contactsText": "Send your CV or give us a call — we’ll tell you where we need people right now and invite you for an interview.",
+        "hrName": "HR department",
+        "emptyTitle": "No open positions right now",
+        "emptyText": "But we keep growing. Send us your CV and we’ll get in touch as soon as a matching role opens.",
+        "seo": {
+          "metaTitle": "NovaLine careers — jobs at an internet provider",
+          "metaDescription": "Open positions at NovaLine: fibre installers, network engineers, support operators and sales managers. Official employment and training."
+        }
+      }
     }
   },
   "collections": [
@@ -2985,6 +3076,152 @@
             "tag": "Bonus",
             "description": "Recommend NovaLine to a neighbour or friend. Once they are connected, you both get 100 UAH on your account.",
             "terms": "The bonus is credited after the new subscriber's first payment. No limit on referrals."
+          }
+        }
+      ]
+    ],
+    [
+      "api::hero-slide.hero-slide",
+      [
+        {
+          "key": "pon-speed",
+          "shared": {
+            "theme": "light",
+            "order": 1
+          },
+          "media": {
+            "image": "hero-wide.png"
+          },
+          "uk": {
+            "kicker": "GPON / EPON · до 10 Гбіт/с",
+            "title": "Швидкісний інтернет",
+            "titleAccent": "за технологією PON",
+            "subtitle": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання та сучасне обладнання з резервним живленням.",
+            "imageAlt": "Задоволена клієнтка користується інтернетом NovaLine",
+            "highlightValue": "1000",
+            "highlightUnit": "Мбіт/с",
+            "highlightCaption": "оптика прямо у дім",
+            "primaryCta": {
+              "label": "Перевірити покриття",
+              "action": "coverage",
+              "variant": "violet"
+            },
+            "secondaryCta": {
+              "label": "Отримати консультацію",
+              "action": "order",
+              "variant": "white"
+            }
+          },
+          "en": {
+            "kicker": "GPON / EPON · up to 10 Gbps",
+            "title": "High-speed internet",
+            "titleAccent": "on PON technology",
+            "subtitle": "Fibre straight to your home or office. A stable connection and modern equipment with backup power.",
+            "imageAlt": "A happy customer using NovaLine internet at home",
+            "highlightValue": "1000",
+            "highlightUnit": "Mbps",
+            "highlightCaption": "fibre straight to your home",
+            "primaryCta": {
+              "label": "Check coverage",
+              "action": "coverage",
+              "variant": "violet"
+            },
+            "secondaryCta": {
+              "label": "Get a consultation",
+              "action": "order",
+              "variant": "white"
+            }
+          }
+        },
+        {
+          "key": "refer-a-friend",
+          "shared": {
+            "theme": "violet",
+            "order": 2,
+            "activeUntil": "2026-11-30"
+          },
+          "uk": {
+            "kicker": "Акція до 30 листопада",
+            "title": "Приведи друга —",
+            "titleAccent": "100 грн обом",
+            "subtitle": "Порекомендуйте NovaLine сусідові чи другові. Після його підключення ви обидва отримаєте 100 грн на рахунок.",
+            "highlightValue": "100",
+            "highlightUnit": "грн",
+            "highlightCaption": "кожному на рахунок",
+            "primaryCta": {
+              "label": "Хочу бонус",
+              "action": "order",
+              "variant": "coral"
+            },
+            "secondaryCta": {
+              "label": "Замовити дзвінок",
+              "action": "callback",
+              "variant": "white"
+            }
+          },
+          "en": {
+            "kicker": "Offer until 30 November",
+            "title": "Refer a friend —",
+            "titleAccent": "100 UAH each",
+            "subtitle": "Recommend NovaLine to a neighbour or friend. Once they are connected, you both get 100 UAH on your account.",
+            "highlightValue": "100",
+            "highlightUnit": "UAH",
+            "highlightCaption": "credited to each of you",
+            "primaryCta": {
+              "label": "Get the bonus",
+              "action": "order",
+              "variant": "coral"
+            },
+            "secondaryCta": {
+              "label": "Request a callback",
+              "action": "callback",
+              "variant": "white"
+            }
+          }
+        },
+        {
+          "key": "tv",
+          "shared": {
+            "theme": "navy",
+            "order": 3
+          },
+          "uk": {
+            "kicker": "Телебачення NovaLine",
+            "title": "ТБ для всієї родини",
+            "titleAccent": "разом з інтернетом",
+            "subtitle": "Пакети каналів у HD на телевізорі, смартфоні та ноутбуці. Оберіть пакет і підключайте разом з інтернетом.",
+            "highlightValue": "HD",
+            "highlightCaption": "на будь-якому екрані",
+            "primaryCta": {
+              "label": "Обрати пакет",
+              "action": "link",
+              "variant": "violet",
+              "url": "/#tv"
+            },
+            "secondaryCta": {
+              "label": "Отримати консультацію",
+              "action": "order",
+              "variant": "white"
+            }
+          },
+          "en": {
+            "kicker": "NovaLine TV",
+            "title": "TV for the whole family",
+            "titleAccent": "together with internet",
+            "subtitle": "HD channel packages on your TV, smartphone and laptop. Pick a package and connect it together with internet.",
+            "highlightValue": "HD",
+            "highlightCaption": "on any screen",
+            "primaryCta": {
+              "label": "Choose a package",
+              "action": "link",
+              "variant": "violet",
+              "url": "/#tv"
+            },
+            "secondaryCta": {
+              "label": "Get a consultation",
+              "action": "order",
+              "variant": "white"
+            }
           }
         }
       ]
@@ -17009,6 +17246,500 @@
               "field": "slug",
               "value": "kharkiv"
             }
+          }
+        }
+      ]
+    ],
+    [
+      "api::vacancy.vacancy",
+      [
+        {
+          "key": "fiber-installer",
+          "shared": {
+            "employmentType": "full-time",
+            "workFormat": "field",
+            "salaryFrom": 28000,
+            "salaryTo": 40000,
+            "isHot": true,
+            "order": 1
+          },
+          "uk": {
+            "title": "Монтажник ВОЛС",
+            "city": "Харків",
+            "department": "Технічний відділ",
+            "salaryLabel": "+ премії за підключення",
+            "summary": "Підключення абонентів до оптичної мережі GPON, прокладання кабелю та зварювання волокна.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ви будете підключати нових абонентів у приватному секторі та багатоповерхівках, обслуговувати магістральні лінії й усувати пошкодження."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Працюємо бригадами по двоє, маршрут на день формує диспетчер."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Прокладання оптичного кабелю та монтаж муфт"
+              },
+              {
+                "text": "Зварювання та вимірювання оптичного волокна"
+              },
+              {
+                "text": "Налаштування ONU у абонента"
+              },
+              {
+                "text": "Усунення аварій на лінії"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Досвід монтажних робіт (електрика, СКС або ВОЛС)"
+              },
+              {
+                "text": "Готовність до роботи на висоті"
+              },
+              {
+                "text": "Посвідчення водія категорії B — буде перевагою"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Зарплата 28–40 тис. грн + премії"
+              },
+              {
+                "text": "Службовий транспорт і пальне"
+              },
+              {
+                "text": "Навчання роботі зі зварювальним апаратом"
+              },
+              {
+                "text": "Графік 5/2 з 9:00 до 18:00"
+              }
+            ]
+          },
+          "en": {
+            "title": "Fibre installer",
+            "city": "Kharkiv",
+            "department": "Technical department",
+            "salaryLabel": "+ per-connection bonuses",
+            "summary": "Connecting subscribers to the GPON fibre network, laying cable and splicing fibre.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "You will connect new subscribers in houses and apartment blocks, maintain trunk lines and repair faults."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We work in teams of two; the dispatcher plans the daily route."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Laying fibre cable and installing closures"
+              },
+              {
+                "text": "Splicing and measuring optical fibre"
+              },
+              {
+                "text": "Setting up the customer’s ONU"
+              },
+              {
+                "text": "Repairing line faults"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Installation experience (electrical, structured cabling or fibre)"
+              },
+              {
+                "text": "Comfortable working at height"
+              },
+              {
+                "text": "Category B driving licence is a plus"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Salary 28–40k UAH + bonuses"
+              },
+              {
+                "text": "Company vehicle and fuel"
+              },
+              {
+                "text": "Training on the fusion splicer"
+              },
+              {
+                "text": "Mon–Fri, 9:00–18:00"
+              }
+            ]
+          }
+        },
+        {
+          "key": "support-operator",
+          "shared": {
+            "employmentType": "shift",
+            "workFormat": "hybrid",
+            "salaryFrom": 18000,
+            "salaryTo": 24000,
+            "isHot": false,
+            "order": 2
+          },
+          "uk": {
+            "title": "Оператор служби підтримки",
+            "city": "Харків",
+            "department": "Клієнтський сервіс",
+            "summary": "Консультуєте абонентів телефоном і в месенджерах, допомагаєте з налаштуваннями та оплатою.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Перша лінія підтримки: ви — голос NovaLine для наших абонентів. Допомагаєте розібратися з роутером, тарифами та оплатою, а складні випадки передаєте інженерам."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Приймання дзвінків і повідомлень від абонентів"
+              },
+              {
+                "text": "Базова діагностика підключення"
+              },
+              {
+                "text": "Оформлення заявок на виїзд майстра"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Грамотна українська мова"
+              },
+              {
+                "text": "Впевнений користувач ПК"
+              },
+              {
+                "text": "Доброзичливість і стресостійкість"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Змінний графік 2/2, можна поєднувати з навчанням"
+              },
+              {
+                "text": "Після випробувального терміну — частково віддалено"
+              },
+              {
+                "text": "Оплачуване навчання на старті"
+              }
+            ]
+          },
+          "en": {
+            "title": "Customer support operator",
+            "city": "Kharkiv",
+            "department": "Customer service",
+            "summary": "Help subscribers by phone and messengers with settings and payments.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "First-line support: you are NovaLine’s voice for our subscribers. You help with routers, plans and payments and pass complex cases to engineers."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Handling calls and messages from subscribers"
+              },
+              {
+                "text": "Basic connection diagnostics"
+              },
+              {
+                "text": "Booking technician visits"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Fluent Ukrainian"
+              },
+              {
+                "text": "Confident PC user"
+              },
+              {
+                "text": "Friendly and stress-resistant"
+              }
+            ],
+            "offer": [
+              {
+                "text": "2/2 shift schedule, compatible with studies"
+              },
+              {
+                "text": "Partly remote after probation"
+              },
+              {
+                "text": "Paid onboarding training"
+              }
+            ]
+          }
+        },
+        {
+          "key": "network-engineer",
+          "shared": {
+            "employmentType": "full-time",
+            "workFormat": "office",
+            "salaryFrom": 45000,
+            "salaryTo": 65000,
+            "isHot": true,
+            "order": 3
+          },
+          "uk": {
+            "title": "Мережевий інженер",
+            "city": "Харків",
+            "department": "Мережевий відділ",
+            "summary": "Підтримка та розвиток опорної мережі: маршрутизація, OLT, моніторинг.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ви відповідатимете за стабільність ядра мережі NovaLine та підключення нових населених пунктів."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Адміністрування маршрутизаторів і комутаторів"
+              },
+              {
+                "text": "Налаштування OLT та VLAN"
+              },
+              {
+                "text": "Моніторинг і розбір інцидентів"
+              },
+              {
+                "text": "Участь у проєктах розширення мережі"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Досвід від 2 років у провайдера або інтегратора"
+              },
+              {
+                "text": "BGP, OSPF, VLAN, QinQ"
+              },
+              {
+                "text": "Linux на рівні впевненого користувача"
+              },
+              {
+                "text": "Mikrotik / Cisco / Huawei"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Зарплата 45–65 тис. грн"
+              },
+              {
+                "text": "Сучасне обладнання та лабораторія"
+              },
+              {
+                "text": "Оплата сертифікацій"
+              },
+              {
+                "text": "Чергування — з доплатою"
+              }
+            ]
+          },
+          "en": {
+            "title": "Network engineer",
+            "city": "Kharkiv",
+            "department": "Network department",
+            "summary": "Run and grow the backbone network: routing, OLTs, monitoring.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "You will keep NovaLine’s core network stable and connect new towns and villages."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Administering routers and switches"
+              },
+              {
+                "text": "Configuring OLTs and VLANs"
+              },
+              {
+                "text": "Monitoring and incident analysis"
+              },
+              {
+                "text": "Network expansion projects"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "2+ years at an ISP or integrator"
+              },
+              {
+                "text": "BGP, OSPF, VLAN, QinQ"
+              },
+              {
+                "text": "Confident Linux user"
+              },
+              {
+                "text": "Mikrotik / Cisco / Huawei"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Salary 45–65k UAH"
+              },
+              {
+                "text": "Modern equipment and a lab"
+              },
+              {
+                "text": "Certifications paid"
+              },
+              {
+                "text": "On-call duty paid extra"
+              }
+            ]
+          }
+        },
+        {
+          "key": "sales-manager",
+          "shared": {
+            "employmentType": "full-time",
+            "workFormat": "field",
+            "salaryFrom": 20000,
+            "isHot": false,
+            "order": 4
+          },
+          "uk": {
+            "title": "Менеджер з продажу",
+            "city": "Полтава",
+            "department": "Відділ продажів",
+            "salaryLabel": "+ відсоток від підключень",
+            "summary": "Розповідаєте мешканцям про NovaLine та оформлюєте нові підключення у своєму районі.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "Ми заходимо в нові райони Полтави. Ваше завдання — познайомити мешканців з оптичним інтернетом NovaLine і допомогти їм підключитися."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Презентація послуг мешканцям і бізнесу"
+              },
+              {
+                "text": "Оформлення договорів на підключення"
+              },
+              {
+                "text": "Ведення бази клієнтів"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Комунікабельність і орієнтація на результат"
+              },
+              {
+                "text": "Досвід продажів — перевага, не обов’язково"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Ставка від 20 тис. грн + відсоток"
+              },
+              {
+                "text": "Компенсація проїзду та зв’язку"
+              },
+              {
+                "text": "Навчання продуктам і техніці продажу"
+              }
+            ]
+          },
+          "en": {
+            "title": "Sales manager",
+            "city": "Poltava",
+            "department": "Sales department",
+            "salaryLabel": "+ commission per connection",
+            "summary": "Tell residents about NovaLine and sign up new connections in your area.",
+            "description": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "We are entering new districts of Poltava. Your job is to introduce residents to NovaLine fibre internet and help them get connected."
+                  }
+                ]
+              }
+            ],
+            "responsibilities": [
+              {
+                "text": "Presenting services to residents and businesses"
+              },
+              {
+                "text": "Signing connection contracts"
+              },
+              {
+                "text": "Maintaining the customer base"
+              }
+            ],
+            "requirements": [
+              {
+                "text": "Outgoing and result-driven"
+              },
+              {
+                "text": "Sales experience is a plus, not required"
+              }
+            ],
+            "offer": [
+              {
+                "text": "Base from 20k UAH + commission"
+              },
+              {
+                "text": "Travel and phone costs covered"
+              },
+              {
+                "text": "Product and sales training"
+              }
+            ]
           }
         }
       ]

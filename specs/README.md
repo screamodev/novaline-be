@@ -12,6 +12,9 @@
 | 008 | radio — /radio | novaline-fe | ✅ implemented |
 | 009 | ai-assistant — OpenAI via server route | novaline-fe (+be) | spec |
 | 010 | deploy — prod compose, Caddy, backups | novaline-be | spec |
+| 011 | client-revisions — navigation, coverage offers, order popup | novaline-fe (+be) | ✅ implemented |
+| 012 | hero-slider — CMS offers slider with CTA actions | novaline-fe (+be) | ✅ implemented |
+| 013 | vacancies — /vacancies, careers page, vacancy collection | novaline-fe (+be) | ✅ implemented |
 
 Constitution: `.specify/memory/constitution.md` (identical in both repos).
 REST contract: `novaline-be/specs/001-content-model/contracts/rest-api.md`.

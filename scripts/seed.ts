@@ -19,7 +19,7 @@ import type { Core } from '@strapi/strapi';
 
 type Data = Record<string, unknown>;
 interface Relation { uid: string; field: string; value: string }
-interface Entry { key: string; shared: Data; uk: Data; en: Data; relations?: Record<string, Relation> }
+interface Entry { key: string; shared: Data; uk: Data; en: Data; relations?: Record<string, Relation>; media?: Record<string, string> }
 interface Single { shared: Data; uk: Data; en: Data; media?: Record<string, string> }
 interface Content { singles: Record<string, Single>; collections: [string, Entry[]][] }
 
@@ -111,7 +111,9 @@ async function seedCollection(strapi: Core.Strapi, uid: string, entries: Entry[]
   const keyField = attributes.key ? 'key' : 'slug';
 
   for (const entry of entries) {
-    const identity = keyField === 'key' ? { key: entry.key } : {};
+    const media: Data = {};
+    for (const [field, fileName] of Object.entries(entry.media ?? {})) media[field] = await uploadMedia(strapi, fileName, 'NovaLine');
+    const identity = { ...(keyField === 'key' ? { key: entry.key } : {}), ...media };
     const existing = await docs(strapi, uid).findFirst({ locale: 'uk', filters: { [keyField]: entry.key } });
     let documentId = existing?.documentId as string | undefined;
 

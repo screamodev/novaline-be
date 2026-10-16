@@ -12,6 +12,33 @@ export interface AssistantReply extends Struct.ComponentSchema {
   };
 }
 
+export interface CareersBenefit extends Struct.ComponentSchema {
+  collectionName: 'components_careers_benefits';
+  info: {
+    description: 'A reason to join NovaLine, shown as an icon card on the vacancies page.';
+    displayName: 'Benefit';
+    icon: 'star';
+  };
+  attributes: {
+    icon: Schema.Attribute.Enumeration<
+      [
+        'award',
+        'bolt',
+        'calendar',
+        'headset',
+        'wrench',
+        'net',
+        'consult',
+        'check',
+      ]
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'check'>;
+    text: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface CoverageOffer extends Struct.ComponentSchema {
   collectionName: 'components_coverage_offers';
   info: {
@@ -181,6 +208,26 @@ export interface SectionsTrustItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCta extends Struct.ComponentSchema {
+  collectionName: 'components_shared_ctas';
+  info: {
+    description: 'Button label plus what it does: open the order form, request a callback, scroll to the coverage check, or follow a link.';
+    displayName: 'CTA button';
+    icon: 'cursor';
+  };
+  attributes: {
+    action: Schema.Attribute.Enumeration<
+      ['order', 'callback', 'coverage', 'link']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'order'>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+    variant: Schema.Attribute.Enumeration<['violet', 'coral', 'white']> &
+      Schema.Attribute.DefaultTo<'violet'>;
+  };
+}
+
 export interface SharedFeature extends Struct.ComponentSchema {
   collectionName: 'components_shared_features';
   info: {
@@ -282,6 +329,7 @@ declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
       'assistant.reply': AssistantReply;
+      'careers.benefit': CareersBenefit;
       'coverage.offer': CoverageOffer;
       'coverage.tariff': CoverageTariff;
       'radio.stream': RadioStream;
@@ -290,6 +338,7 @@ declare module '@strapi/strapi' {
       'sections.heading': SectionsHeading;
       'sections.hero': SectionsHero;
       'sections.trust-item': SectionsTrustItem;
+      'shared.cta': SharedCta;
       'shared.feature': SharedFeature;
       'shared.label-value': SharedLabelValue;
       'shared.phone': SharedPhone;

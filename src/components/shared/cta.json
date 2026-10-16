@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "CTA button",
+    "icon": "cursor",
+    "description": "Button label plus what it does: open the order form, request a callback, scroll to the coverage check, or follow a link."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "action": {
+      "type": "enumeration",
+      "enum": ["order", "callback", "coverage", "link"],
+      "default": "order",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "description": "Only for action = link: a site path (/radio, /#tv) or a full https:// URL"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["violet", "coral", "white"],
+      "default": "violet"
+    }
+  }
+}
