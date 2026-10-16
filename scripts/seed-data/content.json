@@ -3084,52 +3084,52 @@
       "api::hero-slide.hero-slide",
       [
         {
-          "key": "pon-speed",
+          "key": "backup-power",
           "shared": {
             "theme": "light",
             "order": 1
           },
           "media": {
-            "image": "hero-wide.png"
+            "image": "backup-power.jpg"
           },
           "uk": {
-            "kicker": "GPON / EPON · до 10 Гбіт/с",
-            "title": "Швидкісний інтернет",
-            "titleAccent": "за технологією PON",
-            "subtitle": "Оптика прямо у ваш дім чи офіс. Стабільне з’єднання та сучасне обладнання з резервним живленням.",
-            "imageAlt": "Задоволена клієнтка користується інтернетом NovaLine",
-            "highlightValue": "1000",
-            "highlightUnit": "Мбіт/с",
-            "highlightCaption": "оптика прямо у дім",
+            "kicker": "Енергонезалежність",
+            "title": "Інтернет працює",
+            "titleAccent": "навіть без світла",
+            "subtitle": "Підкажемо, як живити роутер і ONU від павербанка чи ДБЖ, і підберемо обладнання під вашу техніку — щоб зв’язок не зникав під час відключень.",
+            "imageAlt": "Роутер з увімкненими індикаторами поруч із вогником свічки",
+            "highlightValue": "12 В",
+            "highlightCaption": "павербанк або ДБЖ для роутера",
             "primaryCta": {
-              "label": "Перевірити покриття",
-              "action": "coverage",
+              "label": "Підібрати живлення",
+              "action": "order",
               "variant": "violet"
             },
             "secondaryCta": {
-              "label": "Отримати консультацію",
-              "action": "order",
-              "variant": "white"
+              "label": "Як це працює",
+              "action": "link",
+              "variant": "white",
+              "url": "/news/yak-my-trymaiemo-merezhu-pid-chas-vidkliuchen"
             }
           },
           "en": {
-            "kicker": "GPON / EPON · up to 10 Gbps",
-            "title": "High-speed internet",
-            "titleAccent": "on PON technology",
-            "subtitle": "Fibre straight to your home or office. A stable connection and modern equipment with backup power.",
-            "imageAlt": "A happy customer using NovaLine internet at home",
-            "highlightValue": "1000",
-            "highlightUnit": "Mbps",
-            "highlightCaption": "fibre straight to your home",
+            "kicker": "Energy independence",
+            "title": "Stay online",
+            "titleAccent": "even in a blackout",
+            "subtitle": "We’ll show you how to run your router and ONU from a power bank or UPS and pick the right equipment, so you stay online during blackouts.",
+            "imageAlt": "A router with its lights on next to a candle flame",
+            "highlightValue": "12 V",
+            "highlightCaption": "power bank or UPS for the router",
             "primaryCta": {
-              "label": "Check coverage",
-              "action": "coverage",
+              "label": "Pick a power solution",
+              "action": "order",
               "variant": "violet"
             },
             "secondaryCta": {
-              "label": "Get a consultation",
-              "action": "order",
-              "variant": "white"
+              "label": "How it works",
+              "action": "link",
+              "variant": "white",
+              "url": "/news/yak-my-trymaiemo-merezhu-pid-chas-vidkliuchen"
             }
           }
         },
@@ -3180,10 +3180,46 @@
           }
         },
         {
-          "key": "tv",
+          "key": "hiring",
           "shared": {
             "theme": "navy",
             "order": 3
+          },
+          "media": {
+            "image": "hiring-team.jpg"
+          },
+          "uk": {
+            "kicker": "Ми наймаємо",
+            "title": "Будуймо швидкий інтернет",
+            "titleAccent": "разом з нами",
+            "subtitle": "Шукаємо монтажників, інженерів, операторів підтримки та менеджерів. Офіційне працевлаштування, навчання і команда, що тримає зв’язок.",
+            "imageAlt": "Усміхнена команда працює разом за ноутбуком",
+            "primaryCta": {
+              "label": "Переглянути вакансії",
+              "action": "link",
+              "variant": "coral",
+              "url": "/vacancies"
+            }
+          },
+          "en": {
+            "kicker": "We’re hiring",
+            "title": "Let’s build fast internet",
+            "titleAccent": "together",
+            "subtitle": "We’re looking for installers, engineers, support operators and sales managers. Official employment, training and a team that stays connected.",
+            "imageAlt": "A smiling team working together at a laptop",
+            "primaryCta": {
+              "label": "See open positions",
+              "action": "link",
+              "variant": "coral",
+              "url": "/vacancies"
+            }
+          }
+        },
+        {
+          "key": "tv",
+          "shared": {
+            "theme": "navy",
+            "order": 4
           },
           "uk": {
             "kicker": "Телебачення NovaLine",

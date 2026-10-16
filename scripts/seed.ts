@@ -46,7 +46,8 @@ async function uploadMedia(strapi: Core.Strapi, fileName: string, alt: string): 
   const existing = await strapi.db.query('plugin::upload.file').findOne({ where: { name: fileName } });
   if (existing) return existing.id;
   const filepath = path.join(SEED_DIR, 'media', fileName);
-  const mimetype = fileName.endsWith('.svg') ? 'image/svg+xml' : fileName.endsWith('.pdf') ? 'application/pdf' : 'image/png';
+  const MIME: Record<string, string> = { svg: 'image/svg+xml', pdf: 'application/pdf', jpg: 'image/jpeg', jpeg: 'image/jpeg', webp: 'image/webp' };
+  const mimetype = MIME[fileName.split('.').pop()!.toLowerCase()] ?? 'image/png';
   const [file] = await strapi
     .plugin('upload')
     .service('upload')

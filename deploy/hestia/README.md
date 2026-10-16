@@ -3,6 +3,14 @@
 **Server:** `hosting.therecom.net` (SSH port 10163).
 **Site:** `new.novaline.net`, a web domain of the Hestia user `novaline`.
 
+**SSH access:** user `screamodev`, key-based. Passwords never go into this repository.
+
+```bash
+ssh -p 10163 screamodev@hosting.therecom.net
+# one-time: install your public key (asks for the password once)
+ssh-copy-id -p 10163 screamodev@hosting.therecom.net
+```
+
 The stack runs in Docker. Hestia's nginx stays in front and terminates TLS with its Let's Encrypt certificate.
 
 | Path | Target |
