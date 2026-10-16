@@ -49,7 +49,15 @@ sudo docker compose logs -f --tail 100 web
 **Update to the latest images** (after CI has finished):
 
 ```bash
+sudo env COMPOSE_FILE=docker-compose.yml ./backup.sh
 sudo docker compose pull && sudo docker compose up -d
+```
+
+**New seed content** (a release that adds content types, e.g. hero slides or vacancies):
+
+```bash
+sudo docker compose exec cms npm run seed                                          # idempotent: only adds what is missing
+sudo docker compose exec cms npm run seed -- --refresh=api::hero-slide.hero-slide  # overwrites that type from the repo
 ```
 
 **Roll back to a commit** — pin `CMS_IMAGE` / `WEB_IMAGE` in `.env` to `…:<sha>`, then run `up -d`.
