@@ -1,5 +1,4 @@
 import { errors } from '@strapi/utils';
-import type { Core } from '@strapi/strapi';
 
 type Data = Record<string, any> | undefined;
 
@@ -19,15 +18,3 @@ export function validateHeroSlide(data: Data) {
   checkCta(data.secondaryCta, 'Secondary CTA');
 }
 
-/**
- * Runs on the Document Service (admin, REST and scripts alike). A DB lifecycle would not work here:
- * by then components are already stored and `data.primaryCta` is only a reference.
- */
-export function registerHeroSlideValidation(strapi: Core.Strapi) {
-  strapi.documents.use(async (ctx, next) => {
-    if (ctx.uid === 'api::hero-slide.hero-slide' && (ctx.action === 'create' || ctx.action === 'update')) {
-      validateHeroSlide((ctx.params as { data?: Data }).data);
-    }
-    return next();
-  });
-}

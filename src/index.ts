@@ -1,5 +1,5 @@
 import type { Core } from '@strapi/strapi';
-import { registerHeroSlideValidation } from './api/hero-slide/validate';
+import { registerValidation } from './validation';
 
 const LOCALES = [
   { code: 'uk', name: 'Ukrainian (uk)' },
@@ -98,7 +98,7 @@ function warnMissingTelegram(strapi: Core.Strapi) {
 
 export default {
   register({ strapi }: { strapi: Core.Strapi }) {
-    registerHeroSlideValidation(strapi);
+    registerValidation(strapi);
   },
 
   async bootstrap({ strapi }: { strapi: Core.Strapi }) {
