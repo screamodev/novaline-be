@@ -71,10 +71,16 @@ export default ({ strapi }: { strapi: Core.Strapi }) => ({
         .sort(byOrder)
         .map((n) => ({ name: name(loc.neighbourhoods, n), offers: toOffers(n.offers) }));
 
+    // Settlements: regional centre first, then alphabetically by the name shown in this locale
+    // (editors no longer have to maintain `order` for hundreds of localities).
+    const collator = new Intl.Collator(locale === 'en' ? 'en' : 'uk', { sensitivity: 'base', numeric: true });
+    const bySettlementName = (a: any, b: any) =>
+      Number(!!b.isRegionalCentre) - Number(!!a.isRegionalCentre) || collator.compare(name(loc.settlements, a), name(loc.settlements, b));
+
     const settlementsOf = (districtId: string): TreeSettlement[] =>
       base.settlements
         .filter((s) => s.district?.documentId === districtId)
-        .sort(byOrder)
+        .sort(bySettlementName)
         .map((s) => ({
           slug: s.slug,
           name: name(loc.settlements, s),
