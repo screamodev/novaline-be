@@ -65,22 +65,27 @@ export default ({ strapi }: { strapi: Core.Strapi }) => ({
     const locative = (item: any) =>
       loc.settlements.find((x) => x.documentId === item.documentId)?.nameLocative ?? item.nameLocative ?? null;
 
+    // Districts, settlements and neighbourhoods are listed alphabetically by the name shown in this locale,
+    // so editors never maintain `order` for them; districts/settlements with a regional centre come first
+    // ("м. Харків", "Харків"). Only regions keep the manual `order`.
+    const collator = new Intl.Collator(locale === 'en' ? 'en' : 'uk', { sensitivity: 'base', numeric: true });
+    const alphabetical = (list: any[]) => (a: any, b: any) => collator.compare(name(list, a), name(list, b));
+    const centreDistricts = new Set(base.settlements.filter((s) => s.isRegionalCentre).map((s) => s.district?.documentId));
+    const byDistrict = (a: any, b: any) =>
+      Number(centreDistricts.has(b.documentId)) - Number(centreDistricts.has(a.documentId)) || alphabetical(loc.districts)(a, b);
+    const bySettlement = (a: any, b: any) =>
+      Number(!!b.isRegionalCentre) - Number(!!a.isRegionalCentre) || alphabetical(loc.settlements)(a, b);
+
     const neighbourhoodsOf = (settlementId: string): TreeNeighbourhood[] =>
       base.neighbourhoods
         .filter((n) => n.settlement?.documentId === settlementId)
-        .sort(byOrder)
+        .sort(alphabetical(loc.neighbourhoods))
         .map((n) => ({ name: name(loc.neighbourhoods, n), offers: toOffers(n.offers) }));
-
-    // Settlements: regional centre first, then alphabetically by the name shown in this locale
-    // (editors no longer have to maintain `order` for hundreds of localities).
-    const collator = new Intl.Collator(locale === 'en' ? 'en' : 'uk', { sensitivity: 'base', numeric: true });
-    const bySettlementName = (a: any, b: any) =>
-      Number(!!b.isRegionalCentre) - Number(!!a.isRegionalCentre) || collator.compare(name(loc.settlements, a), name(loc.settlements, b));
 
     const settlementsOf = (districtId: string): TreeSettlement[] =>
       base.settlements
         .filter((s) => s.district?.documentId === districtId)
-        .sort(bySettlementName)
+        .sort(bySettlement)
         .map((s) => ({
           slug: s.slug,
           name: name(loc.settlements, s),
@@ -97,7 +102,7 @@ export default ({ strapi }: { strapi: Core.Strapi }) => ({
       name: name(loc.regions, r),
       districts: base.districts
         .filter((d) => d.region?.documentId === r.documentId)
-        .sort(byOrder)
+        .sort(byDistrict)
         .map((d) => ({ slug: d.slug, name: name(loc.districts, d), settlements: settlementsOf(d.documentId) })),
     }));
 
