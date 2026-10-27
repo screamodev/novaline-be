@@ -28,19 +28,30 @@ const TYPE_LABEL: Record<string, string> = {
 
 export const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-/** Builds the HTML message managers receive (Telegram `parse_mode=HTML`). */
+/** +380XXXXXXXXX → 0XXXXXXXXX (how managers dial); anything else is shown as stored. */
+export const localPhone = (phone: string) => (/^\+380\d{9}$/.test(phone) ? phone.slice(3) : phone);
+
+/** Region → district → settlement → neighbourhood → street + house (the street field holds both, plus a flat if given). */
+export const formatAddress = (lead: LeadForMessage) =>
+  [lead.region, lead.district, lead.settlement, lead.neighbourhood, lead.street]
+    .map((part) => part?.trim())
+    .filter(Boolean)
+    .join(' → ');
+
+/**
+ * Builds the HTML message managers receive (Telegram `parse_mode=HTML`): only what is needed to call back.
+ * The phone is in <code>, so a tap copies it.
+ */
 export function formatLeadMessage(lead: LeadForMessage): string {
-  const line = (label: string, value?: string | null) => (value ? `<b>${label}:</b> ${escapeHtml(value)}` : null);
-  const address = [lead.street, lead.settlement, lead.neighbourhood, lead.district, lead.region].filter(Boolean).join(', ');
+  const line = (label: string, value?: string | null) => (value?.trim() ? `<b>${label}:</b> ${escapeHtml(value.trim())}` : null);
   return [
     `<b>${TYPE_LABEL[lead.type ?? ''] ?? 'Заявка'}</b>`,
     line('Імʼя', lead.name),
-    lead.phone ? `<b>Телефон:</b> <a href="tel:${escapeHtml(lead.phone)}">${escapeHtml(lead.phone)}</a>` : null,
+    lead.phone ? `<b>Телефон:</b> <code>${escapeHtml(localPhone(lead.phone))}</code>` : null,
     line('Тема', lead.reasonLabel),
-    line('Адреса', address),
-    line('Контекст', lead.context?.label),
-    line('Повідомлення', lead.message),
-    line('Мова / сторінка', [lead.locale, lead.sourcePath].filter(Boolean).join(' · ')),
+    line('Адреса', formatAddress(lead)),
+    line('Обрано', lead.context?.label),
+    line('Коментар', lead.message),
   ]
     .filter(Boolean)
     .join('\n');

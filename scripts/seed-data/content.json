@@ -157,7 +157,7 @@
           "subtitle": "Роутери, ONU-термінали та аксесуари. Можна придбати разом із підключенням."
         },
         "shopRouterNote": "У нашій мережі працюють роутери з WAN-портом будь-яких виробників. Щодо конкретної моделі краще проконсультуватись у магазині електроніки, де ви плануєте придбати роутер.",
-        "shopOrderNote": "Обладнання можна отримати в офісі або разом із монтажем.",
+        "shopOrderNote": "Обладнання можна отримати разом із монтажем.",
         "payment": {
           "kicker": "Оплата",
           "title": "Поповнюйте рахунок як зручно",
@@ -313,7 +313,7 @@
           "subtitle": "Routers, ONU terminals and accessories. Can be bought together with your connection."
         },
         "shopRouterNote": "Routers from any manufacturer with a WAN port work on our network. For a specific model, it is best to ask the electronics shop where you plan to buy it.",
-        "shopOrderNote": "Equipment can be collected at our office or delivered with the installation.",
+        "shopOrderNote": "Equipment is delivered with the installation.",
         "payment": {
           "kicker": "Payment",
           "title": "Top up however suits you",
