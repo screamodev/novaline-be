@@ -29,7 +29,7 @@ const TYPE_LABEL: Record<string, string> = {
 export const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 /** Builds the HTML message managers receive (Telegram `parse_mode=HTML`). */
-export function formatLeadMessage(lead: LeadForMessage, adminUrl?: string): string {
+export function formatLeadMessage(lead: LeadForMessage): string {
   const line = (label: string, value?: string | null) => (value ? `<b>${label}:</b> ${escapeHtml(value)}` : null);
   const address = [lead.street, lead.settlement, lead.neighbourhood, lead.district, lead.region].filter(Boolean).join(', ');
   return [
@@ -41,7 +41,6 @@ export function formatLeadMessage(lead: LeadForMessage, adminUrl?: string): stri
     line('Контекст', lead.context?.label),
     line('Повідомлення', lead.message),
     line('Мова / сторінка', [lead.locale, lead.sourcePath].filter(Boolean).join(' · ')),
-    adminUrl && lead.documentId ? `<a href="${escapeHtml(adminUrl)}">Відкрити в адмінці</a>` : null,
   ]
     .filter(Boolean)
     .join('\n');

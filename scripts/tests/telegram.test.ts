@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { escapeHtml, formatLeadMessage } from '../../src/api/lead/utils/telegram';
 
-test('formats a connection lead with address, context and admin link', () => {
+test('formats a connection lead with address and context, without an admin link', () => {
   const text = formatLeadMessage(
     {
       documentId: 'abc',
@@ -20,13 +20,12 @@ test('formats a connection lead with address, context and admin link', () => {
       locale: 'uk',
       sourcePath: '/',
     },
-    'http://cms/admin/x/abc',
   );
   assert.match(text, /<b>🟣 Нове підключення<\/b>/);
   assert.match(text, /<a href="tel:\+380985060609">\+380985060609<\/a>/);
   assert.match(text, /вул\. Сумська, 10, Харків, Центр, Харківський район, Харківська область/);
   assert.match(text, /Максимум · 1000 Мбіт\/с/);
-  assert.match(text, /Відкрити в адмінці/);
+  assert.doesNotMatch(text, /адмінці|<a href="http/);
 });
 
 test('escapes HTML from visitor input and skips empty fields', () => {
